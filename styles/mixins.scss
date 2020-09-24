@@ -1,0 +1,32 @@
+@mixin f12-rg($f12-rg-c1: #fff){
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 12px;
+    color: $f12-rg-c1;
+    letter-spacing: 0;
+}
+@mixin f14-rg($f14-rg-c1: #110038){
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 14px;
+    color: $f14-rg-c1;
+    letter-spacing: 0;
+}
+@mixin f14-b($f14-b-c1: #fff){
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 14px;
+    color: $f14-b-c1;
+    letter-spacing: 0;
+    font-weight: 700;
+}
+@mixin f16-rg($f16-rg-c: #110038){
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 16px;
+    color: $f16-rg-c;
+    letter-spacing: 0;
+}
+@mixin f16-b($f16-rg-c: #110038){
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 16px;
+    color: $f16-rg-c;
+    letter-spacing: 0;
+    font-weight: bold;
+}

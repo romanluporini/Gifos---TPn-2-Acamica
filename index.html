@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet">
+    
+    <title>Gifos</title>
+</head>
+<body>
+    <!-- <input type="radio" name="t" id="btn-theme-day" checked>
+    <input type="radio" name="t" id="btn-theme-night" > -->
+
+    <input type="radio" name="tab" id="mg-tab">
+    <input type="radio" name="tab" id="cg-tab">
+
+    <div class="index-container" id="index-container">
+
+        <input type="checkbox" id="expand-menu">
+        <input type="checkbox" id="btn-theme-opt">
+
+        <nav class="nav-bar" id="nav">
+            <div class="nav__container">
+
+                <div class="nav__title">
+                    <p>¡Bienvenidos/as a Gifos.com!</p>
+                    <p>Donde los gifs están</p>
+                    <p>¡Bienvenidos/as a Gifos.com!------Donde los gifs están//////Número de visitas: <span></span></p>
+                </div>
+                <div class="nav__logo-buttons">
+                    
+                    <img class="nav__logo day" src="./images/gifOF_logo.png" alt="gifos logo" id="logo1">
+                    <img class="nav__logo night" src="./images/gifOF_logo_dark.png" alt="gifos logo" id="logo2">
+                    
+                    <svg class="nav__arrow-back" width="24px" height="26px" viewBox="0 0 24 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>arrow</title>
+                        <desc>Created with Sketch.</desc>
+                        <a href="/index.html">
+                        <defs>
+                            <path d="M80.3333333,88.6666667 L83,88.6666667 L83,91.3333333 L80.3333333,91.3333333 L80.3333333,94 L77.6666667,94 L77.6666667,91.3333333 C71.4444444,91.3333333 65.2222222,91.3333333 59,91.3333333 L59,88.6666667 C65.2222222,88.6666667 71.4444444,88.6666667 77.6666667,88.6666667 L77.6666667,86 L80.3333333,86 L80.3333333,88.6666667 Z M75,83.3333333 L77.6666667,83.3333333 L77.6666667,86 L75,86 L75,83.3333333 Z M72.3333333,80.6666667 L75,80.6666667 L75,83.3333333 L72.3333333,83.3333333 L72.3333333,80.6666667 Z M69.6666667,78 L72.3333333,78 L72.3333333,80.6666667 L69.6666667,80.6666667 L69.6666667,78 Z M75,96.6666667 L75,94 L77.6666667,94 L77.6666667,96.6666667 L75,96.6666667 Z M72.3333333,99.3333333 L72.3333333,96.6666667 L75,96.6666667 L75,99.3333333 L72.3333333,99.3333333 Z M69.6666667,102 L69.6666667,99.3333333 L72.3333333,99.3333333 L72.3333333,102 L69.6666667,102 Z" id="path-1"></path>
+                            <filter x="-4.2%" y="-4.2%" width="108.3%" height="116.7%" filterUnits="objectBoundingBox" id="filter-2">
+                                <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                <feColorMatrix values="0 0 0 0 0.96823281   0 0 0 0 0.78809464   0 0 0 0 0.952825725  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+                            </filter>
+                        </defs>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="gifOS_captura_7_exito" transform="translate(-60.000000, -77.000000)" fill-rule="nonzero">
+                                <g id="nav-bar" transform="translate(1.000000, 1.000000)">
+                                    <g id="arrow" transform="translate(71.000000, 90.000000) rotate(-180.000000) translate(-71.000000, -90.000000) ">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                        <use fill="#110038" xlink:href="#path-1"></use>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                        </a>
+                    </svg>
+
+
+                    <div class="nav__buttons">
+                        <div class="button">
+                            <a class="cg-anchor" href="/crear-guifos.html"><p>crear gifos</p></a>
+                        </div>
+                        
+                        <div class="theme">
+                            <label for="btn-theme-opt">
+
+                                <div class="text"> <p>elegir tema</p></div>
+                                <div class="arrow">
+                                    <p> 
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="6px" viewBox="0 0 10 6" version="1.1">
+                                            <title>dropdown</title>
+                                            <desc>Created with Sketch.</desc>
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g id="gifOS_misguifos" transform="translate(-1184.000000, -83.000000)">
+                                                    <g id="nav-bar" transform="translate(1.000000, 1.000000)">
+                                                        <g id="dropdown_tema_normal" transform="translate(1038.000000, 67.000000)">
+                                                            <g id="dropdown" transform="translate(150.000000, 18.000000) rotate(-270.000000) translate(-150.000000, -18.000000) translate(147.000000, 13.000000)">
+                                                                <path d="M4,5 L4,6 L3,6 L3,7 L2,7 L2,8 L1,8 L1,9 L0,9 L0,0 L1,0 L1,1 L2,1 L2,2 L3,2 L3,3 L4,3 L4,4 L5,4 L5,5 L4,5 Z" id="back-copy" fill="#110038"/>
+                                                                <path d="M1,9 L1,8 L2,8 L2,7 L3,7 L3,6 L4,6 L4,5 L6,5 L6,6 L5,6 L5,7 L4,7 L4,8 L3,8 L3,9 L2,9 L2,10 L1,10 L1,9 Z" id="Combined-Shape" fill="#FFFFFF"/>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </p> 
+                                </div>
+
+                            
+                                <div class="opt-box">
+                                    <div class="opt day">
+                                        <label for="btn-theme-day" id="theme-day-light">
+                                            <p> <span>s</span>ailor day</p> 
+                                        </label>
+                                    </div>    
+                                    <div class="opt night">
+                                        <label for="btn-theme-night" id="theme-night">
+                                            <p> <span>s</span>ailor night</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="anchor-container">
+                            <a class="anchor" href="/crear-guifos.html"> <p> <span>m</span>is gifos </p></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav__search-bar" id="barra-busqueda">
+                    <div class="search__title">
+                        <p>buscar</p>
+                    </div>
+                    <div class="search-block">
+                        <form action="GET">
+                            <input type="text" class="search__input" placeholder="Busca tus gifs" required id="sinput-m" name="input-buscador" autocomplete="off">
+                            <input type="text" class="search__input" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" required id="sinput-d" name="input-buscador" autocomplete="off">
+                            <!--<label for="expand-menu"></label>-->
+                            <button type="button" class="search__button" >
+                                <img src="/images/lupa_inactive.svg" alt="lupa-inactive">
+                                <img src="/images/lupa.svg" alt="lupa-active">
+                                <p id="search-button">buscar</p>
+                            </button>
+                        
+                            <div class="writing" id="is-writing">
+                                <div class="writing__results">
+                                    <div class="search__suggestions">
+                                        <a href="">
+                                            <p id="sug-result"></p>
+                                        </a>
+                                    </div>
+                                    <div class="search__suggestions">
+                                        <a href="">
+                                            <p id="sim-result"></p>
+                                        </a>
+                                    </div>
+                                    <div class="search__suggestions">
+                                        <a href="">
+                                            <p id="sim-result2"></p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+
+            <section class="suggestions" id="suggested">
+                <div class="sug__container">
+                    
+                    <div class="sug__title">
+                        <p>Hoy te sugerimos:</p>
+                    </div>
+                    <div class="sug__results">
+                        <div class="sug__preview" id="">
+                            <div class="title">
+                                <p class="sug1" id="title-sug1">#Jonathanvanness</p>
+                                <img src="/images/button3.svg" alt="btn-x">
+                            </div>
+                            <img src="" alt="sug-img1" id="sug-img1">
+                            <button type="submit" id="ver-mas1">Ver más...</button>
+                        </div>
+                        <div class="sug__preview">
+                            <div class="title" >
+                                <p class="sug2" id="title-sug2">#SailorMercury</p>
+                                <img src="/images/button3.svg" alt="btn-x">
+                            </div>
+                            <img src="" alt="sug-img2" id="sug-img2">
+                            <button type="submit" id="ver-mas2">Ver más...</button>
+                        </div>
+                        <div class="sug__preview">
+                            <div class="title" >
+                                <p class="sug3" id="title-sug3">#FabFive</p>
+                                <img src="/images/button3.svg" alt="btn-x">
+                            </div>
+                            <img src="" alt="sug-img3" id="sug-img3">
+                            <button type="submit" id="ver-mas3">Ver más...</button>
+                        </div>
+                        <div class="sug__preview">
+                            <div class="title" >
+                                <p class="sug4" id="title-sug4">#Unicorns&Rainbows</p>
+                                <img src="/images/button3.svg" alt="btn-x">
+                            </div>
+                            <img src="" alt="sug-img4"  id="sug-img4">
+                            <button type="submit" id="ver-mas4">Ver más...</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="trendings trend--day" id="trends">
+                <div class="trend__container">
+                    <div class="trend__title">    
+                        <p>Tendencias:</p>
+                    </div>
+                    <div class="trend__results">
+                        
+                        <div class="trend__preview"><img src="" alt="trend-img-1" id="trend-img1"><div class="bottom-tags">#hashtag</div></div>
+                        <div class="trend__preview"><img src="" alt="trend-img-2" id="trend-img2"><div class="bottom-tags">#hashtag</div></div>
+                        <div class="trend__preview"><img src="" alt="trend-img-3" id="trend-img3"><div class="bottom-tags">#hashtag</div></div>
+                        <div class="trend__preview"><img src="" alt="trend-img-4" id="trend-img4"><div class="bottom-tags">#hashtag</div></div>
+                        <div class="trend__preview"><img src="" alt="trend-img-5" id="trend-img5"><div class="bottom-tags">#hashtag</div></div>
+                        <div class="trend__preview"><img src="" alt="trend-img-6" id="trend-img6"><div class="bottom-tags">#hashtag</div></div>
+                        <div class="trend__preview"><img src="" alt="trend-img-7" id="trend-img7"><div class="bottom-tags">#hashtag</div></div>
+                        <div class="trend__preview"><img src="" alt="trend-img-8" id="trend-img8"><div class="bottom-tags">#hashtag</div></div>
+                        <div class="trend__preview"><img src="" alt="trend-img-9" id="trend-img9"><div class="bottom-tags">#hashtag</div></div>
+                        <div class="trend__preview"><img src="" alt="trend-img-10" id="trend-img10"><div class="bottom-tags">#hashtag</div></div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="search-results" id="results-found">
+
+                <div class="sr__container">
+
+                    <div class="examples" id="egs">
+                        <button class="eg" id="eg1"> ejemplo 1</button>
+                        <button class="eg" id="eg2">ejemplo 2</button>
+                        <button class="eg" id="eg3">ejemplo 3</button>
+                    </div>    
+
+                    <div class="sr__title">
+                        <p id="title-resultados">
+                            Resultados:
+                        </p>
+                    </div>
+                    <div class="sr__results">
+
+                        <div class="sr"><img src="" alt="" id="sr-0"><div class="bottom-tags">#hashtag</div></div>
+                        <div class="sr"><img src="" alt="" id="sr-1"><div class="bottom-tags">#hashtag</div></div>
+                        <div class="sr"><img src="" alt="" id="sr-2"><div class="bottom-tags">#hashtag</div></div>
+                        <div class="sr"><img src="" alt="" id="sr-3"><div class="bottom-tags">#hashtag</div></div>
+                        <div class="sr"><img src="" alt="" id="sr-4"><div class="bottom-tags">#hashtag</div></div>
+                        <div class="sr"><img src="" alt="" id="sr-5"><div class="bottom-tags">#hashtag</div></div>
+                        <div class="sr"><img src="" alt="" id="sr-6"><div class="bottom-tags">#hashtag</div></div>
+                        <div class="sr"><img src="" alt="" id="sr-7"><div class="bottom-tags">#hashtag</div></div>
+                        <div class="sr"><img src="" alt="" id="sr-8"><div class="bottom-tags">#hashtag</div></div>
+                        <div class="sr"><img src="" alt="" id="sr-9"><div class="bottom-tags">#hashtag</div></div>
+                        
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="sug-trend-results" id="strId">
+                
+                <div class="str__container">
+                    
+                    <div class="str__title">
+                        <p>
+                            acá va el title del str clickeado:
+                        </p>
+                    </div>
+
+                    <div class="str__results">
+                        <div class="str__preview"><img src="" alt="str-img-1" id="str-img1"><div class="bottom-tags">#hashtag</div></div>
+                        <div class="str__preview"><img src="" alt="str-img-1" id="str-img2"><div class="bottom-tags">#hashtag</div></div>
+                        <div class="str__preview"><img src="" alt="str-img-1" id="str-img3"><div class="bottom-tags">#hashtag</div></div>
+                        <div class="str__preview"><img src="" alt="str-img-1" id="str-img4"><div class="bottom-tags">#hashtag</div></div>
+                        <div class="str__preview"><img src="" alt="str-img-1" id="str-img5"><div class="bottom-tags">#hashtag</div></div>
+                        <div class="str__preview"><img src="" alt="str-img-1" id="str-img6"><div class="bottom-tags">#hashtag</div></div>
+                        <div class="str__preview"><img src="" alt="str-img-1" id="str-img7"><div class="bottom-tags">#hashtag</div></div>
+                        <div class="str__preview"><img src="" alt="str-img-1" id="str-img8"><div class="bottom-tags">#hashtag</div></div>
+                        <div class="str__preview"><img src="" alt="str-img-1" id="str-img9"><div class="bottom-tags">#hashtag</div></div>
+                        <div class="str__preview"><img src="" alt="str-img-1" id="str-img10"><div class="bottom-tags">#hashtag</div></div>
+                    </div>
+                </div>
+                
+            </section>
+
+
+
+        </main>
+
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+</body>
+</html>

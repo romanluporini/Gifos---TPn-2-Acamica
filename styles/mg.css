@@ -1,0 +1,420 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.index-container {
+  width: 100%;
+  clear: both;
+  padding: 0 16px 16px 16px;
+  background-color: whitesmoke;
+  overflow: hidden;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+.nav-bar {
+  width: 100%;
+  clear: both;
+  margin-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav-bar .nav__container {
+  width: 288px;
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-bar .nav__container .nav__title {
+  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  -webkit-box-shadow: 0 1px 0 0 #110038;
+          box-shadow: 0 1px 0 0 #110038;
+  width: 100vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 8px;
+}
+
+.nav-bar .nav__container .nav__title p {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: 0;
+}
+
+.nav-bar .nav__container .nav__title p:last-child {
+  display: none;
+}
+
+.nav-bar .nav__container .nav__logo-buttons {
+  width: 100%;
+  clear: both;
+}
+
+.nav-bar .nav__container .nav__logo-buttons img {
+  float: right;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__logo {
+  margin: 20px 0;
+  padding: 0 16px;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__logo.night {
+  display: none;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__arrow-back {
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 50px;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__arrow-back:hover {
+  cursor: pointer;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__arrow-back a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .button {
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+  width: 100%;
+  height: 36px;
+  padding: 2px;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .button a {
+  text-transform: capitalize;
+  text-decoration: none;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  text-align: left;
+  line-height: 28px;
+  border: none;
+  outline: none;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .button a p {
+  width: 100%;
+  height: 100%;
+  padding-left: 16px;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .button:hover, .nav-bar .nav__container .nav__logo-buttons .nav__buttons .button:active {
+  background: #E6BBE2;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .button:hover p, .nav-bar .nav__container .nav__logo-buttons .nav__buttons .button:active p {
+  outline: none;
+  cursor: pointer;
+  border: 1px dotted #110038;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 36px;
+  margin-bottom: 16px;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 36px;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label:hover .text, .nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label:hover .arrow {
+  background: #E6BBE2;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label:hover .text p, .nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label:hover .arrow p {
+  border: 1px dotted #110038;
+  cursor: pointer;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .text {
+  outline: none;
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  width: calc(100% - 36px);
+  height: 36px;
+  padding: 2px;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .text p {
+  text-transform: capitalize;
+  width: 100%;
+  height: 100%;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 28px;
+  padding-left: 16px;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .arrow {
+  height: 36px;
+  width: 36px;
+  outline: none;
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  padding: 2px;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .arrow p {
+  width: 100%;
+  height: 100%;
+  padding-left: 16px;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .arrow p svg {
+  display: block;
+  position: relative;
+  top: 11px;
+  right: 7px;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .opt-box {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  position: absolute;
+  top: 36px;
+  left: 0;
+  width: 100%;
+  height: 102px;
+  padding: 10px;
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 2;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .opt-box .opt {
+  width: 100%;
+  height: 36px;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .opt-box .opt label {
+  display: none;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 36px;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .opt-box .opt label:hover {
+  cursor: pointer;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .opt-box .opt label p {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 16px;
+  line-height: 36px;
+  border: none;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.day {
+  background: #FFF4FD;
+  border: 1px solid #CCA6C9;
+  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+  margin-bottom: 5px;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.day span {
+  border-bottom: 1px solid #110038;
+  text-transform: capitalize;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.night {
+  margin-top: 5px;
+  margin-bottom: unset;
+  background: #F0F0F0;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.night span {
+  text-transform: capitalize;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .anchor-container {
+  position: relative;
+  width: 100%;
+  height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 13px;
+  padding: 2px;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .anchor-container a {
+  text-transform: capitalize;
+  text-decoration: none;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  text-align: left;
+  line-height: 28px;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .anchor-container a p {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .anchor-container a p:hover span {
+  border-bottom: 1px solid #110038;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .anchor-container:hover a p, .nav-bar .nav__container .nav__logo-buttons .nav__buttons .anchor-container:focus a p {
+  cursor: pointer;
+  outline: none;
+  border: 1px dotted #110038;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .anchor-container:active a p {
+  color: #B4B4B4;
+  border: none;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .anchor-container:active a p span {
+  color: #B4B4B4;
+  border-bottom: 1px solid #B4B4B4;
+}
+/*# sourceMappingURL=mg.css.map */

@@ -1,0 +1,1677 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.index-container {
+  width: 100%;
+  clear: both;
+  padding: 0 16px 16px 16px;
+  background-color: whitesmoke;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+.nav-bar {
+  width: 100%;
+  clear: both;
+  margin-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav-bar .nav__container {
+  width: 288px;
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.nav-bar .nav__container .nav__title {
+  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  -webkit-box-shadow: 0 1px 0 0 #110038;
+          box-shadow: 0 1px 0 0 #110038;
+  width: 100vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 8px;
+}
+
+.nav-bar .nav__container .nav__title p {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: 0;
+}
+
+.nav-bar .nav__container .nav__title p:last-child {
+  display: none;
+}
+
+.nav-bar .nav__container .nav__logo-buttons {
+  width: 100%;
+  clear: both;
+}
+
+.nav-bar .nav__container .nav__logo-buttons img {
+  float: right;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__logo {
+  margin: 20px 0;
+  padding: 0 16px;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__logo.night {
+  display: none;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__arrow-back {
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: -32px;
+  display: none;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__arrow-back:hover {
+  cursor: pointer;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__arrow-back a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .button {
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+  width: 100%;
+  height: 36px;
+  padding: 2px;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .button a {
+  text-transform: capitalize;
+  text-decoration: none;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  text-align: left;
+  line-height: 28px;
+  border: none;
+  outline: none;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .button a p {
+  width: 100%;
+  height: 100%;
+  padding-left: 16px;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .button:hover, .nav-bar .nav__container .nav__logo-buttons .nav__buttons .button:active {
+  background: #E6BBE2;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .button:hover p, .nav-bar .nav__container .nav__logo-buttons .nav__buttons .button:active p {
+  outline: none;
+  cursor: pointer;
+  border: 1px dotted #110038;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 36px;
+  margin-bottom: 16px;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 36px;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label:hover .text, .nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label:hover .arrow {
+  background: #E6BBE2;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label:hover .text p, .nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label:hover .arrow p {
+  border: 1px dotted #110038;
+  cursor: pointer;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .text {
+  outline: none;
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  width: calc(100% - 36px);
+  height: 36px;
+  padding: 2px;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .text p {
+  text-transform: capitalize;
+  width: 100%;
+  height: 100%;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 28px;
+  padding-left: 16px;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .arrow {
+  height: 36px;
+  width: 36px;
+  outline: none;
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  padding: 2px;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .arrow p {
+  width: 100%;
+  height: 100%;
+  padding-left: 16px;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .arrow p svg {
+  display: block;
+  position: relative;
+  top: 11px;
+  right: 7px;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .opt-box {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  position: absolute;
+  top: 36px;
+  left: 0;
+  width: 100%;
+  height: 102px;
+  padding: 10px;
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 2;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .opt-box .opt {
+  width: 100%;
+  height: 36px;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .opt-box .opt label {
+  display: none;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 36px;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .opt-box .opt label:hover {
+  cursor: pointer;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .opt-box .opt label p {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 16px;
+  line-height: 36px;
+  border: none;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.day {
+  background: #FFF4FD;
+  border: 1px solid #CCA6C9;
+  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+  margin-bottom: 5px;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.day span {
+  border-bottom: 1px solid #110038;
+  text-transform: capitalize;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.night {
+  margin-top: 5px;
+  margin-bottom: unset;
+  background: #F0F0F0;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.night span {
+  text-transform: capitalize;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .anchor-container {
+  position: relative;
+  width: 100%;
+  height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 13px;
+  padding: 2px;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .anchor-container a {
+  text-transform: capitalize;
+  text-decoration: none;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  text-align: left;
+  line-height: 28px;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .anchor-container a p {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .anchor-container a p:hover span {
+  border-bottom: 1px solid #110038;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .anchor-container:hover a p, .nav-bar .nav__container .nav__logo-buttons .nav__buttons .anchor-container:focus a p {
+  cursor: pointer;
+  outline: none;
+  border: 1px dotted #110038;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .anchor-container:active a p {
+  color: #B4B4B4;
+  border: none;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .anchor-container:active a p span {
+  color: #B4B4B4;
+  border-bottom: 1px solid #B4B4B4;
+}
+
+.nav-bar .nav__container .nav__search-bar {
+  width: 100%;
+  clear: both;
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  padding: 3px;
+}
+
+.nav-bar .nav__container .nav__search-bar .search__title {
+  width: 100%;
+  height: auto;
+  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+}
+
+.nav-bar .nav__container .nav__search-bar .search__title p {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 0;
+  font-weight: 700;
+  letter-spacing: 0;
+  padding-left: 3px;
+  text-transform: capitalize;
+}
+
+.nav-bar .nav__container .nav__search-bar .search-block {
+  width: 100%;
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px;
+  position: relative;
+}
+
+.nav-bar .nav__container .nav__search-bar .search-block .search__input {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 75%;
+  height: 30px;
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+  padding-left: 16px;
+  outline: none;
+}
+
+.nav-bar .nav__container .nav__search-bar .search-block .search__input::-webkit-input-placeholder {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #B4B4B4;
+  letter-spacing: 0;
+}
+
+.nav-bar .nav__container .nav__search-bar .search-block .search__input:-ms-input-placeholder {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #B4B4B4;
+  letter-spacing: 0;
+}
+
+.nav-bar .nav__container .nav__search-bar .search-block .search__input::-ms-input-placeholder {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #B4B4B4;
+  letter-spacing: 0;
+}
+
+.nav-bar .nav__container .nav__search-bar .search-block .search__input::placeholder {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #B4B4B4;
+  letter-spacing: 0;
+}
+
+.nav-bar .nav__container .nav__search-bar .search-block .search__input:nth-of-type(2) {
+  display: none;
+}
+
+.nav-bar .nav__container .nav__search-bar .search-block .search__input:focus ~ .search__button {
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.nav-bar .nav__container .nav__search-bar .search-block .search__input:focus ~ .search__button p {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+}
+
+.nav-bar .nav__container .nav__search-bar .search-block .search__input:focus ~ .search__button img:nth-child(1) {
+  display: none;
+}
+
+.nav-bar .nav__container .nav__search-bar .search-block .search__input:focus ~ .search__button img:nth-child(2) {
+  display: inline-block;
+}
+
+.nav-bar .nav__container .nav__search-bar .search-block label {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 75%;
+  height: 30px;
+}
+
+.nav-bar .nav__container .nav__search-bar .search-block .search__button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  height: 30px;
+  width: 10%;
+  background: #E6E6E6;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+  border-radius: 2px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  outline: none;
+  cursor: pointer;
+}
+
+.nav-bar .nav__container .nav__search-bar .search-block .search__button p {
+  display: none;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #8F8F8F;
+  letter-spacing: 0;
+  text-transform: capitalize;
+}
+
+.nav-bar .nav__container .nav__search-bar .search-block .search__button img:nth-child(2) {
+  display: none;
+}
+
+.nav-bar .nav__container .nav__search-bar .search-block .search__button:active {
+  border: 1px dotted #110038;
+  background: #e6bbe2;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.nav-bar .nav__container .nav__search-bar .search-block .search__button:active p {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+}
+
+.nav-bar .nav__container .nav__search-bar .search-block .search__button:active img:nth-child(1) {
+  display: none;
+}
+
+.nav-bar .nav__container .nav__search-bar .search-block .search__button:active img:nth-child(2) {
+  display: inline-block;
+  border: 1px dotted #110038;
+}
+
+.nav-bar .nav__container .nav__search-bar .search-block .search__button:active button {
+  padding: 4px;
+}
+
+.nav-bar .nav__container .nav__search-bar .search-block .writing {
+  position: absolute;
+  top: 65px;
+  left: -3px;
+  width: calc(100% + 6px);
+  height: 160px;
+  padding: 16px 15px;
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+}
+
+.nav-bar .nav__container .nav__search-bar .search-block .writing .writing__results {
+  width: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.nav-bar .nav__container .nav__search-bar .search-block .writing .writing__results .search__suggestions {
+  width: 100%;
+  height: 34px;
+  padding: 1px;
+}
+
+.nav-bar .nav__container .nav__search-bar .search-block .writing .writing__results .search__suggestions a {
+  text-decoration: none;
+}
+
+.nav-bar .nav__container .nav__search-bar .search-block .writing .writing__results .search__suggestions a p {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 14px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 28px;
+  padding-left: 16px;
+}
+
+.nav-bar .nav__container .nav__search-bar .search-block .writing .writing__results .search__suggestions:first-of-type {
+  background: #DBDBDB;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.nav-bar .nav__container .nav__search-bar .search-block .writing .writing__results .search__suggestions:first-of-type p {
+  border: 1px dotted #110038;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-bar .nav__container .nav__search-bar .search-block .writing .writing__results .search__suggestions:nth-of-type(2), .nav-bar .nav__container .nav__search-bar .search-block .writing .writing__results .search__suggestions:nth-of-type(3) {
+  margin-top: 10px;
+  background: #F0F0F0;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+main {
+  width: 100%;
+  clear: both;
+  margin: 16px 0;
+  position: relative;
+}
+
+main .suggestions, main .mis-guifos {
+  width: 100%;
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .suggestions .sug__container, main .suggestions .mg__container, main .mis-guifos .sug__container, main .mis-guifos .mg__container {
+  width: 100%;
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .suggestions .sug__container .sug__title, main .suggestions .sug__container .mg__title, main .suggestions .mg__container .sug__title, main .suggestions .mg__container .mg__title, main .mis-guifos .sug__container .sug__title, main .mis-guifos .sug__container .mg__title, main .mis-guifos .mg__container .sug__title, main .mis-guifos .mg__container .mg__title {
+  width: 288px;
+  height: 32px;
+  background: #FFFAFE;
+  border: 1px solid #E6BBE2;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+          box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+  padding: 0 7px;
+}
+
+main .suggestions .sug__container .sug__title p, main .suggestions .sug__container .mg__title p, main .suggestions .mg__container .sug__title p, main .suggestions .mg__container .mg__title p, main .mis-guifos .sug__container .sug__title p, main .mis-guifos .sug__container .mg__title p, main .mis-guifos .mg__container .sug__title p, main .mis-guifos .mg__container .mg__title p {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 14px;
+  color: #110038;
+  letter-spacing: 0;
+}
+
+main .suggestions .sug__container .sug__results, main .suggestions .mg__container .sug__results, main .mis-guifos .sug__container .sug__results, main .mis-guifos .mg__container .sug__results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  clear: both;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .suggestions .sug__container .sug__results .sug__preview, main .suggestions .mg__container .sug__results .sug__preview, main .mis-guifos .sug__container .sug__results .sug__preview, main .mis-guifos .mg__container .sug__results .sug__preview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 288px;
+  height: 313px;
+  position: relative;
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  margin-bottom: 20px;
+  padding: 3px 4px 4px 4px;
+  overflow: hidden;
+}
+
+main .suggestions .sug__container .sug__results .sug__preview .title, main .suggestions .mg__container .sug__results .sug__preview .title, main .mis-guifos .sug__container .sug__results .sug__preview .title, main .mis-guifos .mg__container .sug__results .sug__preview .title {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 280px;
+  height: 24px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+}
+
+main .suggestions .sug__container .sug__results .sug__preview .title img, main .suggestions .mg__container .sug__results .sug__preview .title img, main .mis-guifos .sug__container .sug__results .sug__preview .title img, main .mis-guifos .mg__container .sug__results .sug__preview .title img {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+main .suggestions .sug__container .sug__results .sug__preview .title p, main .suggestions .mg__container .sug__results .sug__preview .title p, main .mis-guifos .sug__container .sug__results .sug__preview .title p, main .mis-guifos .mg__container .sug__results .sug__preview .title p {
+  text-decoration: none;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 0;
+  font-weight: 700;
+  text-align: left;
+  line-height: 24px;
+  padding-left: 3px;
+}
+
+main .suggestions .sug__container .sug__results .sug__preview button, main .suggestions .mg__container .sug__results .sug__preview button, main .mis-guifos .sug__container .sug__results .sug__preview button, main .mis-guifos .mg__container .sug__results .sug__preview button {
+  position: absolute;
+  bottom: 19px;
+  left: 11px;
+  width: 81px;
+  height: 34px;
+  background: #4180F6;
+  border: 1px solid #4C2F99;
+  -webkit-box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+}
+
+main .suggestions .sug__container .sug__results .sug__preview button:hover, main .suggestions .mg__container .sug__results .sug__preview button:hover, main .mis-guifos .sug__container .sug__results .sug__preview button:hover, main .mis-guifos .mg__container .sug__results .sug__preview button:hover {
+  cursor: pointer;
+}
+
+main .suggestions .sug__container .sug__results .sug__preview .title + img, main .suggestions .mg__container .sug__results .sug__preview .title + img, main .mis-guifos .sug__container .sug__results .sug__preview .title + img, main .mis-guifos .mg__container .sug__results .sug__preview .title + img {
+  position: absolute;
+  top: 29px;
+  left: 4px;
+  width: 280px;
+  height: calc(313px - 4px - 24px - 1px - 4px);
+}
+
+main .suggestions .sug__container .btn-cap__box, main .suggestions .mg__container .btn-cap__box, main .mis-guifos .sug__container .btn-cap__box, main .mis-guifos .mg__container .btn-cap__box {
+  width: 100%;
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .suggestions .sug__container .btn-cap__box .btn-cap__img, main .suggestions .mg__container .btn-cap__box .btn-cap__img, main .mis-guifos .sug__container .btn-cap__box .btn-cap__img, main .mis-guifos .mg__container .btn-cap__box .btn-cap__img {
+  display: none;
+}
+
+main .suggestions .sug__container .btn-cap__box .btn-cap__text button, main .suggestions .mg__container .btn-cap__box .btn-cap__text button, main .mis-guifos .sug__container .btn-cap__box .btn-cap__text button, main .mis-guifos .mg__container .btn-cap__box .btn-cap__text button {
+  padding: 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #F7C9F3;
+  border: none;
+  -webkit-box-shadow: 2px 2px 5px rgba(51, 53, 143, 0.2);
+          box-shadow: 2px 2px 5px rgba(51, 53, 143, 0.2);
+}
+
+main .trendings, main .sug-trend-results, main .search-results {
+  width: 100%;
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 32px;
+}
+
+main .trendings .trend__container, main .trendings .str__container, main .trendings .sr__container, main .sug-trend-results .trend__container, main .sug-trend-results .str__container, main .sug-trend-results .sr__container, main .search-results .trend__container, main .search-results .str__container, main .search-results .sr__container {
+  width: 288px;
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 32px 0;
+}
+
+main .trendings .trend__container .examples, main .trendings .str__container .examples, main .trendings .sr__container .examples, main .sug-trend-results .trend__container .examples, main .sug-trend-results .str__container .examples, main .sug-trend-results .sr__container .examples, main .search-results .trend__container .examples, main .search-results .str__container .examples, main .search-results .sr__container .examples {
+  padding: 16px;
+  width: 100%;
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .trendings .trend__container .examples .eg, main .trendings .str__container .examples .eg, main .trendings .sr__container .examples .eg, main .sug-trend-results .trend__container .examples .eg, main .sug-trend-results .str__container .examples .eg, main .sug-trend-results .sr__container .examples .eg, main .search-results .trend__container .examples .eg, main .search-results .str__container .examples .eg, main .search-results .sr__container .examples .eg {
+  margin-bottom: 8px;
+  padding: 8px;
+  width: auto;
+  clear: both;
+  background: #4180F6;
+  border: 1px solid #4C2F99;
+  -webkit-box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+  text-decoration: none;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 0;
+}
+
+main .trendings .trend__container .examples .eg:hover, main .trendings .str__container .examples .eg:hover, main .trendings .sr__container .examples .eg:hover, main .sug-trend-results .trend__container .examples .eg:hover, main .sug-trend-results .str__container .examples .eg:hover, main .sug-trend-results .sr__container .examples .eg:hover, main .search-results .trend__container .examples .eg:hover, main .search-results .str__container .examples .eg:hover, main .search-results .sr__container .examples .eg:hover {
+  cursor: pointer;
+}
+
+main .trendings .trend__container .trend__title, main .trendings .trend__container .str__title, main .trendings .trend__container .sr__title, main .trendings .str__container .trend__title, main .trendings .str__container .str__title, main .trendings .str__container .sr__title, main .trendings .sr__container .trend__title, main .trendings .sr__container .str__title, main .trendings .sr__container .sr__title, main .sug-trend-results .trend__container .trend__title, main .sug-trend-results .trend__container .str__title, main .sug-trend-results .trend__container .sr__title, main .sug-trend-results .str__container .trend__title, main .sug-trend-results .str__container .str__title, main .sug-trend-results .str__container .sr__title, main .sug-trend-results .sr__container .trend__title, main .sug-trend-results .sr__container .str__title, main .sug-trend-results .sr__container .sr__title, main .search-results .trend__container .trend__title, main .search-results .trend__container .str__title, main .search-results .trend__container .sr__title, main .search-results .str__container .trend__title, main .search-results .str__container .str__title, main .search-results .str__container .sr__title, main .search-results .sr__container .trend__title, main .search-results .sr__container .str__title, main .search-results .sr__container .sr__title {
+  width: 100%;
+  height: 32px;
+  background: #FFFAFE;
+  border: 1px solid #E6BBE2;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+          box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 7px;
+}
+
+main .trendings .trend__container .trend__title p, main .trendings .trend__container .str__title p, main .trendings .trend__container .sr__title p, main .trendings .str__container .trend__title p, main .trendings .str__container .str__title p, main .trendings .str__container .sr__title p, main .trendings .sr__container .trend__title p, main .trendings .sr__container .str__title p, main .trendings .sr__container .sr__title p, main .sug-trend-results .trend__container .trend__title p, main .sug-trend-results .trend__container .str__title p, main .sug-trend-results .trend__container .sr__title p, main .sug-trend-results .str__container .trend__title p, main .sug-trend-results .str__container .str__title p, main .sug-trend-results .str__container .sr__title p, main .sug-trend-results .sr__container .trend__title p, main .sug-trend-results .sr__container .str__title p, main .sug-trend-results .sr__container .sr__title p, main .search-results .trend__container .trend__title p, main .search-results .trend__container .str__title p, main .search-results .trend__container .sr__title p, main .search-results .str__container .trend__title p, main .search-results .str__container .str__title p, main .search-results .str__container .sr__title p, main .search-results .sr__container .trend__title p, main .search-results .sr__container .str__title p, main .search-results .sr__container .sr__title p {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 14px;
+  color: #110038;
+  letter-spacing: 0;
+}
+
+main .trendings .trend__container .trend__results, main .trendings .trend__container .str__results, main .trendings .trend__container .sr__results, main .trendings .str__container .trend__results, main .trendings .str__container .str__results, main .trendings .str__container .sr__results, main .trendings .sr__container .trend__results, main .trendings .sr__container .str__results, main .trendings .sr__container .sr__results, main .sug-trend-results .trend__container .trend__results, main .sug-trend-results .trend__container .str__results, main .sug-trend-results .trend__container .sr__results, main .sug-trend-results .str__container .trend__results, main .sug-trend-results .str__container .str__results, main .sug-trend-results .str__container .sr__results, main .sug-trend-results .sr__container .trend__results, main .sug-trend-results .sr__container .str__results, main .sug-trend-results .sr__container .sr__results, main .search-results .trend__container .trend__results, main .search-results .trend__container .str__results, main .search-results .trend__container .sr__results, main .search-results .str__container .trend__results, main .search-results .str__container .str__results, main .search-results .str__container .sr__results, main .search-results .sr__container .trend__results, main .search-results .sr__container .str__results, main .search-results .sr__container .sr__results {
+  width: 100%;
+  clear: both;
+  margin-top: 16px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1;
+      grid-template-columns: 1;
+  -ms-grid-rows: 10;
+      grid-template-rows: 10;
+  row-gap: 16px;
+}
+
+main .trendings .trend__container .trend__results .trend__preview, main .trendings .trend__container .trend__results .str__preview, main .trendings .trend__container .trend__results .sr, main .trendings .trend__container .str__results .trend__preview, main .trendings .trend__container .str__results .str__preview, main .trendings .trend__container .str__results .sr, main .trendings .trend__container .sr__results .trend__preview, main .trendings .trend__container .sr__results .str__preview, main .trendings .trend__container .sr__results .sr, main .trendings .str__container .trend__results .trend__preview, main .trendings .str__container .trend__results .str__preview, main .trendings .str__container .trend__results .sr, main .trendings .str__container .str__results .trend__preview, main .trendings .str__container .str__results .str__preview, main .trendings .str__container .str__results .sr, main .trendings .str__container .sr__results .trend__preview, main .trendings .str__container .sr__results .str__preview, main .trendings .str__container .sr__results .sr, main .trendings .sr__container .trend__results .trend__preview, main .trendings .sr__container .trend__results .str__preview, main .trendings .sr__container .trend__results .sr, main .trendings .sr__container .str__results .trend__preview, main .trendings .sr__container .str__results .str__preview, main .trendings .sr__container .str__results .sr, main .trendings .sr__container .sr__results .trend__preview, main .trendings .sr__container .sr__results .str__preview, main .trendings .sr__container .sr__results .sr, main .sug-trend-results .trend__container .trend__results .trend__preview, main .sug-trend-results .trend__container .trend__results .str__preview, main .sug-trend-results .trend__container .trend__results .sr, main .sug-trend-results .trend__container .str__results .trend__preview, main .sug-trend-results .trend__container .str__results .str__preview, main .sug-trend-results .trend__container .str__results .sr, main .sug-trend-results .trend__container .sr__results .trend__preview, main .sug-trend-results .trend__container .sr__results .str__preview, main .sug-trend-results .trend__container .sr__results .sr, main .sug-trend-results .str__container .trend__results .trend__preview, main .sug-trend-results .str__container .trend__results .str__preview, main .sug-trend-results .str__container .trend__results .sr, main .sug-trend-results .str__container .str__results .trend__preview, main .sug-trend-results .str__container .str__results .str__preview, main .sug-trend-results .str__container .str__results .sr, main .sug-trend-results .str__container .sr__results .trend__preview, main .sug-trend-results .str__container .sr__results .str__preview, main .sug-trend-results .str__container .sr__results .sr, main .sug-trend-results .sr__container .trend__results .trend__preview, main .sug-trend-results .sr__container .trend__results .str__preview, main .sug-trend-results .sr__container .trend__results .sr, main .sug-trend-results .sr__container .str__results .trend__preview, main .sug-trend-results .sr__container .str__results .str__preview, main .sug-trend-results .sr__container .str__results .sr, main .sug-trend-results .sr__container .sr__results .trend__preview, main .sug-trend-results .sr__container .sr__results .str__preview, main .sug-trend-results .sr__container .sr__results .sr, main .search-results .trend__container .trend__results .trend__preview, main .search-results .trend__container .trend__results .str__preview, main .search-results .trend__container .trend__results .sr, main .search-results .trend__container .str__results .trend__preview, main .search-results .trend__container .str__results .str__preview, main .search-results .trend__container .str__results .sr, main .search-results .trend__container .sr__results .trend__preview, main .search-results .trend__container .sr__results .str__preview, main .search-results .trend__container .sr__results .sr, main .search-results .str__container .trend__results .trend__preview, main .search-results .str__container .trend__results .str__preview, main .search-results .str__container .trend__results .sr, main .search-results .str__container .str__results .trend__preview, main .search-results .str__container .str__results .str__preview, main .search-results .str__container .str__results .sr, main .search-results .str__container .sr__results .trend__preview, main .search-results .str__container .sr__results .str__preview, main .search-results .str__container .sr__results .sr, main .search-results .sr__container .trend__results .trend__preview, main .search-results .sr__container .trend__results .str__preview, main .search-results .sr__container .trend__results .sr, main .search-results .sr__container .str__results .trend__preview, main .search-results .sr__container .str__results .str__preview, main .search-results .sr__container .str__results .sr, main .search-results .sr__container .sr__results .trend__preview, main .search-results .sr__container .sr__results .str__preview, main .search-results .sr__container .sr__results .sr {
+  width: 288px;
+  max-width: 288px;
+  height: 298px;
+  position: relative;
+  border: 1px solid black;
+}
+
+main .trendings .trend__container .trend__results .trend__preview img, main .trendings .trend__container .trend__results .str__preview img, main .trendings .trend__container .trend__results .sr img, main .trendings .trend__container .str__results .trend__preview img, main .trendings .trend__container .str__results .str__preview img, main .trendings .trend__container .str__results .sr img, main .trendings .trend__container .sr__results .trend__preview img, main .trendings .trend__container .sr__results .str__preview img, main .trendings .trend__container .sr__results .sr img, main .trendings .str__container .trend__results .trend__preview img, main .trendings .str__container .trend__results .str__preview img, main .trendings .str__container .trend__results .sr img, main .trendings .str__container .str__results .trend__preview img, main .trendings .str__container .str__results .str__preview img, main .trendings .str__container .str__results .sr img, main .trendings .str__container .sr__results .trend__preview img, main .trendings .str__container .sr__results .str__preview img, main .trendings .str__container .sr__results .sr img, main .trendings .sr__container .trend__results .trend__preview img, main .trendings .sr__container .trend__results .str__preview img, main .trendings .sr__container .trend__results .sr img, main .trendings .sr__container .str__results .trend__preview img, main .trendings .sr__container .str__results .str__preview img, main .trendings .sr__container .str__results .sr img, main .trendings .sr__container .sr__results .trend__preview img, main .trendings .sr__container .sr__results .str__preview img, main .trendings .sr__container .sr__results .sr img, main .sug-trend-results .trend__container .trend__results .trend__preview img, main .sug-trend-results .trend__container .trend__results .str__preview img, main .sug-trend-results .trend__container .trend__results .sr img, main .sug-trend-results .trend__container .str__results .trend__preview img, main .sug-trend-results .trend__container .str__results .str__preview img, main .sug-trend-results .trend__container .str__results .sr img, main .sug-trend-results .trend__container .sr__results .trend__preview img, main .sug-trend-results .trend__container .sr__results .str__preview img, main .sug-trend-results .trend__container .sr__results .sr img, main .sug-trend-results .str__container .trend__results .trend__preview img, main .sug-trend-results .str__container .trend__results .str__preview img, main .sug-trend-results .str__container .trend__results .sr img, main .sug-trend-results .str__container .str__results .trend__preview img, main .sug-trend-results .str__container .str__results .str__preview img, main .sug-trend-results .str__container .str__results .sr img, main .sug-trend-results .str__container .sr__results .trend__preview img, main .sug-trend-results .str__container .sr__results .str__preview img, main .sug-trend-results .str__container .sr__results .sr img, main .sug-trend-results .sr__container .trend__results .trend__preview img, main .sug-trend-results .sr__container .trend__results .str__preview img, main .sug-trend-results .sr__container .trend__results .sr img, main .sug-trend-results .sr__container .str__results .trend__preview img, main .sug-trend-results .sr__container .str__results .str__preview img, main .sug-trend-results .sr__container .str__results .sr img, main .sug-trend-results .sr__container .sr__results .trend__preview img, main .sug-trend-results .sr__container .sr__results .str__preview img, main .sug-trend-results .sr__container .sr__results .sr img, main .search-results .trend__container .trend__results .trend__preview img, main .search-results .trend__container .trend__results .str__preview img, main .search-results .trend__container .trend__results .sr img, main .search-results .trend__container .str__results .trend__preview img, main .search-results .trend__container .str__results .str__preview img, main .search-results .trend__container .str__results .sr img, main .search-results .trend__container .sr__results .trend__preview img, main .search-results .trend__container .sr__results .str__preview img, main .search-results .trend__container .sr__results .sr img, main .search-results .str__container .trend__results .trend__preview img, main .search-results .str__container .trend__results .str__preview img, main .search-results .str__container .trend__results .sr img, main .search-results .str__container .str__results .trend__preview img, main .search-results .str__container .str__results .str__preview img, main .search-results .str__container .str__results .sr img, main .search-results .str__container .sr__results .trend__preview img, main .search-results .str__container .sr__results .str__preview img, main .search-results .str__container .sr__results .sr img, main .search-results .sr__container .trend__results .trend__preview img, main .search-results .sr__container .trend__results .str__preview img, main .search-results .sr__container .trend__results .sr img, main .search-results .sr__container .str__results .trend__preview img, main .search-results .sr__container .str__results .str__preview img, main .search-results .sr__container .str__results .sr img, main .search-results .sr__container .sr__results .trend__preview img, main .search-results .sr__container .sr__results .str__preview img, main .search-results .sr__container .sr__results .sr img {
+  width: 100%;
+  height: 100%;
+}
+
+main .trendings .trend__container .trend__results .trend__preview .bottom-tags, main .trendings .trend__container .trend__results .str__preview .bottom-tags, main .trendings .trend__container .trend__results .sr .bottom-tags, main .trendings .trend__container .str__results .trend__preview .bottom-tags, main .trendings .trend__container .str__results .str__preview .bottom-tags, main .trendings .trend__container .str__results .sr .bottom-tags, main .trendings .trend__container .sr__results .trend__preview .bottom-tags, main .trendings .trend__container .sr__results .str__preview .bottom-tags, main .trendings .trend__container .sr__results .sr .bottom-tags, main .trendings .str__container .trend__results .trend__preview .bottom-tags, main .trendings .str__container .trend__results .str__preview .bottom-tags, main .trendings .str__container .trend__results .sr .bottom-tags, main .trendings .str__container .str__results .trend__preview .bottom-tags, main .trendings .str__container .str__results .str__preview .bottom-tags, main .trendings .str__container .str__results .sr .bottom-tags, main .trendings .str__container .sr__results .trend__preview .bottom-tags, main .trendings .str__container .sr__results .str__preview .bottom-tags, main .trendings .str__container .sr__results .sr .bottom-tags, main .trendings .sr__container .trend__results .trend__preview .bottom-tags, main .trendings .sr__container .trend__results .str__preview .bottom-tags, main .trendings .sr__container .trend__results .sr .bottom-tags, main .trendings .sr__container .str__results .trend__preview .bottom-tags, main .trendings .sr__container .str__results .str__preview .bottom-tags, main .trendings .sr__container .str__results .sr .bottom-tags, main .trendings .sr__container .sr__results .trend__preview .bottom-tags, main .trendings .sr__container .sr__results .str__preview .bottom-tags, main .trendings .sr__container .sr__results .sr .bottom-tags, main .sug-trend-results .trend__container .trend__results .trend__preview .bottom-tags, main .sug-trend-results .trend__container .trend__results .str__preview .bottom-tags, main .sug-trend-results .trend__container .trend__results .sr .bottom-tags, main .sug-trend-results .trend__container .str__results .trend__preview .bottom-tags, main .sug-trend-results .trend__container .str__results .str__preview .bottom-tags, main .sug-trend-results .trend__container .str__results .sr .bottom-tags, main .sug-trend-results .trend__container .sr__results .trend__preview .bottom-tags, main .sug-trend-results .trend__container .sr__results .str__preview .bottom-tags, main .sug-trend-results .trend__container .sr__results .sr .bottom-tags, main .sug-trend-results .str__container .trend__results .trend__preview .bottom-tags, main .sug-trend-results .str__container .trend__results .str__preview .bottom-tags, main .sug-trend-results .str__container .trend__results .sr .bottom-tags, main .sug-trend-results .str__container .str__results .trend__preview .bottom-tags, main .sug-trend-results .str__container .str__results .str__preview .bottom-tags, main .sug-trend-results .str__container .str__results .sr .bottom-tags, main .sug-trend-results .str__container .sr__results .trend__preview .bottom-tags, main .sug-trend-results .str__container .sr__results .str__preview .bottom-tags, main .sug-trend-results .str__container .sr__results .sr .bottom-tags, main .sug-trend-results .sr__container .trend__results .trend__preview .bottom-tags, main .sug-trend-results .sr__container .trend__results .str__preview .bottom-tags, main .sug-trend-results .sr__container .trend__results .sr .bottom-tags, main .sug-trend-results .sr__container .str__results .trend__preview .bottom-tags, main .sug-trend-results .sr__container .str__results .str__preview .bottom-tags, main .sug-trend-results .sr__container .str__results .sr .bottom-tags, main .sug-trend-results .sr__container .sr__results .trend__preview .bottom-tags, main .sug-trend-results .sr__container .sr__results .str__preview .bottom-tags, main .sug-trend-results .sr__container .sr__results .sr .bottom-tags, main .search-results .trend__container .trend__results .trend__preview .bottom-tags, main .search-results .trend__container .trend__results .str__preview .bottom-tags, main .search-results .trend__container .trend__results .sr .bottom-tags, main .search-results .trend__container .str__results .trend__preview .bottom-tags, main .search-results .trend__container .str__results .str__preview .bottom-tags, main .search-results .trend__container .str__results .sr .bottom-tags, main .search-results .trend__container .sr__results .trend__preview .bottom-tags, main .search-results .trend__container .sr__results .str__preview .bottom-tags, main .search-results .trend__container .sr__results .sr .bottom-tags, main .search-results .str__container .trend__results .trend__preview .bottom-tags, main .search-results .str__container .trend__results .str__preview .bottom-tags, main .search-results .str__container .trend__results .sr .bottom-tags, main .search-results .str__container .str__results .trend__preview .bottom-tags, main .search-results .str__container .str__results .str__preview .bottom-tags, main .search-results .str__container .str__results .sr .bottom-tags, main .search-results .str__container .sr__results .trend__preview .bottom-tags, main .search-results .str__container .sr__results .str__preview .bottom-tags, main .search-results .str__container .sr__results .sr .bottom-tags, main .search-results .sr__container .trend__results .trend__preview .bottom-tags, main .search-results .sr__container .trend__results .str__preview .bottom-tags, main .search-results .sr__container .trend__results .sr .bottom-tags, main .search-results .sr__container .str__results .trend__preview .bottom-tags, main .search-results .sr__container .str__results .str__preview .bottom-tags, main .search-results .sr__container .str__results .sr .bottom-tags, main .search-results .sr__container .sr__results .trend__preview .bottom-tags, main .search-results .sr__container .sr__results .str__preview .bottom-tags, main .search-results .sr__container .sr__results .sr .bottom-tags {
+  display: none;
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  width: 284px;
+  height: 32px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  text-align: center;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 0;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+main .trendings .trend__container .trend__results .trend__preview:hover, main .trendings .trend__container .trend__results .str__preview:hover, main .trendings .trend__container .trend__results .sr:hover, main .trendings .trend__container .str__results .trend__preview:hover, main .trendings .trend__container .str__results .str__preview:hover, main .trendings .trend__container .str__results .sr:hover, main .trendings .trend__container .sr__results .trend__preview:hover, main .trendings .trend__container .sr__results .str__preview:hover, main .trendings .trend__container .sr__results .sr:hover, main .trendings .str__container .trend__results .trend__preview:hover, main .trendings .str__container .trend__results .str__preview:hover, main .trendings .str__container .trend__results .sr:hover, main .trendings .str__container .str__results .trend__preview:hover, main .trendings .str__container .str__results .str__preview:hover, main .trendings .str__container .str__results .sr:hover, main .trendings .str__container .sr__results .trend__preview:hover, main .trendings .str__container .sr__results .str__preview:hover, main .trendings .str__container .sr__results .sr:hover, main .trendings .sr__container .trend__results .trend__preview:hover, main .trendings .sr__container .trend__results .str__preview:hover, main .trendings .sr__container .trend__results .sr:hover, main .trendings .sr__container .str__results .trend__preview:hover, main .trendings .sr__container .str__results .str__preview:hover, main .trendings .sr__container .str__results .sr:hover, main .trendings .sr__container .sr__results .trend__preview:hover, main .trendings .sr__container .sr__results .str__preview:hover, main .trendings .sr__container .sr__results .sr:hover, main .sug-trend-results .trend__container .trend__results .trend__preview:hover, main .sug-trend-results .trend__container .trend__results .str__preview:hover, main .sug-trend-results .trend__container .trend__results .sr:hover, main .sug-trend-results .trend__container .str__results .trend__preview:hover, main .sug-trend-results .trend__container .str__results .str__preview:hover, main .sug-trend-results .trend__container .str__results .sr:hover, main .sug-trend-results .trend__container .sr__results .trend__preview:hover, main .sug-trend-results .trend__container .sr__results .str__preview:hover, main .sug-trend-results .trend__container .sr__results .sr:hover, main .sug-trend-results .str__container .trend__results .trend__preview:hover, main .sug-trend-results .str__container .trend__results .str__preview:hover, main .sug-trend-results .str__container .trend__results .sr:hover, main .sug-trend-results .str__container .str__results .trend__preview:hover, main .sug-trend-results .str__container .str__results .str__preview:hover, main .sug-trend-results .str__container .str__results .sr:hover, main .sug-trend-results .str__container .sr__results .trend__preview:hover, main .sug-trend-results .str__container .sr__results .str__preview:hover, main .sug-trend-results .str__container .sr__results .sr:hover, main .sug-trend-results .sr__container .trend__results .trend__preview:hover, main .sug-trend-results .sr__container .trend__results .str__preview:hover, main .sug-trend-results .sr__container .trend__results .sr:hover, main .sug-trend-results .sr__container .str__results .trend__preview:hover, main .sug-trend-results .sr__container .str__results .str__preview:hover, main .sug-trend-results .sr__container .str__results .sr:hover, main .sug-trend-results .sr__container .sr__results .trend__preview:hover, main .sug-trend-results .sr__container .sr__results .str__preview:hover, main .sug-trend-results .sr__container .sr__results .sr:hover, main .search-results .trend__container .trend__results .trend__preview:hover, main .search-results .trend__container .trend__results .str__preview:hover, main .search-results .trend__container .trend__results .sr:hover, main .search-results .trend__container .str__results .trend__preview:hover, main .search-results .trend__container .str__results .str__preview:hover, main .search-results .trend__container .str__results .sr:hover, main .search-results .trend__container .sr__results .trend__preview:hover, main .search-results .trend__container .sr__results .str__preview:hover, main .search-results .trend__container .sr__results .sr:hover, main .search-results .str__container .trend__results .trend__preview:hover, main .search-results .str__container .trend__results .str__preview:hover, main .search-results .str__container .trend__results .sr:hover, main .search-results .str__container .str__results .trend__preview:hover, main .search-results .str__container .str__results .str__preview:hover, main .search-results .str__container .str__results .sr:hover, main .search-results .str__container .sr__results .trend__preview:hover, main .search-results .str__container .sr__results .str__preview:hover, main .search-results .str__container .sr__results .sr:hover, main .search-results .sr__container .trend__results .trend__preview:hover, main .search-results .sr__container .trend__results .str__preview:hover, main .search-results .sr__container .trend__results .sr:hover, main .search-results .sr__container .str__results .trend__preview:hover, main .search-results .sr__container .str__results .str__preview:hover, main .search-results .sr__container .str__results .sr:hover, main .search-results .sr__container .sr__results .trend__preview:hover, main .search-results .sr__container .sr__results .str__preview:hover, main .search-results .sr__container .sr__results .sr:hover {
+  cursor: pointer;
+  border: 1px solid #110038;
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  width: 294px;
+  height: 304px;
+  padding: 3px;
+}
+
+main .trendings .trend__container .trend__results .trend__preview:hover img, main .trendings .trend__container .trend__results .str__preview:hover img, main .trendings .trend__container .trend__results .sr:hover img, main .trendings .trend__container .str__results .trend__preview:hover img, main .trendings .trend__container .str__results .str__preview:hover img, main .trendings .trend__container .str__results .sr:hover img, main .trendings .trend__container .sr__results .trend__preview:hover img, main .trendings .trend__container .sr__results .str__preview:hover img, main .trendings .trend__container .sr__results .sr:hover img, main .trendings .str__container .trend__results .trend__preview:hover img, main .trendings .str__container .trend__results .str__preview:hover img, main .trendings .str__container .trend__results .sr:hover img, main .trendings .str__container .str__results .trend__preview:hover img, main .trendings .str__container .str__results .str__preview:hover img, main .trendings .str__container .str__results .sr:hover img, main .trendings .str__container .sr__results .trend__preview:hover img, main .trendings .str__container .sr__results .str__preview:hover img, main .trendings .str__container .sr__results .sr:hover img, main .trendings .sr__container .trend__results .trend__preview:hover img, main .trendings .sr__container .trend__results .str__preview:hover img, main .trendings .sr__container .trend__results .sr:hover img, main .trendings .sr__container .str__results .trend__preview:hover img, main .trendings .sr__container .str__results .str__preview:hover img, main .trendings .sr__container .str__results .sr:hover img, main .trendings .sr__container .sr__results .trend__preview:hover img, main .trendings .sr__container .sr__results .str__preview:hover img, main .trendings .sr__container .sr__results .sr:hover img, main .sug-trend-results .trend__container .trend__results .trend__preview:hover img, main .sug-trend-results .trend__container .trend__results .str__preview:hover img, main .sug-trend-results .trend__container .trend__results .sr:hover img, main .sug-trend-results .trend__container .str__results .trend__preview:hover img, main .sug-trend-results .trend__container .str__results .str__preview:hover img, main .sug-trend-results .trend__container .str__results .sr:hover img, main .sug-trend-results .trend__container .sr__results .trend__preview:hover img, main .sug-trend-results .trend__container .sr__results .str__preview:hover img, main .sug-trend-results .trend__container .sr__results .sr:hover img, main .sug-trend-results .str__container .trend__results .trend__preview:hover img, main .sug-trend-results .str__container .trend__results .str__preview:hover img, main .sug-trend-results .str__container .trend__results .sr:hover img, main .sug-trend-results .str__container .str__results .trend__preview:hover img, main .sug-trend-results .str__container .str__results .str__preview:hover img, main .sug-trend-results .str__container .str__results .sr:hover img, main .sug-trend-results .str__container .sr__results .trend__preview:hover img, main .sug-trend-results .str__container .sr__results .str__preview:hover img, main .sug-trend-results .str__container .sr__results .sr:hover img, main .sug-trend-results .sr__container .trend__results .trend__preview:hover img, main .sug-trend-results .sr__container .trend__results .str__preview:hover img, main .sug-trend-results .sr__container .trend__results .sr:hover img, main .sug-trend-results .sr__container .str__results .trend__preview:hover img, main .sug-trend-results .sr__container .str__results .str__preview:hover img, main .sug-trend-results .sr__container .str__results .sr:hover img, main .sug-trend-results .sr__container .sr__results .trend__preview:hover img, main .sug-trend-results .sr__container .sr__results .str__preview:hover img, main .sug-trend-results .sr__container .sr__results .sr:hover img, main .search-results .trend__container .trend__results .trend__preview:hover img, main .search-results .trend__container .trend__results .str__preview:hover img, main .search-results .trend__container .trend__results .sr:hover img, main .search-results .trend__container .str__results .trend__preview:hover img, main .search-results .trend__container .str__results .str__preview:hover img, main .search-results .trend__container .str__results .sr:hover img, main .search-results .trend__container .sr__results .trend__preview:hover img, main .search-results .trend__container .sr__results .str__preview:hover img, main .search-results .trend__container .sr__results .sr:hover img, main .search-results .str__container .trend__results .trend__preview:hover img, main .search-results .str__container .trend__results .str__preview:hover img, main .search-results .str__container .trend__results .sr:hover img, main .search-results .str__container .str__results .trend__preview:hover img, main .search-results .str__container .str__results .str__preview:hover img, main .search-results .str__container .str__results .sr:hover img, main .search-results .str__container .sr__results .trend__preview:hover img, main .search-results .str__container .sr__results .str__preview:hover img, main .search-results .str__container .sr__results .sr:hover img, main .search-results .sr__container .trend__results .trend__preview:hover img, main .search-results .sr__container .trend__results .str__preview:hover img, main .search-results .sr__container .trend__results .sr:hover img, main .search-results .sr__container .str__results .trend__preview:hover img, main .search-results .sr__container .str__results .str__preview:hover img, main .search-results .sr__container .str__results .sr:hover img, main .search-results .sr__container .sr__results .trend__preview:hover img, main .search-results .sr__container .sr__results .str__preview:hover img, main .search-results .sr__container .sr__results .sr:hover img {
+  position: absolute;
+  width: 286px;
+  height: 296px;
+  border: 1px dotted #110038;
+}
+
+main .trendings .trend__container .trend__results .trend__preview:hover .bottom-tags, main .trendings .trend__container .trend__results .str__preview:hover .bottom-tags, main .trendings .trend__container .trend__results .sr:hover .bottom-tags, main .trendings .trend__container .str__results .trend__preview:hover .bottom-tags, main .trendings .trend__container .str__results .str__preview:hover .bottom-tags, main .trendings .trend__container .str__results .sr:hover .bottom-tags, main .trendings .trend__container .sr__results .trend__preview:hover .bottom-tags, main .trendings .trend__container .sr__results .str__preview:hover .bottom-tags, main .trendings .trend__container .sr__results .sr:hover .bottom-tags, main .trendings .str__container .trend__results .trend__preview:hover .bottom-tags, main .trendings .str__container .trend__results .str__preview:hover .bottom-tags, main .trendings .str__container .trend__results .sr:hover .bottom-tags, main .trendings .str__container .str__results .trend__preview:hover .bottom-tags, main .trendings .str__container .str__results .str__preview:hover .bottom-tags, main .trendings .str__container .str__results .sr:hover .bottom-tags, main .trendings .str__container .sr__results .trend__preview:hover .bottom-tags, main .trendings .str__container .sr__results .str__preview:hover .bottom-tags, main .trendings .str__container .sr__results .sr:hover .bottom-tags, main .trendings .sr__container .trend__results .trend__preview:hover .bottom-tags, main .trendings .sr__container .trend__results .str__preview:hover .bottom-tags, main .trendings .sr__container .trend__results .sr:hover .bottom-tags, main .trendings .sr__container .str__results .trend__preview:hover .bottom-tags, main .trendings .sr__container .str__results .str__preview:hover .bottom-tags, main .trendings .sr__container .str__results .sr:hover .bottom-tags, main .trendings .sr__container .sr__results .trend__preview:hover .bottom-tags, main .trendings .sr__container .sr__results .str__preview:hover .bottom-tags, main .trendings .sr__container .sr__results .sr:hover .bottom-tags, main .sug-trend-results .trend__container .trend__results .trend__preview:hover .bottom-tags, main .sug-trend-results .trend__container .trend__results .str__preview:hover .bottom-tags, main .sug-trend-results .trend__container .trend__results .sr:hover .bottom-tags, main .sug-trend-results .trend__container .str__results .trend__preview:hover .bottom-tags, main .sug-trend-results .trend__container .str__results .str__preview:hover .bottom-tags, main .sug-trend-results .trend__container .str__results .sr:hover .bottom-tags, main .sug-trend-results .trend__container .sr__results .trend__preview:hover .bottom-tags, main .sug-trend-results .trend__container .sr__results .str__preview:hover .bottom-tags, main .sug-trend-results .trend__container .sr__results .sr:hover .bottom-tags, main .sug-trend-results .str__container .trend__results .trend__preview:hover .bottom-tags, main .sug-trend-results .str__container .trend__results .str__preview:hover .bottom-tags, main .sug-trend-results .str__container .trend__results .sr:hover .bottom-tags, main .sug-trend-results .str__container .str__results .trend__preview:hover .bottom-tags, main .sug-trend-results .str__container .str__results .str__preview:hover .bottom-tags, main .sug-trend-results .str__container .str__results .sr:hover .bottom-tags, main .sug-trend-results .str__container .sr__results .trend__preview:hover .bottom-tags, main .sug-trend-results .str__container .sr__results .str__preview:hover .bottom-tags, main .sug-trend-results .str__container .sr__results .sr:hover .bottom-tags, main .sug-trend-results .sr__container .trend__results .trend__preview:hover .bottom-tags, main .sug-trend-results .sr__container .trend__results .str__preview:hover .bottom-tags, main .sug-trend-results .sr__container .trend__results .sr:hover .bottom-tags, main .sug-trend-results .sr__container .str__results .trend__preview:hover .bottom-tags, main .sug-trend-results .sr__container .str__results .str__preview:hover .bottom-tags, main .sug-trend-results .sr__container .str__results .sr:hover .bottom-tags, main .sug-trend-results .sr__container .sr__results .trend__preview:hover .bottom-tags, main .sug-trend-results .sr__container .sr__results .str__preview:hover .bottom-tags, main .sug-trend-results .sr__container .sr__results .sr:hover .bottom-tags, main .search-results .trend__container .trend__results .trend__preview:hover .bottom-tags, main .search-results .trend__container .trend__results .str__preview:hover .bottom-tags, main .search-results .trend__container .trend__results .sr:hover .bottom-tags, main .search-results .trend__container .str__results .trend__preview:hover .bottom-tags, main .search-results .trend__container .str__results .str__preview:hover .bottom-tags, main .search-results .trend__container .str__results .sr:hover .bottom-tags, main .search-results .trend__container .sr__results .trend__preview:hover .bottom-tags, main .search-results .trend__container .sr__results .str__preview:hover .bottom-tags, main .search-results .trend__container .sr__results .sr:hover .bottom-tags, main .search-results .str__container .trend__results .trend__preview:hover .bottom-tags, main .search-results .str__container .trend__results .str__preview:hover .bottom-tags, main .search-results .str__container .trend__results .sr:hover .bottom-tags, main .search-results .str__container .str__results .trend__preview:hover .bottom-tags, main .search-results .str__container .str__results .str__preview:hover .bottom-tags, main .search-results .str__container .str__results .sr:hover .bottom-tags, main .search-results .str__container .sr__results .trend__preview:hover .bottom-tags, main .search-results .str__container .sr__results .str__preview:hover .bottom-tags, main .search-results .str__container .sr__results .sr:hover .bottom-tags, main .search-results .sr__container .trend__results .trend__preview:hover .bottom-tags, main .search-results .sr__container .trend__results .str__preview:hover .bottom-tags, main .search-results .sr__container .trend__results .sr:hover .bottom-tags, main .search-results .sr__container .str__results .trend__preview:hover .bottom-tags, main .search-results .sr__container .str__results .str__preview:hover .bottom-tags, main .search-results .sr__container .str__results .sr:hover .bottom-tags, main .search-results .sr__container .sr__results .trend__preview:hover .bottom-tags, main .search-results .sr__container .sr__results .str__preview:hover .bottom-tags, main .search-results .sr__container .sr__results .sr:hover .bottom-tags {
+  display: block;
+}
+
+main .search-results, main #strId {
+  display: none;
+  margin-top: unset;
+}
+
+#mg-tab:checked ~ .index-container main .mis-guifos {
+  display: block;
+}
+
+#mg-tab:checked ~ .index-container main .suggestions,
+#mg-tab:checked ~ .index-container main .trendings {
+  display: none;
+}
+
+#btn-theme-opt:checked ~ .nav-bar .nav__logo-buttons .nav__buttons .theme .opt-box {
+  -webkit-transition-property: -webkit-clip-path;
+  transition-property: -webkit-clip-path;
+  transition-property: clip-path;
+  transition-property: clip-path, -webkit-clip-path;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+#btn-theme-opt:checked ~ .nav-bar .nav__logo-buttons .nav__buttons .theme .opt-box .opt label {
+  display: block;
+}
+
+#btn-theme-night:checked ~ .index-container {
+  background-color: #110038;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons img:nth-of-type(1) {
+  display: none;
+}
+
+#btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons img:nth-of-type(2) {
+  display: block;
+}
+
+#btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons .nav__buttons .button, #btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .text, #btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .arrow {
+  background: #EE3EFE;
+}
+
+#btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons .nav__buttons .button:hover, #btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons .nav__buttons .button:active, #btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .text:hover, #btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .text:active, #btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .arrow:hover, #btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .arrow:active {
+  background: #CE36DB;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+
+#btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons .nav__buttons .button p, #btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .text p, #btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .arrow p {
+  color: #FFFFFF;
+}
+
+#btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label:hover .text, #btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label:hover .arrow, #btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label:active .text, #btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label:active .arrow {
+  background: #CE36DB;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+
+#btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme .opt-box {
+  background: #B4B4B4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+#btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme .opt.day {
+  background: #CCCCCC;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+#btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme .opt.day p {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+}
+
+#btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme .opt.day p span {
+  border: none;
+}
+
+#btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme .opt.night {
+  background: #2E32FB;
+  border: 1px solid rgba(51, 53, 143, 0.2);
+  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+#btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme .opt.night p {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 0;
+}
+
+#btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme .opt.night p span {
+  border-bottom: 1px solid #fff;
+}
+
+#btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme #back-copy {
+  fill: #fff;
+}
+
+#btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme #Combined-Shape {
+  fill: #110038;
+}
+
+#btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons .nav__buttons .anchor-container p {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #FFF;
+  letter-spacing: 0;
+}
+
+#btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons .nav__buttons .anchor-container p:hover {
+  border: 1px dotted #fff;
+}
+
+#btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons .nav__buttons .anchor-container p:hover span {
+  border-bottom: 1px solid #fff;
+}
+
+#btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons .nav__buttons .anchor-container p:active {
+  border: none;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #B4B4B4;
+  letter-spacing: 0;
+}
+
+#btn-theme-night:checked ~ .index-container .nav-bar .nav__logo-buttons .nav__buttons .anchor-container p:active span {
+  border-bottom: 1px solid #B4B4B4;
+}
+
+#btn-theme-night:checked ~ .index-container .nav-bar .nav__search-bar {
+  background: #B4B4B4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+#btn-theme-night:checked ~ .index-container .nav-bar .nav__search-bar .writing {
+  background: #B4B4B4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+#btn-theme-night:checked ~ .index-container .nav-bar .nav__search-bar .search-block .writing .search__suggestions:nth-of-type(1) {
+  background: #B4B4B4;
+  -webkit-box-shadow: inset -1px -1px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+#btn-theme-night:checked ~ .index-container .nav-bar .nav__search-bar .search-block .writing .search__suggestions:nth-of-type(2),
+#btn-theme-night:checked ~ .index-container .nav-bar .nav__search-bar .search-block .writing .search__suggestions:nth-of-type(3) {
+  background: #CCCCCC;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+#btn-theme-night:checked ~ .index-container .nav-bar .nav__container .nav__title,
+#btn-theme-night:checked ~ .index-container .nav-bar .nav__container .nav__search-bar .search__title,
+#btn-theme-night:checked ~ .index-container main .suggestions .sug__container .sug__results .sug__preview .title,
+#btn-theme-night:checked ~ .index-container main .trendings .trend__container .trend__results .trend__preview .bottom-tags {
+  background-image: -webkit-gradient(linear, right top, left top, from(#EE3EFE), to(#2E32FB));
+  background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}
+
+#btn-theme-night:checked ~ .index-container main .suggestions .sug__container .sug__preview, #btn-theme-night:checked ~ .index-container main .trendings .trend__container .trend__preview:hover {
+  background: #B4B4B4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+}
+
+@media (min-width: 576px) {
+  .nav-bar .nav__container {
+    width: calc(100% - 32px);
+  }
+  .nav-bar .nav__container .nav__title p:nth-of-type(1), .nav-bar .nav__container .nav__title p:nth-of-type(2) {
+    display: none;
+  }
+  .nav-bar .nav__container .nav__title p:nth-of-type(3) {
+    display: block;
+  }
+  .nav-bar .nav__container .nav__logo-buttons img {
+    float: left;
+  }
+  .nav-bar .nav__container .nav__logo-buttons .nav__logo {
+    margin: 64px 0 32px 0;
+  }
+  .nav-bar .nav__container .nav__logo-buttons .nav__buttons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 16px;
+  }
+  .nav-bar .nav__container .nav__logo-buttons .nav__buttons .button {
+    width: 144px;
+  }
+  .nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme {
+    width: 177px;
+  }
+  .nav-bar .nav__container .nav__logo-buttons .nav__buttons .anchor-container {
+    width: 95px;
+  }
+  .nav-bar .nav__container .nav__search-bar {
+    width: calc(100% - 32px);
+  }
+  .nav-bar .nav__container .nav__search-bar .search-block .search__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 4px;
+    width: 102px;
+  }
+  .nav-bar .nav__container .nav__search-bar .search-block .search__button p {
+    display: inline-block;
+    padding-left: 4px;
+  }
+  .nav-bar .nav__container .nav__search-bar .search-block .search__button:active {
+    padding: 0 2px 0 2px;
+    border: 1px dotted #110038;
+  }
+  .nav-bar .nav__container .nav__search-bar .search-block .search__button:active img:nth-child(2) {
+    z-index: 2;
+    border: none;
+  }
+}
+
+@media (min-width: 650px) {
+  .nav-bar .nav__container .nav__search-bar .search-block .search__input:nth-of-type(2) {
+    display: block;
+    width: calc(100% - 32px - 102px - 8px);
+  }
+  .nav-bar .nav__container .nav__search-bar .search-block .search__input:nth-of-type(1) {
+    display: none;
+  }
+  main .suggestions .sug__container, main .trendings .trend__container, main .mis-guifos .mg__container, main .search-results .sr__container {
+    width: calc(100% - 32px);
+  }
+  main .suggestions .sug__container .sug__title, main .suggestions .sug__container .trend__title, main .suggestions .sug__container .mg__title, main .suggestions .sug__container .sr__title, main .trendings .trend__container .sug__title, main .trendings .trend__container .trend__title, main .trendings .trend__container .mg__title, main .trendings .trend__container .sr__title, main .mis-guifos .mg__container .sug__title, main .mis-guifos .mg__container .trend__title, main .mis-guifos .mg__container .mg__title, main .mis-guifos .mg__container .sr__title, main .search-results .sr__container .sug__title, main .search-results .sr__container .trend__title, main .search-results .sr__container .mg__title, main .search-results .sr__container .sr__title {
+    width: calc(100% - 32px);
+    margin-bottom: 32px;
+  }
+  main .suggestions .sug__container .sug__results, main .trendings .trend__container .sug__results, main .mis-guifos .mg__container .sug__results, main .search-results .sr__container .sug__results {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+    row-gap: 16px;
+    -webkit-column-gap: 5%;
+            column-gap: 5%;
+  }
+  main .suggestions .sug__container .trend__results, main .suggestions .sug__container .sr__results, main .trendings .trend__container .trend__results, main .trendings .trend__container .sr__results, main .mis-guifos .mg__container .trend__results, main .mis-guifos .mg__container .sr__results, main .search-results .sr__container .trend__results, main .search-results .sr__container .sr__results {
+    width: calc(100% - 32px);
+    -ms-grid-columns: 2;
+        grid-template-columns: 2;
+    -ms-grid-rows: 7;
+        grid-template-rows: 7;
+    gap: 16px;
+  }
+  main .suggestions .sug__container .trend__results .trend__preview, main .suggestions .sug__container .trend__results .sr, main .suggestions .sug__container .sr__results .trend__preview, main .suggestions .sug__container .sr__results .sr, main .trendings .trend__container .trend__results .trend__preview, main .trendings .trend__container .trend__results .sr, main .trendings .trend__container .sr__results .trend__preview, main .trendings .trend__container .sr__results .sr, main .mis-guifos .mg__container .trend__results .trend__preview, main .mis-guifos .mg__container .trend__results .sr, main .mis-guifos .mg__container .sr__results .trend__preview, main .mis-guifos .mg__container .sr__results .sr, main .search-results .sr__container .trend__results .trend__preview, main .search-results .sr__container .trend__results .sr, main .search-results .sr__container .sr__results .trend__preview, main .search-results .sr__container .sr__results .sr {
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+  main .suggestions .sug__container .trend__results .trend__preview:hover, main .suggestions .sug__container .trend__results .sr:hover, main .suggestions .sug__container .sr__results .trend__preview:hover, main .suggestions .sug__container .sr__results .sr:hover, main .trendings .trend__container .trend__results .trend__preview:hover, main .trendings .trend__container .trend__results .sr:hover, main .trendings .trend__container .sr__results .trend__preview:hover, main .trendings .trend__container .sr__results .sr:hover, main .mis-guifos .mg__container .trend__results .trend__preview:hover, main .mis-guifos .mg__container .trend__results .sr:hover, main .mis-guifos .mg__container .sr__results .trend__preview:hover, main .mis-guifos .mg__container .sr__results .sr:hover, main .search-results .sr__container .trend__results .trend__preview:hover, main .search-results .sr__container .trend__results .sr:hover, main .search-results .sr__container .sr__results .trend__preview:hover, main .search-results .sr__container .sr__results .sr:hover {
+    border: 1px solid #110038;
+    background: #E6E6E6;
+    -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+            box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+  }
+  main .suggestions .sug__container .trend__results .trend__preview:hover img, main .suggestions .sug__container .trend__results .sr:hover img, main .suggestions .sug__container .sr__results .trend__preview:hover img, main .suggestions .sug__container .sr__results .sr:hover img, main .trendings .trend__container .trend__results .trend__preview:hover img, main .trendings .trend__container .trend__results .sr:hover img, main .trendings .trend__container .sr__results .trend__preview:hover img, main .trendings .trend__container .sr__results .sr:hover img, main .mis-guifos .mg__container .trend__results .trend__preview:hover img, main .mis-guifos .mg__container .trend__results .sr:hover img, main .mis-guifos .mg__container .sr__results .trend__preview:hover img, main .mis-guifos .mg__container .sr__results .sr:hover img, main .search-results .sr__container .trend__results .trend__preview:hover img, main .search-results .sr__container .trend__results .sr:hover img, main .search-results .sr__container .sr__results .trend__preview:hover img, main .search-results .sr__container .sr__results .sr:hover img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px dotted #110038;
+  }
+  main .suggestions .sug__container .trend__results .trend__preview:hover .bottom-tags, main .suggestions .sug__container .trend__results .sr:hover .bottom-tags, main .suggestions .sug__container .sr__results .trend__preview:hover .bottom-tags, main .suggestions .sug__container .sr__results .sr:hover .bottom-tags, main .trendings .trend__container .trend__results .trend__preview:hover .bottom-tags, main .trendings .trend__container .trend__results .sr:hover .bottom-tags, main .trendings .trend__container .sr__results .trend__preview:hover .bottom-tags, main .trendings .trend__container .sr__results .sr:hover .bottom-tags, main .mis-guifos .mg__container .trend__results .trend__preview:hover .bottom-tags, main .mis-guifos .mg__container .trend__results .sr:hover .bottom-tags, main .mis-guifos .mg__container .sr__results .trend__preview:hover .bottom-tags, main .mis-guifos .mg__container .sr__results .sr:hover .bottom-tags, main .search-results .sr__container .trend__results .trend__preview:hover .bottom-tags, main .search-results .sr__container .trend__results .sr:hover .bottom-tags, main .search-results .sr__container .sr__results .trend__preview:hover .bottom-tags, main .search-results .sr__container .sr__results .sr:hover .bottom-tags {
+    display: block;
+    width: calc(100% - 6px);
+    bottom: 3px;
+    left: 3px;
+  }
+  main .suggestions .sug__container .trend__results .trend__preview:first-child, main .suggestions .sug__container .trend__results .sr:first-child, main .suggestions .sug__container .sr__results .trend__preview:first-child, main .suggestions .sug__container .sr__results .sr:first-child, main .trendings .trend__container .trend__results .trend__preview:first-child, main .trendings .trend__container .trend__results .sr:first-child, main .trendings .trend__container .sr__results .trend__preview:first-child, main .trendings .trend__container .sr__results .sr:first-child, main .mis-guifos .mg__container .trend__results .trend__preview:first-child, main .mis-guifos .mg__container .trend__results .sr:first-child, main .mis-guifos .mg__container .sr__results .trend__preview:first-child, main .mis-guifos .mg__container .sr__results .sr:first-child, main .search-results .sr__container .trend__results .trend__preview:first-child, main .search-results .sr__container .trend__results .sr:first-child, main .search-results .sr__container .sr__results .trend__preview:first-child, main .search-results .sr__container .sr__results .sr:first-child {
+    -ms-grid-column: 1;
+    grid-column: 1/1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+  }
+  main .suggestions .sug__container .trend__results .trend__preview:nth-child(2), main .suggestions .sug__container .trend__results .sr:nth-child(2), main .suggestions .sug__container .sr__results .trend__preview:nth-child(2), main .suggestions .sug__container .sr__results .sr:nth-child(2), main .trendings .trend__container .trend__results .trend__preview:nth-child(2), main .trendings .trend__container .trend__results .sr:nth-child(2), main .trendings .trend__container .sr__results .trend__preview:nth-child(2), main .trendings .trend__container .sr__results .sr:nth-child(2), main .mis-guifos .mg__container .trend__results .trend__preview:nth-child(2), main .mis-guifos .mg__container .trend__results .sr:nth-child(2), main .mis-guifos .mg__container .sr__results .trend__preview:nth-child(2), main .mis-guifos .mg__container .sr__results .sr:nth-child(2), main .search-results .sr__container .trend__results .trend__preview:nth-child(2), main .search-results .sr__container .trend__results .sr:nth-child(2), main .search-results .sr__container .sr__results .trend__preview:nth-child(2), main .search-results .sr__container .sr__results .sr:nth-child(2) {
+    -ms-grid-column: 2;
+    grid-column: 2/2;
+    -ms-grid-row: 1;
+    grid-row: 1/1;
+  }
+  main .suggestions .sug__container .trend__results .trend__preview:nth-child(3), main .suggestions .sug__container .trend__results .sr:nth-child(3), main .suggestions .sug__container .sr__results .trend__preview:nth-child(3), main .suggestions .sug__container .sr__results .sr:nth-child(3), main .trendings .trend__container .trend__results .trend__preview:nth-child(3), main .trendings .trend__container .trend__results .sr:nth-child(3), main .trendings .trend__container .sr__results .trend__preview:nth-child(3), main .trendings .trend__container .sr__results .sr:nth-child(3), main .mis-guifos .mg__container .trend__results .trend__preview:nth-child(3), main .mis-guifos .mg__container .trend__results .sr:nth-child(3), main .mis-guifos .mg__container .sr__results .trend__preview:nth-child(3), main .mis-guifos .mg__container .sr__results .sr:nth-child(3), main .search-results .sr__container .trend__results .trend__preview:nth-child(3), main .search-results .sr__container .trend__results .sr:nth-child(3), main .search-results .sr__container .sr__results .trend__preview:nth-child(3), main .search-results .sr__container .sr__results .sr:nth-child(3) {
+    -ms-grid-column: 2;
+    grid-column: 2/2;
+    -ms-grid-row: 2;
+    grid-row: 2/2;
+  }
+  main .suggestions .sug__container .trend__results .trend__preview:nth-child(4), main .suggestions .sug__container .trend__results .sr:nth-child(4), main .suggestions .sug__container .sr__results .trend__preview:nth-child(4), main .suggestions .sug__container .sr__results .sr:nth-child(4), main .trendings .trend__container .trend__results .trend__preview:nth-child(4), main .trendings .trend__container .trend__results .sr:nth-child(4), main .trendings .trend__container .sr__results .trend__preview:nth-child(4), main .trendings .trend__container .sr__results .sr:nth-child(4), main .mis-guifos .mg__container .trend__results .trend__preview:nth-child(4), main .mis-guifos .mg__container .trend__results .sr:nth-child(4), main .mis-guifos .mg__container .sr__results .trend__preview:nth-child(4), main .mis-guifos .mg__container .sr__results .sr:nth-child(4), main .search-results .sr__container .trend__results .trend__preview:nth-child(4), main .search-results .sr__container .trend__results .sr:nth-child(4), main .search-results .sr__container .sr__results .trend__preview:nth-child(4), main .search-results .sr__container .sr__results .sr:nth-child(4) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -ms-grid-row: 3;
+    grid-row: 3/3;
+  }
+  main .suggestions .sug__container .trend__results .trend__preview:nth-child(5), main .suggestions .sug__container .trend__results .sr:nth-child(5), main .suggestions .sug__container .sr__results .trend__preview:nth-child(5), main .suggestions .sug__container .sr__results .sr:nth-child(5), main .trendings .trend__container .trend__results .trend__preview:nth-child(5), main .trendings .trend__container .trend__results .sr:nth-child(5), main .trendings .trend__container .sr__results .trend__preview:nth-child(5), main .trendings .trend__container .sr__results .sr:nth-child(5), main .mis-guifos .mg__container .trend__results .trend__preview:nth-child(5), main .mis-guifos .mg__container .trend__results .sr:nth-child(5), main .mis-guifos .mg__container .sr__results .trend__preview:nth-child(5), main .mis-guifos .mg__container .sr__results .sr:nth-child(5), main .search-results .sr__container .trend__results .trend__preview:nth-child(5), main .search-results .sr__container .trend__results .sr:nth-child(5), main .search-results .sr__container .sr__results .trend__preview:nth-child(5), main .search-results .sr__container .sr__results .sr:nth-child(5) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 4;
+    grid-row: 4/4;
+  }
+  main .suggestions .sug__container .trend__results .trend__preview:nth-child(6), main .suggestions .sug__container .trend__results .sr:nth-child(6), main .suggestions .sug__container .sr__results .trend__preview:nth-child(6), main .suggestions .sug__container .sr__results .sr:nth-child(6), main .trendings .trend__container .trend__results .trend__preview:nth-child(6), main .trendings .trend__container .trend__results .sr:nth-child(6), main .trendings .trend__container .sr__results .trend__preview:nth-child(6), main .trendings .trend__container .sr__results .sr:nth-child(6), main .mis-guifos .mg__container .trend__results .trend__preview:nth-child(6), main .mis-guifos .mg__container .trend__results .sr:nth-child(6), main .mis-guifos .mg__container .sr__results .trend__preview:nth-child(6), main .mis-guifos .mg__container .sr__results .sr:nth-child(6), main .search-results .sr__container .trend__results .trend__preview:nth-child(6), main .search-results .sr__container .trend__results .sr:nth-child(6), main .search-results .sr__container .sr__results .trend__preview:nth-child(6), main .search-results .sr__container .sr__results .sr:nth-child(6) {
+    -ms-grid-column: 2;
+    grid-column: 2/2;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 2;
+    grid-row: 4/6;
+  }
+  main .suggestions .sug__container .trend__results .trend__preview:nth-child(7), main .suggestions .sug__container .trend__results .sr:nth-child(7), main .suggestions .sug__container .sr__results .trend__preview:nth-child(7), main .suggestions .sug__container .sr__results .sr:nth-child(7), main .trendings .trend__container .trend__results .trend__preview:nth-child(7), main .trendings .trend__container .trend__results .sr:nth-child(7), main .trendings .trend__container .sr__results .trend__preview:nth-child(7), main .trendings .trend__container .sr__results .sr:nth-child(7), main .mis-guifos .mg__container .trend__results .trend__preview:nth-child(7), main .mis-guifos .mg__container .trend__results .sr:nth-child(7), main .mis-guifos .mg__container .sr__results .trend__preview:nth-child(7), main .mis-guifos .mg__container .sr__results .sr:nth-child(7), main .search-results .sr__container .trend__results .trend__preview:nth-child(7), main .search-results .sr__container .trend__results .sr:nth-child(7), main .search-results .sr__container .sr__results .trend__preview:nth-child(7), main .search-results .sr__container .sr__results .sr:nth-child(7) {
+    -ms-grid-column: 1;
+    grid-column: 1/1;
+    -ms-grid-row: 5;
+    grid-row: 5/5;
+  }
+  main .suggestions .sug__container .trend__results .trend__preview:nth-child(8), main .suggestions .sug__container .trend__results .sr:nth-child(8), main .suggestions .sug__container .sr__results .trend__preview:nth-child(8), main .suggestions .sug__container .sr__results .sr:nth-child(8), main .trendings .trend__container .trend__results .trend__preview:nth-child(8), main .trendings .trend__container .trend__results .sr:nth-child(8), main .trendings .trend__container .sr__results .trend__preview:nth-child(8), main .trendings .trend__container .sr__results .sr:nth-child(8), main .mis-guifos .mg__container .trend__results .trend__preview:nth-child(8), main .mis-guifos .mg__container .trend__results .sr:nth-child(8), main .mis-guifos .mg__container .sr__results .trend__preview:nth-child(8), main .mis-guifos .mg__container .sr__results .sr:nth-child(8), main .search-results .sr__container .trend__results .trend__preview:nth-child(8), main .search-results .sr__container .trend__results .sr:nth-child(8), main .search-results .sr__container .sr__results .trend__preview:nth-child(8), main .search-results .sr__container .sr__results .sr:nth-child(8) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -ms-grid-row: 6;
+    grid-row: 6/6;
+  }
+  main .suggestions .sug__container .trend__results .trend__preview:nth-child(9), main .suggestions .sug__container .trend__results .sr:nth-child(9), main .suggestions .sug__container .sr__results .trend__preview:nth-child(9), main .suggestions .sug__container .sr__results .sr:nth-child(9), main .trendings .trend__container .trend__results .trend__preview:nth-child(9), main .trendings .trend__container .trend__results .sr:nth-child(9), main .trendings .trend__container .sr__results .trend__preview:nth-child(9), main .trendings .trend__container .sr__results .sr:nth-child(9), main .mis-guifos .mg__container .trend__results .trend__preview:nth-child(9), main .mis-guifos .mg__container .trend__results .sr:nth-child(9), main .mis-guifos .mg__container .sr__results .trend__preview:nth-child(9), main .mis-guifos .mg__container .sr__results .sr:nth-child(9), main .search-results .sr__container .trend__results .trend__preview:nth-child(9), main .search-results .sr__container .trend__results .sr:nth-child(9), main .search-results .sr__container .sr__results .trend__preview:nth-child(9), main .search-results .sr__container .sr__results .sr:nth-child(9) {
+    -ms-grid-column: 1;
+    grid-column: 1/1;
+    -ms-grid-row: 7;
+    grid-row: 7/7;
+  }
+  main .suggestions .sug__container .trend__results .trend__preview:nth-child(10), main .suggestions .sug__container .trend__results .sr:nth-child(10), main .suggestions .sug__container .sr__results .trend__preview:nth-child(10), main .suggestions .sug__container .sr__results .sr:nth-child(10), main .trendings .trend__container .trend__results .trend__preview:nth-child(10), main .trendings .trend__container .trend__results .sr:nth-child(10), main .trendings .trend__container .sr__results .trend__preview:nth-child(10), main .trendings .trend__container .sr__results .sr:nth-child(10), main .mis-guifos .mg__container .trend__results .trend__preview:nth-child(10), main .mis-guifos .mg__container .trend__results .sr:nth-child(10), main .mis-guifos .mg__container .sr__results .trend__preview:nth-child(10), main .mis-guifos .mg__container .sr__results .sr:nth-child(10), main .search-results .sr__container .trend__results .trend__preview:nth-child(10), main .search-results .sr__container .trend__results .sr:nth-child(10), main .search-results .sr__container .sr__results .trend__preview:nth-child(10), main .search-results .sr__container .sr__results .sr:nth-child(10) {
+    -ms-grid-column: 2;
+    grid-column: 2/2;
+    -ms-grid-row: 7;
+    grid-row: 7/7;
+  }
+  main .suggestions .sug__container .examples, main .trendings .trend__container .examples, main .mis-guifos .mg__container .examples, main .search-results .sr__container .examples {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: unset;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  main .suggestions .sug__container .examples .eg, main .trendings .trend__container .examples .eg, main .mis-guifos .mg__container .examples .eg, main .search-results .sr__container .examples .eg {
+    margin-right: 8px;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-bar .nav__container .nav__logo-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: calc(100% - 32px);
+  }
+  .nav-bar .nav__container .nav__logo-buttons .nav__logo {
+    margin: unset;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 35px;
+  }
+  .nav-bar .nav__container .nav__logo-buttons .nav__buttons {
+    width: 460px;
+    height: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 44px;
+    margin-bottom: 35px;
+  }
+  .nav-bar .nav__container .nav__search-bar .search-block {
+    height: calc(48px + 32px);
+  }
+  .nav-bar .nav__container .nav__search-bar .search-block .search__input {
+    height: 48px;
+  }
+  .nav-bar .nav__container .nav__search-bar .search-block label {
+    height: 48px;
+  }
+  .nav-bar .nav__container .nav__search-bar .search-block .search__button {
+    height: 36px;
+    width: 102px;
+    top: calc(((48px - 36px) / 2) + 16px);
+  }
+  .nav-bar .nav__container .nav__search-bar .search-block .search__button p {
+    padding-left: 10px;
+  }
+  .nav-bar .nav__container .nav__search-bar .search-block .writing {
+    top: calc(48px + 32px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .index-container {
+    padding: 0 100px;
+  }
+  .index-container .nav-bar {
+    width: 100%;
+  }
+  .index-container .nav-bar .nav__container {
+    width: 100%;
+  }
+  .index-container .nav-bar .nav__container .nav__logo-buttons {
+    width: 100%;
+  }
+  .index-container .nav-bar .nav__container .nav__logo-buttons .nav__logo {
+    padding: unset;
+  }
+  .index-container .nav-bar .nav__container .nav__search-bar {
+    width: 100%;
+  }
+  .index-container .suggestions, .index-container .trendings, .index-container .mis-guifos {
+    width: 100%;
+  }
+  .index-container .suggestions .sug__container, .index-container .suggestions .trend__container, .index-container .suggestions .mg__container, .index-container .trendings .sug__container, .index-container .trendings .trend__container, .index-container .trendings .mg__container, .index-container .mis-guifos .sug__container, .index-container .mis-guifos .trend__container, .index-container .mis-guifos .mg__container {
+    width: 100%;
+  }
+  .index-container .suggestions .sug__container .sug__title, .index-container .suggestions .sug__container .trend__title, .index-container .suggestions .sug__container .mg__title, .index-container .suggestions .trend__container .sug__title, .index-container .suggestions .trend__container .trend__title, .index-container .suggestions .trend__container .mg__title, .index-container .suggestions .mg__container .sug__title, .index-container .suggestions .mg__container .trend__title, .index-container .suggestions .mg__container .mg__title, .index-container .trendings .sug__container .sug__title, .index-container .trendings .sug__container .trend__title, .index-container .trendings .sug__container .mg__title, .index-container .trendings .trend__container .sug__title, .index-container .trendings .trend__container .trend__title, .index-container .trendings .trend__container .mg__title, .index-container .trendings .mg__container .sug__title, .index-container .trendings .mg__container .trend__title, .index-container .trendings .mg__container .mg__title, .index-container .mis-guifos .sug__container .sug__title, .index-container .mis-guifos .sug__container .trend__title, .index-container .mis-guifos .sug__container .mg__title, .index-container .mis-guifos .trend__container .sug__title, .index-container .mis-guifos .trend__container .trend__title, .index-container .mis-guifos .trend__container .mg__title, .index-container .mis-guifos .mg__container .sug__title, .index-container .mis-guifos .mg__container .trend__title, .index-container .mis-guifos .mg__container .mg__title {
+    width: 100%;
+  }
+  .index-container .suggestions .sug__container .sug__results, .index-container .suggestions .trend__container .sug__results, .index-container .suggestions .mg__container .sug__results, .index-container .trendings .sug__container .sug__results, .index-container .trendings .trend__container .sug__results, .index-container .trendings .mg__container .sug__results, .index-container .mis-guifos .sug__container .sug__results, .index-container .mis-guifos .trend__container .sug__results, .index-container .mis-guifos .mg__container .sug__results {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2;
+        grid-template-columns: 2;
+    -ms-grid-rows: 2;
+        grid-template-rows: 2;
+  }
+  .index-container .suggestions .sug__container .sug__results .sug__preview:first-of-type, .index-container .suggestions .trend__container .sug__results .sug__preview:first-of-type, .index-container .suggestions .mg__container .sug__results .sug__preview:first-of-type, .index-container .trendings .sug__container .sug__results .sug__preview:first-of-type, .index-container .trendings .trend__container .sug__results .sug__preview:first-of-type, .index-container .trendings .mg__container .sug__results .sug__preview:first-of-type, .index-container .mis-guifos .sug__container .sug__results .sug__preview:first-of-type, .index-container .mis-guifos .trend__container .sug__results .sug__preview:first-of-type, .index-container .mis-guifos .mg__container .sug__results .sug__preview:first-of-type {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .index-container .suggestions .sug__container .sug__results .sug__preview:nth-of-type(2), .index-container .suggestions .trend__container .sug__results .sug__preview:nth-of-type(2), .index-container .suggestions .mg__container .sug__results .sug__preview:nth-of-type(2), .index-container .trendings .sug__container .sug__results .sug__preview:nth-of-type(2), .index-container .trendings .trend__container .sug__results .sug__preview:nth-of-type(2), .index-container .trendings .mg__container .sug__results .sug__preview:nth-of-type(2), .index-container .mis-guifos .sug__container .sug__results .sug__preview:nth-of-type(2), .index-container .mis-guifos .trend__container .sug__results .sug__preview:nth-of-type(2), .index-container .mis-guifos .mg__container .sug__results .sug__preview:nth-of-type(2) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  .index-container .suggestions .sug__container .sug__results .sug__preview:nth-of-type(3), .index-container .suggestions .trend__container .sug__results .sug__preview:nth-of-type(3), .index-container .suggestions .mg__container .sug__results .sug__preview:nth-of-type(3), .index-container .trendings .sug__container .sug__results .sug__preview:nth-of-type(3), .index-container .trendings .trend__container .sug__results .sug__preview:nth-of-type(3), .index-container .trendings .mg__container .sug__results .sug__preview:nth-of-type(3), .index-container .mis-guifos .sug__container .sug__results .sug__preview:nth-of-type(3), .index-container .mis-guifos .trend__container .sug__results .sug__preview:nth-of-type(3), .index-container .mis-guifos .mg__container .sug__results .sug__preview:nth-of-type(3) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .index-container .suggestions .sug__container .sug__results .sug__preview:last-of-type, .index-container .suggestions .trend__container .sug__results .sug__preview:last-of-type, .index-container .suggestions .mg__container .sug__results .sug__preview:last-of-type, .index-container .trendings .sug__container .sug__results .sug__preview:last-of-type, .index-container .trendings .trend__container .sug__results .sug__preview:last-of-type, .index-container .trendings .mg__container .sug__results .sug__preview:last-of-type, .index-container .mis-guifos .sug__container .sug__results .sug__preview:last-of-type, .index-container .mis-guifos .trend__container .sug__results .sug__preview:last-of-type, .index-container .mis-guifos .mg__container .sug__results .sug__preview:last-of-type {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+}
+
+@media (min-width: 1366px) {
+  .index-container main .suggestions .sug__container .sug__results {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-grid-columns: 4;
+        grid-template-columns: 4;
+    -ms-grid-rows: 1;
+        grid-template-rows: 1;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+  }
+  .index-container main .suggestions .sug__container .sug__results .sug__preview:first-of-type {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .index-container main .suggestions .sug__container .sug__results .sug__preview:nth-of-type(2) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  .index-container main .suggestions .sug__container .sug__results .sug__preview:nth-of-type(3) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+  }
+  .index-container main .suggestions .sug__container .sug__results .sug__preview:last-of-type {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4/5;
+  }
+  .index-container main .trendings .trend__container .trend__results .trend__preview, .index-container main .search-results .sr__container .sr__results .sr {
+    -ms-grid-columns: 4;
+        grid-template-columns: 4;
+    -ms-grid-rows: 3;
+        grid-template-rows: 3;
+    max-height: 304px;
+  }
+  .index-container main .trendings .trend__container .trend__results .trend__preview:first-child, .index-container main .search-results .sr__container .sr__results .sr:first-child {
+    -ms-grid-column: 1;
+    grid-column: 1/1;
+    -ms-grid-row: 1;
+    grid-row: 1/1;
+  }
+  .index-container main .trendings .trend__container .trend__results .trend__preview:nth-child(2), .index-container main .search-results .sr__container .sr__results .sr:nth-child(2) {
+    -ms-grid-column: 2;
+    grid-column: 2/2;
+    -ms-grid-row: 1;
+    grid-row: 1/1;
+  }
+  .index-container main .trendings .trend__container .trend__results .trend__preview:nth-child(3), .index-container main .search-results .sr__container .sr__results .sr:nth-child(3) {
+    -ms-grid-column: 3;
+    grid-column: 3/3;
+    -ms-grid-row: 1;
+    grid-row: 1/1;
+  }
+  .index-container main .trendings .trend__container .trend__results .trend__preview:nth-child(4), .index-container main .search-results .sr__container .sr__results .sr:nth-child(4) {
+    -ms-grid-column: 4;
+    grid-column: 4/4;
+    -ms-grid-row: 1;
+    grid-row: 1/1;
+  }
+  .index-container main .trendings .trend__container .trend__results .trend__preview:nth-child(5), .index-container main .search-results .sr__container .sr__results .sr:nth-child(5) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -ms-grid-row: 2;
+    grid-row: 2/2;
+  }
+  .index-container main .trendings .trend__container .trend__results .trend__preview:nth-child(6), .index-container main .search-results .sr__container .sr__results .sr:nth-child(6) {
+    -ms-grid-column: 3;
+    grid-column: 3/3;
+    -ms-grid-row: 2;
+    grid-row: 2/2;
+  }
+  .index-container main .trendings .trend__container .trend__results .trend__preview:nth-child(7), .index-container main .search-results .sr__container .sr__results .sr:nth-child(7) {
+    -ms-grid-column: 4;
+    grid-column: 4/4;
+    -ms-grid-row: 2;
+    grid-row: 2/2;
+  }
+  .index-container main .trendings .trend__container .trend__results .trend__preview:nth-child(8), .index-container main .search-results .sr__container .sr__results .sr:nth-child(8) {
+    -ms-grid-column: 1;
+    grid-column: 1/1;
+    -ms-grid-row: 3;
+    grid-row: 3/3;
+  }
+  .index-container main .trendings .trend__container .trend__results .trend__preview:nth-child(9), .index-container main .search-results .sr__container .sr__results .sr:nth-child(9) {
+    -ms-grid-column: 2;
+    grid-column: 2/2;
+    -ms-grid-row: 3;
+    grid-row: 3/3;
+  }
+  .index-container main .trendings .trend__container .trend__results .trend__preview:nth-child(10), .index-container main .search-results .sr__container .sr__results .sr:nth-child(10) {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+    -ms-grid-row: 3;
+    grid-row: 3/3;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
