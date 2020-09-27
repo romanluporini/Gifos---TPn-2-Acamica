@@ -1698,6 +1698,7 @@ main .search-results, main #strId {
   min-height: 100vh;
   width: 100%;
   overflow-x: hidden;
+  padding: 0 32px;
 }
 
 main {
@@ -1716,7 +1717,6 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 64px;
   row-gap: 64px;
 }
 
@@ -2399,6 +2399,55 @@ main .crear-gifs .cg__container .copy-download .copy-gif button, main .crear-gif
 
 main .crear-gifs .cg__container .copy-download .copy-gif button:hover, main .crear-gifs .cg__container .copy-download .download-gif button:hover {
   cursor: pointer;
+}
+
+main .mg__saved {
+  width: 100%;
+  clear: both;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+main .mg__saved .gif {
+  width: 288px;
+  max-width: 288px;
+  height: 298px;
+  position: relative;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .mg__saved .gif img {
+  width: 100%;
+  height: 100%;
+}
+
+main .mg__saved .gif:hover {
+  cursor: pointer;
+  border: 1px solid #110038;
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  width: 294px;
+  height: 304px;
+  padding: 2px;
+}
+
+main .mg__saved .gif:hover img {
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  border: 1px dotted #110038;
 }
 
 #screen1:checked ~ .before-starts {
