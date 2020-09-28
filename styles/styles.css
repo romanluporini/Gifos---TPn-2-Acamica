@@ -946,17 +946,14 @@ body {
   padding: 1px;
 }
 
-.nav-bar .nav__container .nav__search-bar .search-block .writing .writing__results .search__suggestions a {
-  text-decoration: none;
-}
-
-.nav-bar .nav__container .nav__search-bar .search-block .writing .writing__results .search__suggestions a p {
+.nav-bar .nav__container .nav__search-bar .search-block .writing .writing__results .search__suggestions p {
   font-family: 'Chakra Petch', sans-serif;
   font-size: 14px;
   color: #110038;
   letter-spacing: 0;
   line-height: 28px;
   padding-left: 16px;
+  z-index: 5;
 }
 
 .nav-bar .nav__container .nav__search-bar .search-block .writing .writing__results .search__suggestions:first-of-type {
