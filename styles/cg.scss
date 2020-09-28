@@ -1,28 +1,27 @@
 @import 'mixins.scss';
 @import 'styles.scss';
+@import 'dark-styles.scss';
 
-.nav__arrow-back{
-    display: block;
-    position: absolute;
-    top: 60px;
-    left: 50px;
-    &:hover{
-        cursor: pointer;
-    }
-    a{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
+body{
+    width: 100%;
+    clear: both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg-site;
 }
+
 
 .index-container{
     min-height: 100vh;
     width: 100%;
-    overflow-x: hidden;
-    padding: 0 32px;
+    padding: 0 64px;
+}
+
+#nav__arrow-back{
+    position: absolute;
+    top: 65px;
+    left: -30px;
 }
 
 main{
@@ -41,7 +40,6 @@ main{
         align-items: center;
         flex-direction: column;
         .cg__container{
-            padding: 3px;
             background: #E6E6E6;
             box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
             display: flex;
@@ -53,6 +51,7 @@ main{
                 display: none;
             }
             .before-starts{
+                padding: 3px;
                 width: 684px;
                 height: 386px;
                 display: flex;
@@ -243,6 +242,9 @@ main{
                     &:hover{
                         cursor: pointer;
                     }
+                    img:nth-of-type(2){
+                        display: none;
+                    }
                 }
                 .btn-cap__text, .btn-stop__text{
                     width: 144px;
@@ -367,10 +369,18 @@ main{
                         width: 100%;
                         height: 100%;
                         background: none;
-                        @include f16-rg(#110038);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 2px;
                         &:hover{
                             cursor: pointer;
                         }    
+                        p{
+                            width: 140px;
+                            line-height: 28px;
+                            @include f16-rg(#110038);
+                        }
                     }    
                     a{
                         @include f16-rg(#110038);

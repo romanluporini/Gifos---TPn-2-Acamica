@@ -30,16 +30,26 @@ var signal=controller.signal;
 var urlGif;
 var urlGifArr = [];
 
-//--------------------listeners-------------------------
-
-window.addEventListener('load', ()=>{
-    linkclickeado=localStorage.getItem('cg-mg');
-    if (linkclickeado == "mg"){
-        document.querySelector('.crear-gifs').style.display="none"
+function theme() {
+    mode=localStorage.getItem('darkMode')
+    if(mode==='true'){
+        document.body.classList.add('dark');
+    }else{
+        document.body.classList.remove('dark');
     }
-});
+}
+theme();
+
+function visitNumber() {    
+    let counter;
+    counter=JSON.parse(localStorage.getItem('visitCounter'));
+    document.getElementById('visit-counter').innerHTML=counter;
+}
+visitNumber();
 
 placeRecordedGifs();//gifs grabados y guardados en el localstorage
+
+//--------------------listeners-------------------------
 
 document.getElementById('activarCamara').addEventListener('click', async (e) => {
     var stream = await navigator.mediaDevices.getUserMedia({

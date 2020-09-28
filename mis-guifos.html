@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/cg.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet">
 
@@ -16,49 +17,46 @@
 
         <input type="checkbox" id="expand-menu">
         <input type="checkbox" id="btn-theme-opt">
-        
-        <nav class="nav-bar">
+
+        <nav class="nav-bar" id="nav">
             <div class="nav__container">
 
                 <div class="nav__title">
-                    <p>¡Bienvenidos/as a Gifos.com!</p>
-                    <p>Donde los gifs están</p>
-                    <p>¡Bienvenidos/as a Gifos.com!------Donde los gifs están//////Número de visitas: <span></span></p>
+                    <p>¡Bienvenidos/as a Gifos.com!------Donde los gifs están//////Número de visitas: <span id="visit-counter"></span></p>
                 </div>
                 <div class="nav__logo-buttons">
                     
-                    <img class="nav__logo day" src="./images/gifOF_logo.png" alt="gifos logo">
-                    <img class="nav__logo night" src="./images/gifOF_logo_dark.png" alt="gifos logo">
-
-
-                        <svg class="nav__arrow-back" width="24px" height="26px" viewBox="0 0 24 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <title>arrow</title>
-                            <desc>Created with Sketch.</desc>
-                            <a href="/index.html">
-                            <defs>
-                                <path d="M80.3333333,88.6666667 L83,88.6666667 L83,91.3333333 L80.3333333,91.3333333 L80.3333333,94 L77.6666667,94 L77.6666667,91.3333333 C71.4444444,91.3333333 65.2222222,91.3333333 59,91.3333333 L59,88.6666667 C65.2222222,88.6666667 71.4444444,88.6666667 77.6666667,88.6666667 L77.6666667,86 L80.3333333,86 L80.3333333,88.6666667 Z M75,83.3333333 L77.6666667,83.3333333 L77.6666667,86 L75,86 L75,83.3333333 Z M72.3333333,80.6666667 L75,80.6666667 L75,83.3333333 L72.3333333,83.3333333 L72.3333333,80.6666667 Z M69.6666667,78 L72.3333333,78 L72.3333333,80.6666667 L69.6666667,80.6666667 L69.6666667,78 Z M75,96.6666667 L75,94 L77.6666667,94 L77.6666667,96.6666667 L75,96.6666667 Z M72.3333333,99.3333333 L72.3333333,96.6666667 L75,96.6666667 L75,99.3333333 L72.3333333,99.3333333 Z M69.6666667,102 L69.6666667,99.3333333 L72.3333333,99.3333333 L72.3333333,102 L69.6666667,102 Z" id="path-1"></path>
-                                <filter x="-4.2%" y="-4.2%" width="108.3%" height="116.7%" filterUnits="objectBoundingBox" id="filter-2">
-                                    <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-                                    <feColorMatrix values="0 0 0 0 0.96823281   0 0 0 0 0.78809464   0 0 0 0 0.952825725  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
-                                </filter>
-                            </defs>
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                <g id="gifOS_captura_7_exito" transform="translate(-60.000000, -77.000000)" fill-rule="nonzero">
-                                    <g id="nav-bar" transform="translate(1.000000, 1.000000)">
-                                        <g id="arrow" transform="translate(71.000000, 90.000000) rotate(-180.000000) translate(-71.000000, -90.000000) ">
-                                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-                                            <use fill="#110038" xlink:href="#path-1"></use>
-                                        </g>
+                    <img class="nav__logo day" src="./images/gifOF_logo.png" alt="gifos logo" id="logo1">
+                    <img class="nav__logo night" src="./images/gifOF_logo_dark.png" alt="gifos logo" id="logo2">
+                    
+                    <svg id="nav__arrow-back" width="24px" height="26px" viewBox="0 0 24 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>arrow</title>
+                        <desc>Created with Sketch.</desc>
+                        <a href="/index.html">
+                        <defs>
+                            <path d="M80.3333333,88.6666667 L83,88.6666667 L83,91.3333333 L80.3333333,91.3333333 L80.3333333,94 L77.6666667,94 L77.6666667,91.3333333 C71.4444444,91.3333333 65.2222222,91.3333333 59,91.3333333 L59,88.6666667 C65.2222222,88.6666667 71.4444444,88.6666667 77.6666667,88.6666667 L77.6666667,86 L80.3333333,86 L80.3333333,88.6666667 Z M75,83.3333333 L77.6666667,83.3333333 L77.6666667,86 L75,86 L75,83.3333333 Z M72.3333333,80.6666667 L75,80.6666667 L75,83.3333333 L72.3333333,83.3333333 L72.3333333,80.6666667 Z M69.6666667,78 L72.3333333,78 L72.3333333,80.6666667 L69.6666667,80.6666667 L69.6666667,78 Z M75,96.6666667 L75,94 L77.6666667,94 L77.6666667,96.6666667 L75,96.6666667 Z M72.3333333,99.3333333 L72.3333333,96.6666667 L75,96.6666667 L75,99.3333333 L72.3333333,99.3333333 Z M69.6666667,102 L69.6666667,99.3333333 L72.3333333,99.3333333 L72.3333333,102 L69.6666667,102 Z" id="path-1"></path>
+                            <filter x="-4.2%" y="-4.2%" width="108.3%" height="116.7%" filterUnits="objectBoundingBox" id="filter-2">
+                                <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                <feColorMatrix values="0 0 0 0 0.96823281   0 0 0 0 0.78809464   0 0 0 0 0.952825725  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+                            </filter>
+                        </defs>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="gifOS_captura_7_exito" transform="translate(-60.000000, -77.000000)" fill-rule="nonzero">
+                                <g id="nav-bar" transform="translate(1.000000, 1.000000)">
+                                    <g id="arrow" transform="translate(71.000000, 90.000000) rotate(-180.000000) translate(-71.000000, -90.000000) ">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                        <use fill="#110038" xlink:href="#path-1"></use>
                                     </g>
                                 </g>
                             </g>
-                            </a>
-                        </svg>
+                        </g>
+                        </a>
+                    </svg>
 
 
                     <div class="nav__buttons">
                         <div class="button">
-                            <a href="/crear-guifos.html"><p>crear gifos</p></a>
+                            <a class="cg-anchor" href="/crear-guifos.html"><p>crear gifos</p></a>
                         </div>
                         
                         <div class="theme">
@@ -86,41 +84,47 @@
                                     </p> 
                                 </div>
 
-                            </label>
-                            <div class="opt-box">
-                                <div class="opt day">
-                                    <label for="btn-theme-day">
-                                        <p> <span>s</span>ailor day</p> 
-                                    </label>
-                                </div>    
-                                <div class="opt night">
-                                    <label for="btn-theme-night">
-                                        <p> <span>s</span>ailor night</p>
-                                    </label>
+                            
+                                <div class="opt-box">
+                                    <div class="opt day">
+                                        <label for="btn-theme-day" id="light-style">
+                                            <p> <span>s</span>ailor day</p> 
+                                        </label>
+                                    </div>    
+                                    <div class="opt night">
+                                        <label for="btn-theme-night" id="dark-style">
+                                            <p> <span>s</span>ailor night</p>
+                                        </label>
+                                    </div>
                                 </div>
-                            </div>
+                            </label>
                         </div>
 
                         <div class="anchor-container">
-                            <a class="anchor" href="/mis-guifos.html"> <label for="mg-tab"><p> <span>m</span>is gifos </p></label></a>
+                            <a class="anchor" href="/mis-guifos.html"> <p> <span>m</span>is gifos </p></a>
                         </div>
                     </div>
                 </div>
 
             </div>
         </nav>
+        
 
 
         <main>
             
             <section class="mis-guifos">
-                
+                    
                 <div class="mg__container">
                     
                     <div class="mg__title">
                         <p>
                             Mis guifos: 
                         </p>
+                    </div>
+
+                    <div class="mg__saved">
+                        
                     </div>
                 </div>
                 
@@ -129,6 +133,6 @@
         </main>
     </div>
         
-
+<script src="mis-guifos.js"></script>
 </body>
 </html>

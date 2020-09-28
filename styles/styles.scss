@@ -3,28 +3,35 @@
     margin: 0;
     box-sizing: border-box;
 }
+input[type="checkbox"], input[type="radio"]{
+    display: none;
+}
 
 
-@import 'mixins.scss';
 $bg-site: whitesmoke;
 $bg-title: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
 $bd-color: #110038;
 
-.index-container{
+@import 'mixins.scss';
+@import 'dark-styles.scss';
+
+body{
     width: 100%;
     clear: both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg-site;
+    overflow-x: hidden;
+}
+.index-container{
+    width: 100%;
+    max-width: 1440px;
+    clear: both;
+    min-height: 100vh;
     padding: 0 16px 16px 16px;
     background-color: $bg-site;
-    overflow: hidden;
-    min-height: 100vh;
 }
-
-input[type="checkbox"],
-input[type="radio"]
-{
-    display: none;
-}
-
 
 
 .nav-bar{
@@ -55,9 +62,7 @@ input[type="radio"]
                 padding-left: 8px;
                 p{
                     @include f12-rg;
-                    &:last-child{
-                        display: none;
-                    }
+                    padding-left: 8px;
                 }
             }
             
@@ -76,23 +81,11 @@ input[type="radio"]
                 }
 
                 .nav__arrow-back{
-                    display: block;
                     position: absolute;
-                    top: 60px;
-                    left: -32px;
+                    top: 65px;
+                    left: -30px;
                     display: none;
-                    &:hover{
-                        cursor: pointer;
-                    }
-                    a{
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                    }
                 }
-
                 .nav__buttons{
                     width: 100%;
                     height: fit-content;
@@ -118,10 +111,12 @@ input[type="radio"]
                             line-height: 28px;
                             border: none;
                             outline: none;
+                            width: 100%;
+                            height: 100%;
                             p{
                                 width: 100%;
                                 height: 100%; 
-                                padding-left: 16px;                             
+                                text-align: center;                            
                             }
                         }
                         &:hover, &:active{
@@ -146,8 +141,6 @@ input[type="radio"]
                             position: absolute;
                             top: 0;
                             left: 0;
-                            width: 100%;
-                            height: 100%;
                             display: flex;
                             flex-direction: row;
                             width: 100%;
@@ -169,13 +162,13 @@ input[type="radio"]
                                 width: calc(100% - 36px);
                                 height: 36px;
                                 padding: 2px;
+                                text-align: center;
                                 p{
                                     text-transform: capitalize;
                                     width: 100%;
                                     height: 100%;
                                     @include f16-rg;
                                     line-height: 28px;
-                                    padding-left: 16px;
                                 }
                             }
                             
@@ -391,7 +384,7 @@ input[type="radio"]
                             @include f16-rg(#8F8F8F);
                             text-transform: capitalize;
                         }
-                        img:nth-child(2){
+                        img:nth-child(2), img:nth-of-type(3){
                             display: none;
                         }
                         &:active{
@@ -470,9 +463,6 @@ input[type="radio"]
             }
         }
 }
-  
-
-
 main{
     width: 100%;
     clear: both;
@@ -554,15 +544,23 @@ main{
                                 height: 34px;
                                 background: #4180F6;
                                 border: 1px solid #4C2F99;
+                                outline: none;
                                 box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
-                                font-family: 'Chakra Petch', sans-serif;
-                                font-size: 14px;
-                                color: #FFFFFF;
-                                letter-spacing: 0;
-                                text-align: center;
-                                line-height: 18px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                padding: 3px;    
+                                p{
+                                    @include f14-rg(#fff);
+                                    letter-spacing: 0;    
+                                    width: 100%;
+                                    line-height: 26px;
+                                }
                                 &:hover{
                                     cursor: pointer;
+                                    p{
+                                        border: 1px dotted #110038;
+                                    }                        
                                 }
                             }
                             .title + img{
@@ -683,6 +681,7 @@ main{
                             text-align: center;
                             @include f14-b;
                             line-height: 32px;   
+                            overflow: hidden;
                         }
                         &:hover{
                             cursor: pointer;
@@ -714,16 +713,6 @@ main{
         }
 }
 
-#mg-tab:checked ~ .index-container main .mis-guifos{
-    display: block;
-}
-
-#mg-tab:checked ~ .index-container main .suggestions,
-#mg-tab:checked ~ .index-container main .trendings{
-    display: none;
-}
-
-
 #btn-theme-opt:checked ~ .nav-bar .nav__logo-buttons .nav__buttons .theme{
     .opt-box{
         transition-property: clip-path;
@@ -736,141 +725,9 @@ main{
     }
 } 
 
-
-#btn-theme-night:checked ~ .index-container{
-
-    $bg-site: #110038;
-    background-color: $bg-site;
-    transition-property: all;
-    transition-timing-function: ease-in-out;
-    transition: 1s;
-
-    .nav-bar{
-
-        .nav__logo-buttons{
-            img{
-                &:nth-of-type(1){
-                    display: none;
-                }
-                &:nth-of-type(2){
-                    display: block;
-                }
-            }
-        
-        
-            .nav__buttons{
-                .button, .theme label .text, .theme label .arrow{
-                    background: #EE3EFE;
-                    &:hover, &:active{
-                        background: #CE36DB;
-                        box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
-                    }
-                    p{
-                        color: #FFFFFF;
-                    } 
-                }
-                .theme {
-                    label:hover .text, label:hover .arrow, label:active .text, label:active .arrow{
-                        background: #CE36DB;
-                        box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
-                    }
-                    .opt-box{
-                        background: #B4B4B4;
-                        box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
-                    } 
-                    .opt.day{
-                        background: #CCCCCC;
-                        border: 1px solid #808080;
-                        box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
-                        p{
-                            @include f16-rg(#110038);
-                            span{
-                                border: none;
-                            }
-                        }
-                    } 
-                    .opt.night{
-                        background: #2E32FB;
-                        border: 1px solid rgba(51,53,143,0.20);
-                        box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
-                        p{
-                            @include f16-rg(#fff);
-                            span{
-                                border-bottom: 1px solid #fff;
-                            }
-                        }
-                    }
-                    #back-copy{
-                        fill: #fff;
-                    }
-                    #Combined-Shape{
-                        fill: #110038;
-                    }
-                }
-                .anchor-container p{
-                    @include f16-rg(#FFF);
-                    &:hover{
-                        border: 1px dotted #fff;
-                        span{
-                            border-bottom: 1px solid #fff;
-                        }
-                    }
-                    &:active{
-                        border: none;
-                        @include f16-rg(#B4B4B4);
-                        span{
-                            border-bottom: 1px solid #B4B4B4;
-                        }
-                    } 
-                }
-            }
-        }
-        .nav__search-bar{
-            background: #B4B4B4;
-            box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
-            .writing{
-                background: #B4B4B4;
-                box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
-            }
-            .search-block .writing .search__suggestions:nth-of-type(1){
-                background: #B4B4B4;
-                box-shadow: inset -1px -1px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
-            }
-            .search-block .writing .search__suggestions:nth-of-type(2),
-            .search-block .writing .search__suggestions:nth-of-type(3){
-                background: #CCCCCC;
-                border: 1px solid #808080;
-                box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
-            }
-        } 
-    }
-
-    .nav-bar .nav__container .nav__title,
-    .nav-bar .nav__container .nav__search-bar .search__title,
-    main .suggestions .sug__container .sug__results .sug__preview .title,
-    main .trendings .trend__container .trend__results .trend__preview .bottom-tags{
-        $bg-title: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
-        background-image: $bg-title;
-    }
-
-    main .suggestions .sug__container .sug__preview, main .trendings .trend__container .trend__preview:hover{
-        background: #B4B4B4;
-        box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
-    }
-}
-
-
 @media (min-width:576px){
     .nav-bar .nav__container{
         width: calc(100% - 32px);
-        .nav__title{
-            p:nth-of-type(1), p:nth-of-type(2){
-                display: none;
-            }
-            p:nth-of-type(3){
-                display: block;
-            }
-        }
         .nav__logo-buttons{
             img{
                 float: left;
@@ -920,7 +777,6 @@ main{
         } 
     }
 }
-
 
 @media (min-width:650px){
 
@@ -1031,7 +887,6 @@ main{
     } 
 }
 
-
 @media (min-width: 768px){
     .nav-bar .nav__container{
         .nav__logo-buttons{
@@ -1075,7 +930,6 @@ main{
         } 
     } 
 }
-
 
 @media (min-width:1024px){
     .index-container{
@@ -1128,7 +982,6 @@ main{
     } 
 
 }
-
 
 @media (min-width:1366px){
     .index-container{

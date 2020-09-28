@@ -1,42 +1,42 @@
-//deja el theme seleccionado la última vez por el usuario
+sailorDay=document.getElementById('light-style');
+sailorNight=document.getElementById('dark-style');
+sailorDay.addEventListener('click', ()=>{
+    localStorage.setItem('darkMode', 'false');
+    theme();
+})
+sailorNight.addEventListener('click', ()=>{
+    localStorage.setItem('darkMode', 'true');
+    theme();
+})
+function theme() {
+    mode=localStorage.getItem('darkMode')
+    if(mode==='true'){
+        document.body.classList.add('dark');
+    }else{
+        document.body.classList.remove('dark');
+    }
+}
+theme();
+
+
+function visitNumber() {    
+    let counter;
+    counter=JSON.parse(localStorage.getItem('visitCounter'));
+    if(counter!==null){
+        counter++;
+        document.getElementById('visit-counter').innerHTML=counter;
+        localStorage.setItem('visitCounter' , JSON.stringify(counter));
+    }else{
+        counter=1;
+        document.getElementById('visit-counter').innerHTML=counter;
+        localStorage.setItem('visitCounter' , JSON.stringify(counter));
+    }
+}
 window.addEventListener('load', ()=>{
     console.log('me recargue XD');
-
-    currentTheme=localStorage.getItem('theme');
-
-    if (currentTheme == 'day'){
-        document.getElementById('index-container').style.backgroundColor="whitesmoke"
-        document.getElementById('logo1').style.display="block"
-        document.getElementById('logo2').style.display="none"
-
-    } else {
-        document.getElementById('index-container').style.backgroundColor="#110038"
-        document.getElementById('logo2').style.display="block"
-        document.getElementById('logo1').style.display="none"
-    }
-
+    visitNumber();
+    theme();
 })
-document.getElementById('theme-day-light').addEventListener('click', ()=>{
-    localStorage.setItem('theme', 'day');
-    document.getElementById('index-container').style.backgroundColor="whitesmoke"
-    document.getElementById('logo1').style.display="block"
-    document.getElementById('logo2').style.display="none"
-
-})
-document.getElementById('theme-night').addEventListener('click', ()=>{
-    localStorage.setItem('theme', 'night');
-    document.getElementById('index-container').style.backgroundColor="#110038"
-    document.getElementById('logo2').style.display="block"
-    document.getElementById('logo1').style.display="none"
-
-})
-document.querySelector('.anchor').addEventListener('click', ()=>{
-    localStorage.setItem('cg-mg', 'mg');
-})
-document.querySelector('.button').addEventListener('click', ()=>{
-    localStorage.setItem('cg-mg', 'cg');
-})
-
 
 //los hashtags
 
@@ -435,10 +435,13 @@ document.getElementById('ver-mas1').addEventListener('click', ()=>{
 
             for (i = 0; i < 10; i++) {
                 var ctrlId = `sr-${i}`;
-                if (document.getElementById(ctrlId))
+                var tagId=`tag-${i+10}`
+                if (document.getElementById(ctrlId) && document.getElementById(tagId))
                 {
                     var ctrlVal = gifsVerMas.data[i].id
                     document.getElementById(ctrlId).setAttribute('src', 'https://media.giphy.com/media/' + `${ctrlVal}` + '/giphy.gif');
+                    var tagVal=gifsVerMas.data[i].title
+                    document.getElementById(tagId).innerHTML=tagVal;
                 }
             }
 
@@ -612,3 +615,18 @@ function insertarTendencias(){
     document.getElementById('trend-img10').setAttribute('src', 'https://media.giphy.com/media/' + `${srcTrend9}` + '/giphy.gif');
 }        
 insertarTendencias();
+
+
+function hoverTags() {
+    let objTrend=JSON.parse(localStorage.getItem('gifsTendencia'));
+    for (i = 0; i < 10; i++) {
+        var ctrlId = 'tag-' + i;
+        if (document.getElementById(ctrlId))
+        {
+            var ctrlVal = objTrend.data[i].title
+            document.getElementById(ctrlId).innerHTML=ctrlVal;
+        }
+    }
+}
+
+hoverTags();

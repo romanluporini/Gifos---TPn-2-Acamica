@@ -1,0 +1,213 @@
+@import 'mixins.scss';
+
+
+.dark{
+        background-color: #110038;
+        transition-property: all;
+        transition-timing-function: ease-in-out;
+        transition: .3s;
+    .index-container{
+        background-color: #110038;
+        transition-property: all;
+        transition-timing-function: ease-in-out;
+        transition: .3s;
+        .nav-bar{
+            .nav__logo-buttons{
+                    #logo2{
+                        display: block;
+                    }
+                    #logo1{
+                        display: none;
+                    }
+                .nav__buttons{
+                    .button, .theme label .text, .theme label .arrow{
+                        background: #EE3EFE;
+                        &:hover, &:active{
+                            background: #CE36DB;
+                            box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+                        }
+                        p{
+                            color: #FFFFFF;
+                        } 
+                    }
+                    .theme{
+                        label:hover .text, label:hover .arrow, label:active .text, label:active .arrow{
+                            background: #CE36DB;
+                            box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+                        }
+                        label .opt-box{
+                            background: #B4B4B4;
+                            box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+                            .opt.day{
+                                background: #CCCCCC;
+                                border: 1px solid #808080;
+                                box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+                                p{
+                                    @include f16-rg(#110038);
+                                    span{
+                                        border: none;
+                                    }
+                                }
+                            } 
+                            .opt.night{
+                                background: #2E32FB;
+                                border: 1px solid rgba(51,53,143,0.20);
+                                box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+                                p{
+                                    @include f16-rg(#fff);
+                                    span{
+                                        border-bottom: 1px solid #fff;
+                                    }
+                                }
+                            } 
+                        }
+                        #back-copy{
+                            fill: #fff;
+                        }
+                        #Combined-Shape{
+                            fill: #110038;
+                        }
+                    }
+                    .anchor-container p{
+                        @include f16-rg(#FFF);
+                        &:hover{
+                            border: 1px dotted #fff;
+                            span{
+                                border-bottom: 1px solid #fff;
+                            }
+                        }
+                        &:active{
+                            border: none;
+                            @include f16-rg(#B4B4B4);
+                            span{
+                                border-bottom: 1px solid #B4B4B4;
+                            }
+                        } 
+                    }
+                }
+            }
+            .nav__search-bar{
+                background: #B4B4B4;
+                box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+                .search-block .search__input:focus ~ .search__button{
+                    background: #EE3EFE;
+                    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+                    p{
+                        color: #fff;
+                    }
+                    img:nth-of-type(3){
+                        display:block;
+                    }
+                    img:nth-of-type(2){
+                        display: none;
+                    }
+                }
+                .search-block .search__button:active{
+                    background: #CE36DB;
+                    p{
+                        color: #fff;
+                    }
+                    img:nth-of-type(3){
+                        display:block;
+                    }
+                    img:nth-of-type(2){
+                        display: none;
+                    }
+                }
+                .writing{
+                    background: #B4B4B4;
+                    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+                }
+                .search-block .writing .search__suggestions:nth-of-type(1){
+                    background: #B4B4B4;
+                    box-shadow: inset -1px -1px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+                }
+                .search-block .writing .search__suggestions:nth-of-type(2),
+                .search-block .writing .search__suggestions:nth-of-type(3){
+                    background: #CCCCCC;
+                    border: 1px solid #808080;
+                    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+                }
+            } 
+        }
+
+        .nav-bar .nav__container .nav__title,
+        .nav-bar .nav__container .nav__search-bar .search__title,
+        main .suggestions .sug__container .sug__results .sug__preview .title,
+        main .trendings .trend__container .trend__results .trend__preview .bottom-tags,
+        main .cg__container .cg__title{
+            background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+        }
+
+        main .suggestions .sug__container .sug__preview, 
+        main .trendings .trend__container .trend__preview:hover,
+        main .cg__container,
+        main .cg__container .before-starts,
+        main .mg__saved .gif:hover{
+            background: #B4B4B4;
+            box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+        }
+
+        main .suggestions .sug__container .sug__preview button{
+            background: #2E32FB;
+            border: 1px solid #4C2F99;
+            box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+            &:hover{
+                background: #2629CC;
+            }
+        }
+
+        main .cg__container{
+            .before-starts .buttons,
+            .camera-active .btn-box{
+                .cap-box .btn-cap__img,
+                .cap-box .btn-cap__text,
+                .btn-subir,
+                .btn-listo,
+                .start{
+                    background: #EE3EFE;
+                    border: 1px solid #110038;
+                    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+                    button, p, a{
+                        color: #fff;
+                    }
+                }
+                .btn-cap__img img:nth-of-type(1){
+                    display: none;
+                }
+                .btn-cap__img img:nth-of-type(2){
+                    display: block;              
+                }
+            } 
+            .before-starts .buttons .cancel,
+            .camera-active .btn-box .btn-cancelarUp,
+            .camera-active .copy-download .copy-gif,
+            .camera-active .copy-download .download-gif
+            {
+                background: #2E32FB;
+                border: 1px solid #4C2F99;
+                box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+                button, p{
+                    color: #fff;
+                }
+                &:hover{
+                    background: #2629CC;
+                }
+            }
+            .camera-active .btn-box .btn-repetir{
+                background: #110038;
+                border: 1px solid #B4B4B4;
+                box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+                button p{
+                    color: #fff;
+                }
+                &:active button p{
+                    border: 1px dotted #FFFFFF;
+                }
+            }
+            
+        }
+    
+    }
+
+}

@@ -5,37 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles.css" id="light-styles">
+    <!-- <link rel="stylesheet" href="./styles/dark-styles.css" id="dark-styles"> -->
 
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet">
     
     <title>Gifos</title>
 </head>
 <body>
-    <!-- <input type="radio" name="t" id="btn-theme-day" checked>
-    <input type="radio" name="t" id="btn-theme-night" > -->
-
-    <input type="radio" name="tab" id="mg-tab">
-    <input type="radio" name="tab" id="cg-tab">
 
     <div class="index-container" id="index-container">
 
-        <input type="checkbox" id="expand-menu">
         <input type="checkbox" id="btn-theme-opt">
 
         <nav class="nav-bar" id="nav">
             <div class="nav__container">
 
                 <div class="nav__title">
-                    <p>¡Bienvenidos/as a Gifos.com!</p>
-                    <p>Donde los gifs están</p>
-                    <p>¡Bienvenidos/as a Gifos.com!------Donde los gifs están//////Número de visitas: <span></span></p>
+                    <p>¡Bienvenidos/as a Gifos.com!------Donde los gifs están//////Número de visitas: <span id="visit-counter"></span></p>
                 </div>
                 <div class="nav__logo-buttons">
                     
                     <img class="nav__logo day" src="./images/gifOF_logo.png" alt="gifos logo" id="logo1">
                     <img class="nav__logo night" src="./images/gifOF_logo_dark.png" alt="gifos logo" id="logo2">
-                    
+
                     <svg class="nav__arrow-back" width="24px" height="26px" viewBox="0 0 24 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>arrow</title>
                         <desc>Created with Sketch.</desc>
@@ -59,7 +52,6 @@
                         </g>
                         </a>
                     </svg>
-
 
                     <div class="nav__buttons">
                         <div class="button">
@@ -94,12 +86,12 @@
                             
                                 <div class="opt-box">
                                     <div class="opt day">
-                                        <label for="btn-theme-day" id="theme-day-light">
+                                        <label id="light-style">
                                             <p> <span>s</span>ailor day</p> 
                                         </label>
                                     </div>    
                                     <div class="opt night">
-                                        <label for="btn-theme-night" id="theme-night">
+                                        <label id="dark-style">
                                             <p> <span>s</span>ailor night</p>
                                         </label>
                                     </div>
@@ -108,7 +100,7 @@
                         </div>
 
                         <div class="anchor-container">
-                            <a class="anchor" href="/crear-guifos.html"> <p> <span>m</span>is gifos </p></a>
+                            <a class="anchor" href="/mis-guifos.html"> <p> <span>m</span>is gifos </p></a>
                         </div>
                     </div>
                 </div>
@@ -121,10 +113,10 @@
                         <form action="GET">
                             <input type="text" class="search__input" placeholder="Busca tus gifs" required id="sinput-m" name="input-buscador" autocomplete="off">
                             <input type="text" class="search__input" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" required id="sinput-d" name="input-buscador" autocomplete="off">
-                            <!--<label for="expand-menu"></label>-->
                             <button type="button" class="search__button" >
                                 <img src="/images/lupa_inactive.svg" alt="lupa-inactive">
                                 <img src="/images/lupa.svg" alt="lupa-active">
+                                <img src="/images/lupa_light.svg" alt="lupa-light">
                                 <p id="search-button">buscar</p>
                             </button>
                         
@@ -152,9 +144,8 @@
                 </div>
             </div>
         </nav>
-
+        
         <main>
-
             <section class="suggestions" id="suggested">
                 <div class="sug__container">
                     
@@ -168,7 +159,7 @@
                                 <img src="/images/button3.svg" alt="btn-x">
                             </div>
                             <img src="" alt="sug-img1" id="sug-img1">
-                            <button type="submit" id="ver-mas1">Ver más...</button>
+                            <button type="submit"><p id="ver-mas1">Ver más...</p></button>
                         </div>
                         <div class="sug__preview">
                             <div class="title" >
@@ -176,7 +167,7 @@
                                 <img src="/images/button3.svg" alt="btn-x">
                             </div>
                             <img src="" alt="sug-img2" id="sug-img2">
-                            <button type="submit" id="ver-mas2">Ver más...</button>
+                            <button type="submit"><p id="ver-mas2">Ver más...</p></button>
                         </div>
                         <div class="sug__preview">
                             <div class="title" >
@@ -184,7 +175,7 @@
                                 <img src="/images/button3.svg" alt="btn-x">
                             </div>
                             <img src="" alt="sug-img3" id="sug-img3">
-                            <button type="submit" id="ver-mas3">Ver más...</button>
+                            <button type="submit"><p id="ver-mas3">Ver más...</p></button>
                         </div>
                         <div class="sug__preview">
                             <div class="title" >
@@ -192,12 +183,11 @@
                                 <img src="/images/button3.svg" alt="btn-x">
                             </div>
                             <img src="" alt="sug-img4"  id="sug-img4">
-                            <button type="submit" id="ver-mas4">Ver más...</button>
+                            <button type="submit"><p id="ver-mas4">Ver más...</p></button>
                         </div>
                     </div>
                 </div>
             </section>
-            
             <section class="trendings trend--day" id="trends">
                 <div class="trend__container">
                     <div class="trend__title">    
@@ -205,20 +195,19 @@
                     </div>
                     <div class="trend__results">
                         
-                        <div class="trend__preview"><img src="" alt="trend-img-1" id="trend-img1"><div class="bottom-tags">#hashtag</div></div>
-                        <div class="trend__preview"><img src="" alt="trend-img-2" id="trend-img2"><div class="bottom-tags">#hashtag</div></div>
-                        <div class="trend__preview"><img src="" alt="trend-img-3" id="trend-img3"><div class="bottom-tags">#hashtag</div></div>
-                        <div class="trend__preview"><img src="" alt="trend-img-4" id="trend-img4"><div class="bottom-tags">#hashtag</div></div>
-                        <div class="trend__preview"><img src="" alt="trend-img-5" id="trend-img5"><div class="bottom-tags">#hashtag</div></div>
-                        <div class="trend__preview"><img src="" alt="trend-img-6" id="trend-img6"><div class="bottom-tags">#hashtag</div></div>
-                        <div class="trend__preview"><img src="" alt="trend-img-7" id="trend-img7"><div class="bottom-tags">#hashtag</div></div>
-                        <div class="trend__preview"><img src="" alt="trend-img-8" id="trend-img8"><div class="bottom-tags">#hashtag</div></div>
-                        <div class="trend__preview"><img src="" alt="trend-img-9" id="trend-img9"><div class="bottom-tags">#hashtag</div></div>
-                        <div class="trend__preview"><img src="" alt="trend-img-10" id="trend-img10"><div class="bottom-tags">#hashtag</div></div>
+                        <div class="trend__preview"><img src="" alt="trend-img-1" id="trend-img1"><div class="bottom-tags" id="tag-0"></div></div>
+                        <div class="trend__preview"><img src="" alt="trend-img-2" id="trend-img2"><div class="bottom-tags" id="tag-1"></div></div>
+                        <div class="trend__preview"><img src="" alt="trend-img-3" id="trend-img3"><div class="bottom-tags" id="tag-2"></div></div>
+                        <div class="trend__preview"><img src="" alt="trend-img-4" id="trend-img4"><div class="bottom-tags" id="tag-3"></div></div>
+                        <div class="trend__preview"><img src="" alt="trend-img-5" id="trend-img5"><div class="bottom-tags" id="tag-4"></div></div>
+                        <div class="trend__preview"><img src="" alt="trend-img-6" id="trend-img6"><div class="bottom-tags" id="tag-5"></div></div>
+                        <div class="trend__preview"><img src="" alt="trend-img-7" id="trend-img7"><div class="bottom-tags" id="tag-6"></div></div>
+                        <div class="trend__preview"><img src="" alt="trend-img-8" id="trend-img8"><div class="bottom-tags" id="tag-7"></div></div>
+                        <div class="trend__preview"><img src="" alt="trend-img-9" id="trend-img9"><div class="bottom-tags" id="tag-8"></div></div>
+                        <div class="trend__preview"><img src="" alt="trend-img-10" id="trend-img10"><div class="bottom-tags" id="tag-9"></div></div>
                     </div>
                 </div>
             </section>
-            
             <section class="search-results" id="results-found">
 
                 <div class="sr__container">
@@ -236,23 +225,22 @@
                     </div>
                     <div class="sr__results">
 
-                        <div class="sr"><img src="" alt="" id="sr-0"><div class="bottom-tags">#hashtag</div></div>
-                        <div class="sr"><img src="" alt="" id="sr-1"><div class="bottom-tags">#hashtag</div></div>
-                        <div class="sr"><img src="" alt="" id="sr-2"><div class="bottom-tags">#hashtag</div></div>
-                        <div class="sr"><img src="" alt="" id="sr-3"><div class="bottom-tags">#hashtag</div></div>
-                        <div class="sr"><img src="" alt="" id="sr-4"><div class="bottom-tags">#hashtag</div></div>
-                        <div class="sr"><img src="" alt="" id="sr-5"><div class="bottom-tags">#hashtag</div></div>
-                        <div class="sr"><img src="" alt="" id="sr-6"><div class="bottom-tags">#hashtag</div></div>
-                        <div class="sr"><img src="" alt="" id="sr-7"><div class="bottom-tags">#hashtag</div></div>
-                        <div class="sr"><img src="" alt="" id="sr-8"><div class="bottom-tags">#hashtag</div></div>
-                        <div class="sr"><img src="" alt="" id="sr-9"><div class="bottom-tags">#hashtag</div></div>
+                        <div class="sr"><img src="" alt="" id="sr-0"><div class="bottom-tags" id="tag-10"></div></div>
+                        <div class="sr"><img src="" alt="" id="sr-1"><div class="bottom-tags" id="tag-11"></div></div>
+                        <div class="sr"><img src="" alt="" id="sr-2"><div class="bottom-tags" id="tag-12"></div></div>
+                        <div class="sr"><img src="" alt="" id="sr-3"><div class="bottom-tags" id="tag-13"></div></div>
+                        <div class="sr"><img src="" alt="" id="sr-4"><div class="bottom-tags" id="tag-14"></div></div>
+                        <div class="sr"><img src="" alt="" id="sr-5"><div class="bottom-tags" id="tag-15"></div></div>
+                        <div class="sr"><img src="" alt="" id="sr-6"><div class="bottom-tags" id="tag-16"></div></div>
+                        <div class="sr"><img src="" alt="" id="sr-7"><div class="bottom-tags" id="tag-17"></div></div>
+                        <div class="sr"><img src="" alt="" id="sr-8"><div class="bottom-tags" id="tag-18"></div></div>
+                        <div class="sr"><img src="" alt="" id="sr-9"><div class="bottom-tags" id="tag-19"></div></div>
                         
                     </div>
 
                 </div>
 
             </section>
-
             <section class="sug-trend-results" id="strId">
                 
                 <div class="str__container">
@@ -264,28 +252,25 @@
                     </div>
 
                     <div class="str__results">
-                        <div class="str__preview"><img src="" alt="str-img-1" id="str-img1"><div class="bottom-tags">#hashtag</div></div>
-                        <div class="str__preview"><img src="" alt="str-img-1" id="str-img2"><div class="bottom-tags">#hashtag</div></div>
-                        <div class="str__preview"><img src="" alt="str-img-1" id="str-img3"><div class="bottom-tags">#hashtag</div></div>
-                        <div class="str__preview"><img src="" alt="str-img-1" id="str-img4"><div class="bottom-tags">#hashtag</div></div>
-                        <div class="str__preview"><img src="" alt="str-img-1" id="str-img5"><div class="bottom-tags">#hashtag</div></div>
-                        <div class="str__preview"><img src="" alt="str-img-1" id="str-img6"><div class="bottom-tags">#hashtag</div></div>
-                        <div class="str__preview"><img src="" alt="str-img-1" id="str-img7"><div class="bottom-tags">#hashtag</div></div>
-                        <div class="str__preview"><img src="" alt="str-img-1" id="str-img8"><div class="bottom-tags">#hashtag</div></div>
-                        <div class="str__preview"><img src="" alt="str-img-1" id="str-img9"><div class="bottom-tags">#hashtag</div></div>
-                        <div class="str__preview"><img src="" alt="str-img-1" id="str-img10"><div class="bottom-tags">#hashtag</div></div>
+                        <div class="str__preview"><img src="" alt="str-img-1" id="str-img1"><div class="bottom-tags"></div></div>
+                        <div class="str__preview"><img src="" alt="str-img-1" id="str-img2"><div class="bottom-tags"></div></div>
+                        <div class="str__preview"><img src="" alt="str-img-1" id="str-img3"><div class="bottom-tags"></div></div>
+                        <div class="str__preview"><img src="" alt="str-img-1" id="str-img4"><div class="bottom-tags"></div></div>
+                        <div class="str__preview"><img src="" alt="str-img-1" id="str-img5"><div class="bottom-tags"></div></div>
+                        <div class="str__preview"><img src="" alt="str-img-1" id="str-img6"><div class="bottom-tags"></div></div>
+                        <div class="str__preview"><img src="" alt="str-img-1" id="str-img7"><div class="bottom-tags"></div></div>
+                        <div class="str__preview"><img src="" alt="str-img-1" id="str-img8"><div class="bottom-tags"></div></div>
+                        <div class="str__preview"><img src="" alt="str-img-1" id="str-img9"><div class="bottom-tags"></div></div>
+                        <div class="str__preview"><img src="" alt="str-img-1" id="str-img10"><div class="bottom-tags"></div></div>
                     </div>
                 </div>
                 
             </section>
-
-
-
         </main>
 
     </div>
 
-    <script src="main.js"></script>
-    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="index.js"></script>
+    <!-- <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script> -->
 </body>
 </html>
