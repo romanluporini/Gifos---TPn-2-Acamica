@@ -2,15 +2,9 @@
 
 
 .dark{
-        background-color: #110038;
-        transition-property: all;
-        transition-timing-function: ease-in-out;
-        transition: .3s;
+    background-color: #110038;
     .index-container{
         background-color: #110038;
-        transition-property: all;
-        transition-timing-function: ease-in-out;
-        transition: .3s;
         .nav-bar{
             .nav__logo-buttons{
                     #logo2{
@@ -94,24 +88,26 @@
                     box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
                     p{
                         color: #fff;
-                    }
-                    img:nth-of-type(3){
-                        display:block;
-                    }
-                    img:nth-of-type(2){
-                        display: none;
+                        img:nth-of-type(3){
+                            display:inline-block;
+                        }
+                        img:nth-of-type(2){
+                            display: none;
+                        }
                     }
                 }
                 .search-block .search__button:active{
                     background: #CE36DB;
+                    padding: 3px;
                     p{
                         color: #fff;
-                    }
-                    img:nth-of-type(3){
-                        display:block;
-                    }
-                    img:nth-of-type(2){
-                        display: none;
+                        img:nth-of-type(3){
+                            display:inline-block;
+                            margin-right: 4px;
+                        }
+                        img:nth-of-type(2){
+                            display: none;
+                        }
                     }
                 }
                 .writing{
@@ -135,12 +131,14 @@
         .nav-bar .nav__container .nav__search-bar .search__title,
         main .suggestions .sug__container .sug__results .sug__preview .title,
         main .trendings .trend__container .trend__results .trend__preview .bottom-tags,
-        main .cg__container .cg__title{
+        main .cg__container .cg__title,
+        main .search-results .sr__container .sr__results .sr .bottom-tags{
             background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
         }
 
         main .suggestions .sug__container .sug__preview, 
         main .trendings .trend__container .trend__preview:hover,
+        main .search-results .sr__container .sr__results .sr:hover,
         main .cg__container,
         main .cg__container .before-starts,
         main .mg__saved .gif:hover{

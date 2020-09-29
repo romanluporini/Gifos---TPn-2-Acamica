@@ -1,21 +1,9 @@
 .dark {
   background-color: #110038;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
-  -webkit-transition: .3s;
-  transition: .3s;
 }
 
 .dark .index-container {
   background-color: #110038;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
-  -webkit-transition: .3s;
-  transition: .3s;
 }
 
 .dark .index-container .nav-bar .nav__logo-buttons #logo2 {
@@ -139,27 +127,29 @@
   color: #fff;
 }
 
-.dark .index-container .nav-bar .nav__search-bar .search-block .search__input:focus ~ .search__button img:nth-of-type(3) {
-  display: block;
+.dark .index-container .nav-bar .nav__search-bar .search-block .search__input:focus ~ .search__button p img:nth-of-type(3) {
+  display: inline-block;
 }
 
-.dark .index-container .nav-bar .nav__search-bar .search-block .search__input:focus ~ .search__button img:nth-of-type(2) {
+.dark .index-container .nav-bar .nav__search-bar .search-block .search__input:focus ~ .search__button p img:nth-of-type(2) {
   display: none;
 }
 
 .dark .index-container .nav-bar .nav__search-bar .search-block .search__button:active {
   background: #CE36DB;
+  padding: 3px;
 }
 
 .dark .index-container .nav-bar .nav__search-bar .search-block .search__button:active p {
   color: #fff;
 }
 
-.dark .index-container .nav-bar .nav__search-bar .search-block .search__button:active img:nth-of-type(3) {
-  display: block;
+.dark .index-container .nav-bar .nav__search-bar .search-block .search__button:active p img:nth-of-type(3) {
+  display: inline-block;
+  margin-right: 4px;
 }
 
-.dark .index-container .nav-bar .nav__search-bar .search-block .search__button:active img:nth-of-type(2) {
+.dark .index-container .nav-bar .nav__search-bar .search-block .search__button:active p img:nth-of-type(2) {
   display: none;
 }
 
@@ -187,13 +177,15 @@
 .dark .index-container .nav-bar .nav__container .nav__search-bar .search__title,
 .dark .index-container main .suggestions .sug__container .sug__results .sug__preview .title,
 .dark .index-container main .trendings .trend__container .trend__results .trend__preview .bottom-tags,
-.dark .index-container main .cg__container .cg__title {
+.dark .index-container main .cg__container .cg__title,
+.dark .index-container main .search-results .sr__container .sr__results .sr .bottom-tags {
   background-image: -webkit-gradient(linear, right top, left top, from(#EE3EFE), to(#2E32FB));
   background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
 }
 
 .dark .index-container main .suggestions .sug__container .sug__preview,
 .dark .index-container main .trendings .trend__container .trend__preview:hover,
+.dark .index-container main .search-results .sr__container .sr__results .sr:hover,
 .dark .index-container main .cg__container,
 .dark .index-container main .cg__container .before-starts,
 .dark .index-container main .mg__saved .gif:hover {

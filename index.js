@@ -31,19 +31,20 @@ verMasButton4=document.getElementById('ver-mas4');
 
 var search;// lo que se escriba en el input de búsqueda
 var srcSugArr = []; 
-var suggestions;
+var suggestions = [];
 var gifsFound;
+var hashSearchSug;
 
-//se llama con el event 'load'
+//aplica modo light/dark
 function theme() {
-    mode=localStorage.getItem('darkMode')
+    mode=localStorage.getItem('darkMode');
     if(mode==='true'){
         document.body.classList.add('dark');
     }else{
         document.body.classList.remove('dark');
     }
 }
-//se llama con el event 'load'
+//contador de visitas
 function visitNumber() {    
     let counter;
     counter=JSON.parse(localStorage.getItem('visitCounter'));
@@ -57,7 +58,7 @@ function visitNumber() {
         localStorage.setItem('visitCounter' , JSON.stringify(counter));
     }
 }
-//se llama con el event 'load'
+//busca las tendencias sugeridas
 function getTrendingSearchResults() {
     let found = fetch('http://api.giphy.com/v1/trending/searches?' + '&api_key=' + 'MEzLGHsEgB21300IkEEPzSpYzn9V8brD')
     .then(response => {
@@ -72,13 +73,13 @@ function getTrendingSearchResults() {
             return error;
         }); 
 }
-//se llama con el event 'load'
+//busca según cada una de las 4 tendencias sugeridas
+// y muestra los primeros resultados de cada una
 function insertarSugeridos(){
     suggestions=JSON.parse(localStorage.getItem('gifsTrendingSearch'));
-    for(i=0; i<4; i++){
-        srcSugArr.push(suggestions.data[i]);
-        console.log(i,srcSugArr);
-    }
+    srcSugArr=suggestions.data.splice(0,4);
+    console.log(srcSugArr)
+
     for (i=0; i < srcSugArr.length; i++) {
         let v='gifsTrendSugeridos'+i;
         let found = fetch('http://api.giphy.com/v1/gifs/search?q=' + `${srcSugArr[i]}` + '&api_key=' + 'MEzLGHsEgB21300IkEEPzSpYzn9V8brD' + '&limit=10')
@@ -92,6 +93,7 @@ function insertarSugeridos(){
         .catch(error => {
             return error;
         });
+
     }
     let objSug0 = JSON.parse(localStorage.getItem('gifsTrendSugeridos0'));
     let objSug1 = JSON.parse(localStorage.getItem('gifsTrendSugeridos1'));
@@ -106,7 +108,7 @@ function insertarSugeridos(){
     imgSuggestedTerm4.setAttribute('src', 'https://media.giphy.com/media/' + `${objSug3.data[3].id}` + '/giphy.gif');
     titleSuggestedTerm4.innerHTML='#'+ srcSugArr[3];
 }       
-//se llama con el event 'load'
+//busca las tendencias
 function getTrendResults(){
     let found = fetch('http://api.giphy.com/v1/gifs/trending?' + '&api_key=' + 'MEzLGHsEgB21300IkEEPzSpYzn9V8brD' + '&limit=10')
     .then(response => {
@@ -120,7 +122,7 @@ function getTrendResults(){
         return error;
     })
 }
-//se llama con el event 'load'
+//muestra las tendencias
 function insertarTendencias(){
     let objTrend = JSON.parse(localStorage.getItem('gifsTendencia'));
     for (i = 0; i < 10; i++) {
@@ -132,7 +134,7 @@ function insertarTendencias(){
         }
     }
 }        
-//se llama con el event 'load'
+//hover en tendencias
 function hoverTags() {
     let objTrend=JSON.parse(localStorage.getItem('gifsTendencia'));
     for (i = 0; i < 10; i++) {
@@ -144,7 +146,6 @@ function hoverTags() {
         }
     }
 }
-
 
 window.addEventListener('load', ()=>{
     console.log('me recargue XD');
@@ -182,7 +183,11 @@ searchButton.addEventListener('click', ()=>{
     autocompleteBlock.style.height="160";
     autocompleteBlock.style.zIndex="2";
     autocompleteTags.style.display="none";    
+    search=searchInput.value;
+    console.log(search);
     getSearchResults(search);
+    placeHashtags();
+    title.innerHTML = (search + ':');
 })
 
 //busca las sugerencias de autocompletado de búsqueda
@@ -201,136 +206,123 @@ function getSearchSug(term){
 }
 //coloca las sugerencias de autocompletado de búsqueda
 function placeTags() {
-    objSearchSug=JSON.parse(localStorage.getItem('gifsSearchSug'));
+    let objSearchSug=JSON.parse(localStorage.getItem('gifsSearchSug'));
     sugResult.innerHTML= objSearchSug.data[0].name;
     simResult2.innerHTML= objSearchSug.data[1].name;
     simResult3.innerHTML= objSearchSug.data[2].name;
 }
-
+//busca y muestra según el tag sugerido clickeado
 sugResult.addEventListener('click',()=>{
     searchInput.value = sugResult.innerHTML;
     placeHashtags();
     getSearchResults(searchInput.value);
     title.innerHTML = (searchInput.value + ':');
-    insertarBuscados();
 });
 simResult2.addEventListener('click',()=>{
     searchInput.value = simResult2.innerHTML;
     placeHashtags();
     getSearchResults(searchInput.value);
     title.innerHTML = (searchInput.value + ':');
-    insertarBuscados();
 });
 simResult3.addEventListener('click',()=>{
     searchInput.value = simResult3.innerHTML;
     placeHashtags();
     getSearchResults(searchInput.value);
     title.innerHTML = (searchInput.value + ':');
-    insertarBuscados();
 });
-
-searchButton.addEventListener('click', ()=>{
-    search=searchInput.value;
-    console.log(search);
-    placeHashtags();
-    getSearchResults(search);
-    title.innerHTML = (search + ':');
-    insertarBuscados();
-})
-
+//coloca hashtags relacionados con las búsquedas
 function placeHashtags() {
     nav.style.margin="0 0 16px 0";
     autocompleteBlock.style.height="160";
     autocompleteTags.style.display="none";
     
-    let hashSearchSug = JSON.parse(localStorage.getItem('gifsSearchSug'));
+    hashSearchSug = JSON.parse(localStorage.getItem('gifsSearchSug'));
     hashtag1.innerHTML='#' + hashSearchSug.data[0].name;
     hashtag2.innerHTML='#' + hashSearchSug.data[1].name;
     hashtag3.innerHTML='#' + hashSearchSug.data[2].name;
 }
+//busca y muestra según el hashtag clickeado
+hashtag1.addEventListener('click', ()=> {
+    let hash1=hashSearchSug.data[0].name;
+    getSearchResults(hash1);
+    title.innerHTML = (hash1 + ':');
+    searchInput.value = hash1;
+});
+hashtag2.addEventListener('click', ()=>{
+    let hash2=hashSearchSug.data[1].name;
+    getSearchResults(hash2);
+    title.innerHTML = (hash2 + ':');
+    searchInput.value = hash2;
+})
+hashtag3.addEventListener('click', ()=>{
+    let hash3=hashSearchSug.data[2].name;
+    getSearchResults(hash3);
+    title.innerHTML = (hash3 + ':');
+    searchInput.value = hash3;
+})
 
-function getSearchResults(searchValue) {    
+//función de búsqueda
+async function getSearchResults(searchValue) {    
     let found = fetch('http://api.giphy.com/v1/gifs/search?' + 'api_key=' + 'MEzLGHsEgB21300IkEEPzSpYzn9V8brD' + `&q=${searchValue}` + '&limit=10')
     .then(response => {
             return response.json();
         })
         .then(data =>{
         localStorage.setItem('gifsGuardados',JSON.stringify(data));
-        console.log('Resultados', data);
+        gifsFound=JSON.parse(localStorage.getItem('gifsGuardados'))
+        console.log('Resultados', gifsFound);
+        insertarBuscados(gifsFound);
         })
         .catch(error => {
             return error;
         });
 }
-    
-function insertarBuscados(){
-    gifsFound= JSON.parse(localStorage.getItem('gifsGuardados'));
+//muestra resultados de busqueda
+function insertarBuscados(param){
     gifSuggestionsBlock.style.display="none";
     gifTrendsBlock.style.display="none";
-    gifResultsBlock.style.display="block";
-
+    gifResultsBlock.style.display="flex";
+    console.log('param', param)
     for (i = 0; i < 10; i++) {
         var ctrlId = `sr-${i}`;
-        if (document.getElementById(ctrlId))
+        var tagId=`tag-${i+10}`
+        if (document.getElementById(ctrlId) && document.getElementById(tagId))
         {
-            var ctrlVal = gifsFound.data[i].id;
+            var ctrlVal = param.data[i].id;
             document.getElementById(ctrlId).setAttribute('src', 'https://media.giphy.com/media/' + `${ctrlVal}` + '/giphy.gif');
+            var tagVal=param.data[i].title
+            document.getElementById(tagId).innerHTML=tagVal;
         }
     }
 }
-//
-//los botones "ver mas..."
+//muestra resultados según el botón "ver más" clickeado
 verMasButton1.addEventListener('click', ()=>{
     document.querySelector('.nav__arrow-back').style.display="block";
     document.getElementById('egs').style.display="none";
     let gifsVerMas=JSON.parse(localStorage.getItem('gifsTrendSugeridos0'));
     title.innerHTML = suggestions.data[0] + ':';
-    insertarVerMas(gifsVerMas);
+    insertarBuscados(gifsVerMas);
 })
 verMasButton2.addEventListener('click', ()=>{
     document.querySelector('.nav__arrow-back').style.display="block";
     document.getElementById('egs').style.display="none";
     let gifsVerMas=JSON.parse(localStorage.getItem('gifsTrendSugeridos1'));
     title.innerHTML = suggestions.data[0] + ':';
-    insertarVerMas(gifsVerMas);
+    insertarBuscados(gifsVerMas);
 })
 verMasButton3.addEventListener('click', ()=>{
     document.querySelector('.nav__arrow-back').style.display="block";
     document.getElementById('egs').style.display="none";
     let gifsVerMas=JSON.parse(localStorage.getItem('gifsTrendSugeridos2'));
     title.innerHTML = suggestions.data[0] + ':';
-    insertarVerMas(gifsVerMas)
+    insertarBuscados(gifsVerMas)
 })
 verMasButton4.addEventListener('click', ()=>{
     document.querySelector('.nav__arrow-back').style.display="block";
     document.getElementById('egs').style.display="none";
     let gifsVerMas=JSON.parse(localStorage.getItem('gifsTrendSugeridos3'));
     title.innerHTML = suggestions.data[0] + ':';
-    insertarVerMas(gifsVerMas);
+    insertarBuscados(gifsVerMas);
 })
 
-function insertarVerMas(gifsVerMas){
-    gifSuggestionsBlock.style.display="none";
-    gifTrendsBlock.style.display="none";
-    gifResultsBlock.style.display="block";
-    for (i = 0; i < 10; i++) {
-        var ctrlId = `sr-${i}`;
-        var tagId=`tag-${i+10}`
-        if (document.getElementById(ctrlId) && document.getElementById(tagId))
-        {
-            var ctrlVal = gifsVerMas.data[i].id
-            document.getElementById(ctrlId).setAttribute('src', 'https://media.giphy.com/media/' + `${ctrlVal}` + '/giphy.gif');
-            var tagVal=gifsVerMas.data[i].title
-            document.getElementById(tagId).innerHTML=tagVal;
-        }
-    }
-}
 
-
-//cuando cambie de tema está bueno que haga la transición,
-//pero después cuando está seleccionado,no. CAMBIAR
-
-//agregar el contenedor sr (search results o algo así) a la clase dark
-
-//ver si se puede meterle a hacer todo con parametros las funciones de búsqueda
-//etc... va a tomar su tiempo pero es lo mejor

@@ -49,8 +49,6 @@ visitNumber();
 
 placeRecordedGifs();//gifs grabados y guardados en el localstorage
 
-//--------------------listeners-------------------------
-
 document.getElementById('activarCamara').addEventListener('click', async (e) => {
     var stream = await navigator.mediaDevices.getUserMedia({
       video: {height: 436, width: 834}
@@ -215,7 +213,6 @@ buttonDone.addEventListener('click', ()=>{
     counter=0;
     localStorage.removeItem(gifOrder);
 });
-//-------------------listeners------------------------
 
 function uploadGifo() {
     console.log('La función de carga se está ejecutando');
@@ -322,7 +319,7 @@ function getGifById(id) {
         return error;
     });
 }
-
+//gif recientemente grabados
 function placeNewGif() {
     console.log('placeNewGif se está ejecutando')
     let newGif = document.createElement("div");
