@@ -316,7 +316,7 @@ function uploadSuccessfulScreen() {
 //busca gif por id
 function getGifById(id) {
         
-    let found = fetch('http://api.giphy.com/v1/gifs/'+ id + '?api_key=' + 'MEzLGHsEgB21300IkEEPzSpYzn9V8brD&')
+    let found = fetch('https://api.giphy.com/v1/gifs/'+ id + '?api_key=' + 'MEzLGHsEgB21300IkEEPzSpYzn9V8brD&')
         
     .then(response => {
         return response.json();

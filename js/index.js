@@ -60,7 +60,7 @@ function visitNumber() {
 }
 //busca las tendencias sugeridas
 function getTrendingSearchResults() {
-    let found = fetch('http://api.giphy.com/v1/trending/searches?' + '&api_key=' + 'MEzLGHsEgB21300IkEEPzSpYzn9V8brD')
+    let found = fetch('https://api.giphy.com/v1/trending/searches?' + '&api_key=' + 'MEzLGHsEgB21300IkEEPzSpYzn9V8brD')
     .then(response => {
             return response.json();
         })
@@ -110,7 +110,7 @@ function insertarSugeridos(){
 }       
 //busca las tendencias
 function getTrendResults(){
-    let found = fetch('http://api.giphy.com/v1/gifs/trending?' + '&api_key=' + 'MEzLGHsEgB21300IkEEPzSpYzn9V8brD' + '&limit=10')
+    let found = fetch('https://api.giphy.com/v1/gifs/trending?' + '&api_key=' + 'MEzLGHsEgB21300IkEEPzSpYzn9V8brD' + '&limit=10')
     .then(response => {
         return response.json();
     })
@@ -265,7 +265,7 @@ hashtag3.addEventListener('click', ()=>{
 
 //función de búsqueda
 async function getSearchResults(searchValue) {    
-    let found = fetch('http://api.giphy.com/v1/gifs/search?' + 'api_key=' + 'MEzLGHsEgB21300IkEEPzSpYzn9V8brD' + `&q=${searchValue}` + '&limit=10')
+    let found = fetch('https://api.giphy.com/v1/gifs/search?' + 'api_key=' + 'MEzLGHsEgB21300IkEEPzSpYzn9V8brD' + `&q=${searchValue}` + '&limit=10')
     .then(response => {
             return response.json();
         })
