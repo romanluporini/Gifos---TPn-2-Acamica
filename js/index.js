@@ -1,5 +1,6 @@
 sailorDay=document.getElementById('light-style');
 sailorNight=document.getElementById('dark-style');
+themeList=document.getElementById('btn-theme-opt');
 searchInput=document.getElementById('sinput-d');
 autocompleteBlock=document.getElementById('barra-busqueda');
 autocompleteTags=document.getElementById('is-writing');
@@ -27,7 +28,6 @@ verMasButton1=document.getElementById('ver-mas1');
 verMasButton2=document.getElementById('ver-mas2');
 verMasButton3=document.getElementById('ver-mas3');
 verMasButton4=document.getElementById('ver-mas4');
-
 
 var search;// lo que se escriba en el input de búsqueda
 var srcSugArr = []; 
@@ -161,10 +161,12 @@ window.addEventListener('load', ()=>{
 sailorDay.addEventListener('click', ()=>{
     localStorage.setItem('darkMode', 'false');
     theme();
+    themeList.checked=false;
 })
 sailorNight.addEventListener('click', ()=>{
     localStorage.setItem('darkMode', 'true');
     theme();
+    themeList.checked=false;
 })
 
 searchInput.addEventListener('keyup', ()=>{

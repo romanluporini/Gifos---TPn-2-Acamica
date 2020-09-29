@@ -1,12 +1,15 @@
 sailorDay=document.getElementById('light-style');
 sailorNight=document.getElementById('dark-style');
+themeList=document.getElementById('btn-theme-opt');
 sailorDay.addEventListener('click', ()=>{
     localStorage.setItem('darkMode', 'false');
     theme();
+    themeList.checked=false;
 })
 sailorNight.addEventListener('click', ()=>{
     localStorage.setItem('darkMode', 'true');
     theme();
+    themeList.checked=false;
 })
 function theme() {
     mode=localStorage.getItem('darkMode')
