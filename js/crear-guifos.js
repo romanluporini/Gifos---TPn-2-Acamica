@@ -204,8 +204,8 @@ buttonDownload.addEventListener('click', ()=>{
 });
 
 buttonLink.addEventListener('click', ()=>{
-    let linkCopied = JSON.parse(localStorage.getItem('gifById'));
-    navigator.clipboard.writeText(linkCopied.data.url);
+    let index=urlGifArr.length-1;
+    navigator.clipboard.writeText(urlGifArr[index]);
 });
 
 buttonDone.addEventListener('click', ()=>{
@@ -213,7 +213,7 @@ buttonDone.addEventListener('click', ()=>{
     counter=0;
     localStorage.removeItem(gifOrder);
 });
-
+//carga el gif en el servidor
 function uploadGifo() {
     console.log('La función de carga se está ejecutando');
     fetch('https://upload.giphy.com/v1/gifs?' + 'api_key=MEzLGHsEgB21300IkEEPzSpYzn9V8brD' + '&source_image_url=' + urlGif,{
@@ -232,18 +232,25 @@ function uploadGifo() {
     })
     .catch(error => console.error('Error:', error));
 }
-
+//pinta fracciones de tiempo 
 function lapsesPainter() {
     console.log('lapsesPainter se está ejecutando')
     if( l == timeLapsesArr.length){
         l = 0;
     } else{
-        document.getElementById(timeLapsesArr[l].id).style.background="#F7C9F3";
-        console.log(l)
-        l++
+        mode=localStorage.getItem('darkMode')
+        if (mode==='true') {
+            document.getElementById(timeLapsesArr[l].id).style.background="#EE3EFE";
+            console.log(l)
+            l++
+        }else{
+            document.getElementById(timeLapsesArr[l].id).style.background="#F7C9F3";
+            console.log(l)
+            l++
+        }
     }
 };
-     
+//calcula el tiempo de grabación  
 function recordTime() { 
     recordDuration = setInterval(()=>{
         if (counter<10){
@@ -255,24 +262,30 @@ function recordTime() {
         lapsesPainter();
     },1000)
 }
-
+//deja en estado original fracciones de tiempo
 function stopLapses() {
     for(i=0; i<timeLapsesArr.length; i++){
         document.getElementById(timeLapsesArr[i].id).style.background="#999999";
     }
 }
-
+//pinta barra de carga
 function waitingForUpload(){
     interval = setInterval(()=>{
         if(c==timeFractionArr.length){
             c = 0;
         }else{
-            document.getElementById(timeFractionArr[c].id).style.background="#F7C9F3";
-            c++
+            mode=localStorage.getItem('darkMode')
+            if (mode==='true') {
+                document.getElementById(timeFractionArr[c].id).style.background="#EE3EFE";
+                c++
+            }else{
+                document.getElementById(timeFractionArr[c].id).style.background="#F7C9F3";
+                c++
+            }
         }
     }, 250);
 }
-
+//deja en estado original barra de carga
 function stopUpload() {
     clearInterval(interval);
     for(i=0; i< timeFractionArr.length; i++){
@@ -300,7 +313,7 @@ function uploadSuccessfulScreen() {
     document.querySelector('.copy-download').style.display="flex";
     document.getElementById('btn-listo').style.display="block";
 }
-
+//busca gif por id
 function getGifById(id) {
         
     let found = fetch('http://api.giphy.com/v1/gifs/'+ id + '?api_key=' + 'MEzLGHsEgB21300IkEEPzSpYzn9V8brD&')
@@ -330,7 +343,7 @@ function placeNewGif() {
     imgInside.setAttribute('src', urlGifArr[newGifIndex]);
     document.querySelector('.mg__saved').appendChild(newGif);
 }
-
+//gis guardados
 function placeRecordedGifs() {
     if(localStorage.getItem('serverGifUrl')!==null){
         urlGifArr=JSON.parse(localStorage.getItem('serverGifUrl'));

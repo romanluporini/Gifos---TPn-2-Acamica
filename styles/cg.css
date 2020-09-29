@@ -9,6 +9,312 @@ input[type="checkbox"], input[type="radio"] {
   display: none;
 }
 
+.dark {
+  background-color: #110038;
+}
+
+.dark .index-container {
+  background-color: #110038;
+}
+
+.dark .index-container .nav-bar .nav__logo-buttons #logo2 {
+  display: block;
+}
+
+.dark .index-container .nav-bar .nav__logo-buttons #logo1 {
+  display: none;
+}
+
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .button, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .text, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .arrow {
+  background: #EE3EFE;
+}
+
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .button:hover, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .button:active, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .text:hover, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .text:active, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .arrow:hover, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .arrow:active {
+  background: #CE36DB;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .button p, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .text p, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .arrow p {
+  color: #FFFFFF;
+}
+
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label:hover .text, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label:hover .arrow, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label:active .text, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label:active .arrow {
+  background: #CE36DB;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .opt-box {
+  background: #B4B4B4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.day {
+  background: #CCCCCC;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.day p {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+}
+
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.day p span {
+  border: none;
+}
+
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.night {
+  background: #2E32FB;
+  border: 1px solid rgba(51, 53, 143, 0.2);
+  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.night p {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 0;
+}
+
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.night p span {
+  border-bottom: 1px solid #fff;
+}
+
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme #back-copy {
+  fill: #fff;
+}
+
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme #Combined-Shape {
+  fill: #110038;
+}
+
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .anchor-container p {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #FFF;
+  letter-spacing: 0;
+}
+
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .anchor-container p:hover {
+  border: 1px dotted #fff;
+}
+
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .anchor-container p:hover span {
+  border-bottom: 1px solid #fff;
+}
+
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .anchor-container p:active {
+  border: none;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #B4B4B4;
+  letter-spacing: 0;
+}
+
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .anchor-container p:active span {
+  border-bottom: 1px solid #B4B4B4;
+}
+
+.dark .index-container .nav-bar .nav__search-bar {
+  background: #B4B4B4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.dark .index-container .nav-bar .nav__search-bar .search-block .search__input:focus ~ .search__button {
+  background: #EE3EFE;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.dark .index-container .nav-bar .nav__search-bar .search-block .search__input:focus ~ .search__button p {
+  color: #fff;
+}
+
+.dark .index-container .nav-bar .nav__search-bar .search-block .search__input:focus ~ .search__button p img:nth-of-type(3) {
+  display: inline-block;
+}
+
+.dark .index-container .nav-bar .nav__search-bar .search-block .search__input:focus ~ .search__button p img:nth-of-type(2) {
+  display: none;
+}
+
+.dark .index-container .nav-bar .nav__search-bar .search-block .search__button:active {
+  background: #CE36DB;
+  padding: 3px;
+}
+
+.dark .index-container .nav-bar .nav__search-bar .search-block .search__button:active p {
+  color: #fff;
+}
+
+.dark .index-container .nav-bar .nav__search-bar .search-block .search__button:active p img:nth-of-type(3) {
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.dark .index-container .nav-bar .nav__search-bar .search-block .search__button:active p img:nth-of-type(2) {
+  display: none;
+}
+
+.dark .index-container .nav-bar .nav__search-bar .writing {
+  background: #B4B4B4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.dark .index-container .nav-bar .nav__search-bar .search-block .writing .search__suggestions:nth-of-type(1) {
+  background: #B4B4B4;
+  -webkit-box-shadow: inset -1px -1px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.dark .index-container .nav-bar .nav__search-bar .search-block .writing .search__suggestions:nth-of-type(2),
+.dark .index-container .nav-bar .nav__search-bar .search-block .writing .search__suggestions:nth-of-type(3) {
+  background: #CCCCCC;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.dark .index-container .nav-bar .nav__container .nav__title,
+.dark .index-container .nav-bar .nav__container .nav__search-bar .search__title,
+.dark .index-container main .suggestions .sug__container .sug__results .sug__preview .title,
+.dark .index-container main .trendings .trend__container .trend__results .trend__preview .bottom-tags,
+.dark .index-container main .cg__container .cg__title,
+.dark .index-container main .search-results .sr__container .sr__results .sr .bottom-tags {
+  background-image: -webkit-gradient(linear, right top, left top, from(#EE3EFE), to(#2E32FB));
+  background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}
+
+.dark .index-container main .suggestions .sug__container .sug__preview,
+.dark .index-container main .trendings .trend__container .trend__preview:hover,
+.dark .index-container main .search-results .sr__container .sr__results .sr:hover,
+.dark .index-container main .cg__container,
+.dark .index-container main .cg__container .before-starts,
+.dark .index-container main .mg__saved .gif:hover {
+  background: #B4B4B4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.dark .index-container main .suggestions .sug__container .sug__preview button {
+  background: #2E32FB;
+  border: 1px solid #4C2F99;
+  -webkit-box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.dark .index-container main .suggestions .sug__container .sug__preview button:hover {
+  background: #2629CC;
+}
+
+.dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__img,
+.dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__text,
+.dark .index-container main .cg__container .before-starts .buttons .btn-subir,
+.dark .index-container main .cg__container .before-starts .buttons .btn-listo,
+.dark .index-container main .cg__container .before-starts .buttons .start,
+.dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__img,
+.dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__text,
+.dark .index-container main .cg__container .camera-active .btn-box .btn-subir,
+.dark .index-container main .cg__container .camera-active .btn-box .btn-listo,
+.dark .index-container main .cg__container .camera-active .btn-box .start {
+  background: #EE3EFE;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__img button, .dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__img p, .dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__img a,
+.dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__text button,
+.dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__text p,
+.dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__text a,
+.dark .index-container main .cg__container .before-starts .buttons .btn-subir button,
+.dark .index-container main .cg__container .before-starts .buttons .btn-subir p,
+.dark .index-container main .cg__container .before-starts .buttons .btn-subir a,
+.dark .index-container main .cg__container .before-starts .buttons .btn-listo button,
+.dark .index-container main .cg__container .before-starts .buttons .btn-listo p,
+.dark .index-container main .cg__container .before-starts .buttons .btn-listo a,
+.dark .index-container main .cg__container .before-starts .buttons .start button,
+.dark .index-container main .cg__container .before-starts .buttons .start p,
+.dark .index-container main .cg__container .before-starts .buttons .start a,
+.dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__img button,
+.dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__img p,
+.dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__img a,
+.dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__text button,
+.dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__text p,
+.dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__text a,
+.dark .index-container main .cg__container .camera-active .btn-box .btn-subir button,
+.dark .index-container main .cg__container .camera-active .btn-box .btn-subir p,
+.dark .index-container main .cg__container .camera-active .btn-box .btn-subir a,
+.dark .index-container main .cg__container .camera-active .btn-box .btn-listo button,
+.dark .index-container main .cg__container .camera-active .btn-box .btn-listo p,
+.dark .index-container main .cg__container .camera-active .btn-box .btn-listo a,
+.dark .index-container main .cg__container .camera-active .btn-box .start button,
+.dark .index-container main .cg__container .camera-active .btn-box .start p,
+.dark .index-container main .cg__container .camera-active .btn-box .start a {
+  color: #fff;
+}
+
+.dark .index-container main .cg__container .before-starts .buttons .btn-cap__img img:nth-of-type(1),
+.dark .index-container main .cg__container .camera-active .btn-box .btn-cap__img img:nth-of-type(1) {
+  display: none;
+}
+
+.dark .index-container main .cg__container .before-starts .buttons .btn-cap__img img:nth-of-type(2),
+.dark .index-container main .cg__container .camera-active .btn-box .btn-cap__img img:nth-of-type(2) {
+  display: block;
+}
+
+.dark .index-container main .cg__container .before-starts .buttons .cancel,
+.dark .index-container main .cg__container .camera-active .btn-box .btn-cancelarUp,
+.dark .index-container main .cg__container .camera-active .copy-download .copy-gif,
+.dark .index-container main .cg__container .camera-active .copy-download .download-gif {
+  background: #2E32FB;
+  border: 1px solid #4C2F99;
+  -webkit-box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.dark .index-container main .cg__container .before-starts .buttons .cancel button, .dark .index-container main .cg__container .before-starts .buttons .cancel p,
+.dark .index-container main .cg__container .camera-active .btn-box .btn-cancelarUp button,
+.dark .index-container main .cg__container .camera-active .btn-box .btn-cancelarUp p,
+.dark .index-container main .cg__container .camera-active .copy-download .copy-gif button,
+.dark .index-container main .cg__container .camera-active .copy-download .copy-gif p,
+.dark .index-container main .cg__container .camera-active .copy-download .download-gif button,
+.dark .index-container main .cg__container .camera-active .copy-download .download-gif p {
+  color: #fff;
+}
+
+.dark .index-container main .cg__container .before-starts .buttons .cancel:hover,
+.dark .index-container main .cg__container .camera-active .btn-box .btn-cancelarUp:hover,
+.dark .index-container main .cg__container .camera-active .copy-download .copy-gif:hover,
+.dark .index-container main .cg__container .camera-active .copy-download .download-gif:hover {
+  background: #2629CC;
+}
+
+.dark .index-container main .cg__container .camera-active .btn-box .btn-repetir {
+  background: #110038;
+  border: 1px solid #B4B4B4;
+  -webkit-box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+          box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+}
+
+.dark .index-container main .cg__container .camera-active .btn-box .btn-repetir button p {
+  color: #fff;
+}
+
+.dark .index-container main .cg__container .camera-active .btn-box .btn-repetir:active button p {
+  border: 1px dotted #FFFFFF;
+}
+
 body {
   width: 100%;
   clear: both;
@@ -1540,312 +1846,6 @@ main .search-results, main #strId {
     -ms-grid-row: 3;
     grid-row: 3/3;
   }
-}
-
-.dark {
-  background-color: #110038;
-}
-
-.dark .index-container {
-  background-color: #110038;
-}
-
-.dark .index-container .nav-bar .nav__logo-buttons #logo2 {
-  display: block;
-}
-
-.dark .index-container .nav-bar .nav__logo-buttons #logo1 {
-  display: none;
-}
-
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .button, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .text, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .arrow {
-  background: #EE3EFE;
-}
-
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .button:hover, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .button:active, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .text:hover, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .text:active, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .arrow:hover, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .arrow:active {
-  background: #CE36DB;
-  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
-}
-
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .button p, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .text p, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .arrow p {
-  color: #FFFFFF;
-}
-
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label:hover .text, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label:hover .arrow, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label:active .text, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label:active .arrow {
-  background: #CE36DB;
-  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
-}
-
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .opt-box {
-  background: #B4B4B4;
-  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
-}
-
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.day {
-  background: #CCCCCC;
-  border: 1px solid #808080;
-  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
-}
-
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.day p {
-  font-family: 'Chakra Petch', sans-serif;
-  font-size: 16px;
-  color: #110038;
-  letter-spacing: 0;
-}
-
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.day p span {
-  border: none;
-}
-
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.night {
-  background: #2E32FB;
-  border: 1px solid rgba(51, 53, 143, 0.2);
-  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
-}
-
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.night p {
-  font-family: 'Chakra Petch', sans-serif;
-  font-size: 16px;
-  color: #fff;
-  letter-spacing: 0;
-}
-
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.night p span {
-  border-bottom: 1px solid #fff;
-}
-
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme #back-copy {
-  fill: #fff;
-}
-
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme #Combined-Shape {
-  fill: #110038;
-}
-
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .anchor-container p {
-  font-family: 'Chakra Petch', sans-serif;
-  font-size: 16px;
-  color: #FFF;
-  letter-spacing: 0;
-}
-
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .anchor-container p:hover {
-  border: 1px dotted #fff;
-}
-
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .anchor-container p:hover span {
-  border-bottom: 1px solid #fff;
-}
-
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .anchor-container p:active {
-  border: none;
-  font-family: 'Chakra Petch', sans-serif;
-  font-size: 16px;
-  color: #B4B4B4;
-  letter-spacing: 0;
-}
-
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .anchor-container p:active span {
-  border-bottom: 1px solid #B4B4B4;
-}
-
-.dark .index-container .nav-bar .nav__search-bar {
-  background: #B4B4B4;
-  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
-}
-
-.dark .index-container .nav-bar .nav__search-bar .search-block .search__input:focus ~ .search__button {
-  background: #EE3EFE;
-  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
-}
-
-.dark .index-container .nav-bar .nav__search-bar .search-block .search__input:focus ~ .search__button p {
-  color: #fff;
-}
-
-.dark .index-container .nav-bar .nav__search-bar .search-block .search__input:focus ~ .search__button p img:nth-of-type(3) {
-  display: inline-block;
-}
-
-.dark .index-container .nav-bar .nav__search-bar .search-block .search__input:focus ~ .search__button p img:nth-of-type(2) {
-  display: none;
-}
-
-.dark .index-container .nav-bar .nav__search-bar .search-block .search__button:active {
-  background: #CE36DB;
-  padding: 3px;
-}
-
-.dark .index-container .nav-bar .nav__search-bar .search-block .search__button:active p {
-  color: #fff;
-}
-
-.dark .index-container .nav-bar .nav__search-bar .search-block .search__button:active p img:nth-of-type(3) {
-  display: inline-block;
-  margin-right: 4px;
-}
-
-.dark .index-container .nav-bar .nav__search-bar .search-block .search__button:active p img:nth-of-type(2) {
-  display: none;
-}
-
-.dark .index-container .nav-bar .nav__search-bar .writing {
-  background: #B4B4B4;
-  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
-}
-
-.dark .index-container .nav-bar .nav__search-bar .search-block .writing .search__suggestions:nth-of-type(1) {
-  background: #B4B4B4;
-  -webkit-box-shadow: inset -1px -1px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
-}
-
-.dark .index-container .nav-bar .nav__search-bar .search-block .writing .search__suggestions:nth-of-type(2),
-.dark .index-container .nav-bar .nav__search-bar .search-block .writing .search__suggestions:nth-of-type(3) {
-  background: #CCCCCC;
-  border: 1px solid #808080;
-  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
-}
-
-.dark .index-container .nav-bar .nav__container .nav__title,
-.dark .index-container .nav-bar .nav__container .nav__search-bar .search__title,
-.dark .index-container main .suggestions .sug__container .sug__results .sug__preview .title,
-.dark .index-container main .trendings .trend__container .trend__results .trend__preview .bottom-tags,
-.dark .index-container main .cg__container .cg__title,
-.dark .index-container main .search-results .sr__container .sr__results .sr .bottom-tags {
-  background-image: -webkit-gradient(linear, right top, left top, from(#EE3EFE), to(#2E32FB));
-  background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
-}
-
-.dark .index-container main .suggestions .sug__container .sug__preview,
-.dark .index-container main .trendings .trend__container .trend__preview:hover,
-.dark .index-container main .search-results .sr__container .sr__results .sr:hover,
-.dark .index-container main .cg__container,
-.dark .index-container main .cg__container .before-starts,
-.dark .index-container main .mg__saved .gif:hover {
-  background: #B4B4B4;
-  -webkit-box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
-}
-
-.dark .index-container main .suggestions .sug__container .sug__preview button {
-  background: #2E32FB;
-  border: 1px solid #4C2F99;
-  -webkit-box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
-}
-
-.dark .index-container main .suggestions .sug__container .sug__preview button:hover {
-  background: #2629CC;
-}
-
-.dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__img,
-.dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__text,
-.dark .index-container main .cg__container .before-starts .buttons .btn-subir,
-.dark .index-container main .cg__container .before-starts .buttons .btn-listo,
-.dark .index-container main .cg__container .before-starts .buttons .start,
-.dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__img,
-.dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__text,
-.dark .index-container main .cg__container .camera-active .btn-box .btn-subir,
-.dark .index-container main .cg__container .camera-active .btn-box .btn-listo,
-.dark .index-container main .cg__container .camera-active .btn-box .start {
-  background: #EE3EFE;
-  border: 1px solid #110038;
-  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
-}
-
-.dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__img button, .dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__img p, .dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__img a,
-.dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__text button,
-.dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__text p,
-.dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__text a,
-.dark .index-container main .cg__container .before-starts .buttons .btn-subir button,
-.dark .index-container main .cg__container .before-starts .buttons .btn-subir p,
-.dark .index-container main .cg__container .before-starts .buttons .btn-subir a,
-.dark .index-container main .cg__container .before-starts .buttons .btn-listo button,
-.dark .index-container main .cg__container .before-starts .buttons .btn-listo p,
-.dark .index-container main .cg__container .before-starts .buttons .btn-listo a,
-.dark .index-container main .cg__container .before-starts .buttons .start button,
-.dark .index-container main .cg__container .before-starts .buttons .start p,
-.dark .index-container main .cg__container .before-starts .buttons .start a,
-.dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__img button,
-.dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__img p,
-.dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__img a,
-.dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__text button,
-.dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__text p,
-.dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__text a,
-.dark .index-container main .cg__container .camera-active .btn-box .btn-subir button,
-.dark .index-container main .cg__container .camera-active .btn-box .btn-subir p,
-.dark .index-container main .cg__container .camera-active .btn-box .btn-subir a,
-.dark .index-container main .cg__container .camera-active .btn-box .btn-listo button,
-.dark .index-container main .cg__container .camera-active .btn-box .btn-listo p,
-.dark .index-container main .cg__container .camera-active .btn-box .btn-listo a,
-.dark .index-container main .cg__container .camera-active .btn-box .start button,
-.dark .index-container main .cg__container .camera-active .btn-box .start p,
-.dark .index-container main .cg__container .camera-active .btn-box .start a {
-  color: #fff;
-}
-
-.dark .index-container main .cg__container .before-starts .buttons .btn-cap__img img:nth-of-type(1),
-.dark .index-container main .cg__container .camera-active .btn-box .btn-cap__img img:nth-of-type(1) {
-  display: none;
-}
-
-.dark .index-container main .cg__container .before-starts .buttons .btn-cap__img img:nth-of-type(2),
-.dark .index-container main .cg__container .camera-active .btn-box .btn-cap__img img:nth-of-type(2) {
-  display: block;
-}
-
-.dark .index-container main .cg__container .before-starts .buttons .cancel,
-.dark .index-container main .cg__container .camera-active .btn-box .btn-cancelarUp,
-.dark .index-container main .cg__container .camera-active .copy-download .copy-gif,
-.dark .index-container main .cg__container .camera-active .copy-download .download-gif {
-  background: #2E32FB;
-  border: 1px solid #4C2F99;
-  -webkit-box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
-}
-
-.dark .index-container main .cg__container .before-starts .buttons .cancel button, .dark .index-container main .cg__container .before-starts .buttons .cancel p,
-.dark .index-container main .cg__container .camera-active .btn-box .btn-cancelarUp button,
-.dark .index-container main .cg__container .camera-active .btn-box .btn-cancelarUp p,
-.dark .index-container main .cg__container .camera-active .copy-download .copy-gif button,
-.dark .index-container main .cg__container .camera-active .copy-download .copy-gif p,
-.dark .index-container main .cg__container .camera-active .copy-download .download-gif button,
-.dark .index-container main .cg__container .camera-active .copy-download .download-gif p {
-  color: #fff;
-}
-
-.dark .index-container main .cg__container .before-starts .buttons .cancel:hover,
-.dark .index-container main .cg__container .camera-active .btn-box .btn-cancelarUp:hover,
-.dark .index-container main .cg__container .camera-active .copy-download .copy-gif:hover,
-.dark .index-container main .cg__container .camera-active .copy-download .download-gif:hover {
-  background: #2629CC;
-}
-
-.dark .index-container main .cg__container .camera-active .btn-box .btn-repetir {
-  background: #110038;
-  border: 1px solid #B4B4B4;
-  -webkit-box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
-          box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
-}
-
-.dark .index-container main .cg__container .camera-active .btn-box .btn-repetir button p {
-  color: #fff;
-}
-
-.dark .index-container main .cg__container .camera-active .btn-box .btn-repetir:active button p {
-  border: 1px dotted #FFFFFF;
 }
 
 .dark {
