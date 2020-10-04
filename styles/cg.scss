@@ -116,13 +116,13 @@ main{
                             display: flex;
                             justify-content: center;
                             align-items: center;
+                            @include f14-rg(#110038);
                             &:hover{
                                 cursor: pointer;
                             }    
-                            p{
+                            // p{
                                 
-                                @include f14-rg(#110038);
-                            }
+                            // }
                         }
                     }
                     .cancel{
@@ -373,14 +373,17 @@ main{
                         justify-content: center;
                         align-items: center;
                         padding: 2px;
+                        line-height: 28px;
+                        @include f16-rg(#110038);
+
                         &:hover{
                             cursor: pointer;
-                        }    
-                        p{
-                            width: 140px;
-                            line-height: 28px;
-                            @include f16-rg(#110038);
-                        }
+                        }   
+                        &:active{
+                            border: 1px dotted #110038;
+                        } 
+                        // p{
+                        // }
                     }    
                     a{
                         @include f16-rg(#110038);

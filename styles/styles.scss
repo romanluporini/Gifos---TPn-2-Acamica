@@ -131,7 +131,7 @@ body{
                     .theme{
                         position: relative;
                         display: flex;
-                        flex-direction: column;
+                        flex-direction: row;
                         width: 100%;
                         height: 36px;
                         margin-bottom: 16px;
@@ -139,11 +139,13 @@ body{
                             position: absolute;
                             top: 0;
                             left: 0;
-                            display: flex;
-                            flex-direction: row;
                             width: 100%;
                             height: 36px;
-                            &:hover .text, &:hover .arrow{
+                            z-index: 1;
+                            &:hover + .text, 
+                            &:hover ~ .arrow,
+                            &:active + .text,
+                            &:active ~ .arrow{
                                 background: #E6BBE2;
                                 border: 1px solid #110038;
                                 box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
@@ -152,45 +154,49 @@ body{
                                     cursor: pointer;
                                 }
                             }
-                            .text{
-                                outline: none;
-                                background: #F7C9F3;
-                                border: 1px solid #110038;
-                                box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-                                width: calc(100% - 36px);
-                                height: 36px;
-                                padding: 2px;
-                                text-align: center;
-                                p{
-                                    text-transform: capitalize;
-                                    width: 100%;
-                                    height: 100%;
-                                    @include f16-rg;
-                                    line-height: 28px;
-                                }
+                            &:hover{
+                                cursor: pointer;
                             }
-                            
-                            .arrow{
-                                height: 36px;
-                                width: 36px;
-                                outline: none;
-                                background: #F7C9F3;
-                                border: 1px solid #110038;
-                                box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-                                padding: 2px;
-                                p{
-                                    width: 100%;
-                                    height: 100%;
-                                    padding-left: 16px;
-                                    svg{
-                                        display: block;
-                                        position: relative;
-                                        top: 11px;
-                                        right: 7px;
-                                    }
-                                }
+                        }
+                        .text{
+                            outline: none;
+                            background: #F7C9F3;
+                            border: 1px solid #110038;
+                            box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+                            width: calc(100% - 36px);
+                            height: 36px;
+                            padding: 2px;
+                            text-align: center;
+                            p{
+                                text-transform: capitalize;
+                                width: 100%;
+                                height: 100%;
+                                @include f16-rg;
+                                line-height: 28px;
                             }
+                        }
                         
+                        .arrow{
+                            height: 36px;
+                            width: 36px;
+                            outline: none;
+                            background: #F7C9F3;
+                            border: 1px solid #110038;
+                            box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+                            padding: 2px;
+                            p{
+                                width: 100%;
+                                height: 100%;
+                                padding-left: 16px;
+                                svg{
+                                    display: block;
+                                    position: relative;
+                                    top: 11px;
+                                    right: 7px;
+                                }
+                            }
+                        }
+                    
                         .opt-box{
                             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
                             position: absolute;
@@ -209,6 +215,17 @@ body{
                             .opt{
                                 width: 100%;
                                 height: 36px;
+                                position: relative;
+                                p{
+                                    @include f16-rg;
+                                    width: 100%;
+                                    line-height: 36px;
+                                    border: none;
+                                    position: absolute;
+                                    top: 18px;
+                                    left: 16px;
+                                    transform: translateY(-50%);
+                                }   
                                 label{
                                     display: none;
                                     position: relative;
@@ -218,15 +235,7 @@ body{
                                     height: 36px;
                                     &:hover{
                                         cursor: pointer;
-                                    }        
-                                    p{
-                                        @include f16-rg;
-                                        width: 100%;
-                                        height: 100%;
-                                        padding-left: 16px;
-                                        line-height: 36px;
-                                        border: none;
-                                    }
+                                    }    
                                 }
                                 &.day{
                                     background: #FFF4FD;
@@ -251,7 +260,7 @@ body{
                                 }
                             }
                         } 
-                        }
+
                     }
                     .anchor-container{
                         position: relative;
@@ -343,15 +352,24 @@ body{
                                 background: #F7C9F3;
                                 border: 1px solid #110038;
                                 box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-                                p{
-                                    @include f16-rg(#110038);
-                                    img:nth-child(1){
-                                        display: none;
-                                    }
-                                    img:nth-child(2){
-                                        display: inline-block;
-                                    }
+                                
+                                @include f16-rg(#110038);
+                                img:nth-child(1){
+                                    display: none;
                                 }
+                                img:nth-child(2){
+                                    display: inline-block;
+                                }
+
+                                // p{
+                                //     @include f16-rg(#110038);
+                                //     img:nth-child(1){
+                                //         display: none;
+                                //     }
+                                //     img:nth-child(2){
+                                //         display: inline-block;
+                                //     }
+                                // }
                         }
                         
                     }
@@ -376,7 +394,7 @@ body{
                         outline: none;
                         cursor: pointer;
                         padding: 3px;
-                        p{
+                        // p{
                             display: flex;
                             justify-content: center;
                             align-items: center;
@@ -386,18 +404,21 @@ body{
                             text-align: center;    
                             @include f16-rg(#8F8F8F);
                             text-transform: capitalize;
+                            img{
+                                margin-right: 4px;
+                            }
                             img:nth-child(2), img:nth-of-type(3){
                                 display: none;
                             }
-                        }
+                        // }
                         &:active{
                             border: 1px dotted #110038;
                             background: #e6bbe2;
                             box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-                            p{
+                            // p{
                                 @include f16-rg(#110038);
                                 line-height: 28px;
-                                width: 138px;    
+                                // width: 138px;    
                                 border: 1px dotted #110038;
                                 img:nth-child(1){
                                     display: none;
@@ -405,7 +426,7 @@ body{
                                 img:nth-child(2){
                                     display: inline-block;
                                 }
-                            }
+                            // }
                         }
                     }
                     .writing{
@@ -550,17 +571,17 @@ main{
                                 justify-content: center;
                                 align-items: center;
                                 padding: 3px;    
-                                p{
+                                // p{
                                     @include f14-rg(#fff);
                                     letter-spacing: 0;    
-                                    width: 100%;
+                                    // width: 100%;
                                     line-height: 26px;
-                                }
+                                // }
                                 &:hover{
                                     cursor: pointer;
-                                    p{
+                                    // p{
                                         border: 1px dotted #110038;
-                                    }                        
+                                    // }                        
                                 }
                             }
                             .title + img{

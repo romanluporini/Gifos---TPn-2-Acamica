@@ -14,7 +14,7 @@
                         display: none;
                     }
                 .nav__buttons{
-                    .button, .theme label .text, .theme label .arrow{
+                    .button, .theme .text, .theme .arrow{
                         background: #EE3EFE;
                         &:hover, &:active{
                             background: #CE36DB;
@@ -25,11 +25,14 @@
                         } 
                     }
                     .theme{
-                        label:hover .text, label:hover .arrow, label:active .text, label:active .arrow{
+                        label:hover + .text, 
+                        label:hover ~ .arrow, 
+                        label:active + .text, 
+                        label:active ~ .arrow{
                             background: #CE36DB;
                             box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
                         }
-                        label .opt-box{
+                        label ~ .opt-box{
                             background: #B4B4B4;
                             box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
                             .opt.day{
@@ -86,7 +89,7 @@
                 .search-block .search__input:focus ~ .search__button{
                     background: #EE3EFE;
                     box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
-                    p{
+                    // p{
                         color: #fff;
                         img:nth-of-type(3){
                             display:inline-block;
@@ -94,21 +97,20 @@
                         img:nth-of-type(2){
                             display: none;
                         }
-                    }
+                    // }
                 }
                 .search-block .search__button:active{
                     background: #CE36DB;
                     padding: 3px;
-                    p{
+                    // p{
                         color: #fff;
                         img:nth-of-type(3){
                             display:inline-block;
-                            margin-right: 4px;
                         }
                         img:nth-of-type(2){
                             display: none;
                         }
-                    }
+                    // }
                 }
                 .writing{
                     background: #B4B4B4;
@@ -166,7 +168,7 @@
                     background: #EE3EFE;
                     border: 1px solid #110038;
                     box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
-                    button, p, a{
+                    button, label, a{
                         color: #fff;
                     }
                 }
@@ -196,10 +198,10 @@
                 background: #110038;
                 border: 1px solid #B4B4B4;
                 box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
-                button p{
+                button{
                     color: #fff;
                 }
-                &:active button p{
+                &:active button{
                     border: 1px dotted #FFFFFF;
                 }
             }

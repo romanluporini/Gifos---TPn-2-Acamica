@@ -25,65 +25,68 @@ input[type="checkbox"], input[type="radio"] {
   display: none;
 }
 
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .button, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .text, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .arrow {
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .button, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme .text, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme .arrow {
   background: #EE3EFE;
 }
 
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .button:hover, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .button:active, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .text:hover, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .text:active, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .arrow:hover, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .arrow:active {
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .button:hover, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .button:active, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme .text:hover, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme .text:active, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme .arrow:hover, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme .arrow:active {
   background: #CE36DB;
   -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
           box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
 }
 
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .button p, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .text p, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .arrow p {
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .button p, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme .text p, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme .arrow p {
   color: #FFFFFF;
 }
 
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label:hover .text, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label:hover .arrow, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label:active .text, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label:active .arrow {
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label:hover + .text,
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label:hover ~ .arrow,
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label:active + .text,
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label:active ~ .arrow {
   background: #CE36DB;
   -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
           box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
 }
 
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .opt-box {
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label ~ .opt-box {
   background: #B4B4B4;
   -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
           box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
 }
 
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.day {
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label ~ .opt-box .opt.day {
   background: #CCCCCC;
   border: 1px solid #808080;
   -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
           box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
 }
 
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.day p {
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label ~ .opt-box .opt.day p {
   font-family: 'Chakra Petch', sans-serif;
   font-size: 16px;
   color: #110038;
   letter-spacing: 0;
 }
 
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.day p span {
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label ~ .opt-box .opt.day p span {
   border: none;
 }
 
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.night {
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label ~ .opt-box .opt.night {
   background: #2E32FB;
   border: 1px solid rgba(51, 53, 143, 0.2);
   -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
           box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
 }
 
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.night p {
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label ~ .opt-box .opt.night p {
   font-family: 'Chakra Petch', sans-serif;
   font-size: 16px;
   color: #fff;
   letter-spacing: 0;
 }
 
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.night p span {
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label ~ .opt-box .opt.night p span {
   border-bottom: 1px solid #fff;
 }
 
@@ -132,35 +135,28 @@ input[type="checkbox"], input[type="radio"] {
   background: #EE3EFE;
   -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
           box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
-}
-
-.dark .index-container .nav-bar .nav__search-bar .search-block .search__input:focus ~ .search__button p {
   color: #fff;
 }
 
-.dark .index-container .nav-bar .nav__search-bar .search-block .search__input:focus ~ .search__button p img:nth-of-type(3) {
+.dark .index-container .nav-bar .nav__search-bar .search-block .search__input:focus ~ .search__button img:nth-of-type(3) {
   display: inline-block;
 }
 
-.dark .index-container .nav-bar .nav__search-bar .search-block .search__input:focus ~ .search__button p img:nth-of-type(2) {
+.dark .index-container .nav-bar .nav__search-bar .search-block .search__input:focus ~ .search__button img:nth-of-type(2) {
   display: none;
 }
 
 .dark .index-container .nav-bar .nav__search-bar .search-block .search__button:active {
   background: #CE36DB;
   padding: 3px;
-}
-
-.dark .index-container .nav-bar .nav__search-bar .search-block .search__button:active p {
   color: #fff;
 }
 
-.dark .index-container .nav-bar .nav__search-bar .search-block .search__button:active p img:nth-of-type(3) {
+.dark .index-container .nav-bar .nav__search-bar .search-block .search__button:active img:nth-of-type(3) {
   display: inline-block;
-  margin-right: 4px;
 }
 
-.dark .index-container .nav-bar .nav__search-bar .search-block .search__button:active p img:nth-of-type(2) {
+.dark .index-container .nav-bar .nav__search-bar .search-block .search__button:active img:nth-of-type(2) {
   display: none;
 }
 
@@ -232,33 +228,33 @@ input[type="checkbox"], input[type="radio"] {
           box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
 }
 
-.dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__img button, .dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__img p, .dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__img a,
+.dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__img button, .dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__img label, .dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__img a,
 .dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__text button,
-.dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__text p,
+.dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__text label,
 .dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__text a,
 .dark .index-container main .cg__container .before-starts .buttons .btn-subir button,
-.dark .index-container main .cg__container .before-starts .buttons .btn-subir p,
+.dark .index-container main .cg__container .before-starts .buttons .btn-subir label,
 .dark .index-container main .cg__container .before-starts .buttons .btn-subir a,
 .dark .index-container main .cg__container .before-starts .buttons .btn-listo button,
-.dark .index-container main .cg__container .before-starts .buttons .btn-listo p,
+.dark .index-container main .cg__container .before-starts .buttons .btn-listo label,
 .dark .index-container main .cg__container .before-starts .buttons .btn-listo a,
 .dark .index-container main .cg__container .before-starts .buttons .start button,
-.dark .index-container main .cg__container .before-starts .buttons .start p,
+.dark .index-container main .cg__container .before-starts .buttons .start label,
 .dark .index-container main .cg__container .before-starts .buttons .start a,
 .dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__img button,
-.dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__img p,
+.dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__img label,
 .dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__img a,
 .dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__text button,
-.dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__text p,
+.dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__text label,
 .dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__text a,
 .dark .index-container main .cg__container .camera-active .btn-box .btn-subir button,
-.dark .index-container main .cg__container .camera-active .btn-box .btn-subir p,
+.dark .index-container main .cg__container .camera-active .btn-box .btn-subir label,
 .dark .index-container main .cg__container .camera-active .btn-box .btn-subir a,
 .dark .index-container main .cg__container .camera-active .btn-box .btn-listo button,
-.dark .index-container main .cg__container .camera-active .btn-box .btn-listo p,
+.dark .index-container main .cg__container .camera-active .btn-box .btn-listo label,
 .dark .index-container main .cg__container .camera-active .btn-box .btn-listo a,
 .dark .index-container main .cg__container .camera-active .btn-box .start button,
-.dark .index-container main .cg__container .camera-active .btn-box .start p,
+.dark .index-container main .cg__container .camera-active .btn-box .start label,
 .dark .index-container main .cg__container .camera-active .btn-box .start a {
   color: #fff;
 }
@@ -307,11 +303,11 @@ input[type="checkbox"], input[type="radio"] {
           box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
 }
 
-.dark .index-container main .cg__container .camera-active .btn-box .btn-repetir button p {
+.dark .index-container main .cg__container .camera-active .btn-box .btn-repetir button {
   color: #fff;
 }
 
-.dark .index-container main .cg__container .camera-active .btn-box .btn-repetir:active button p {
+.dark .index-container main .cg__container .camera-active .btn-box .btn-repetir:active button {
   border: 1px dotted #FFFFFF;
 }
 
@@ -504,10 +500,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 100%;
   height: 36px;
   margin-bottom: 16px;
@@ -517,30 +513,34 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   width: 100%;
   height: 36px;
+  z-index: 1;
 }
 
-.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label:hover .text, .nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label:hover .arrow {
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label:hover + .text,
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label:hover ~ .arrow,
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label:active + .text,
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label:active ~ .arrow {
   background: #E6BBE2;
   border: 1px solid #110038;
   -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
           box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
 }
 
-.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label:hover .text p, .nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label:hover .arrow p {
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label:hover + .text p,
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label:hover ~ .arrow p,
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label:active + .text p,
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label:active ~ .arrow p {
   border: 1px dotted #110038;
   cursor: pointer;
 }
 
-.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .text {
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label:hover {
+  cursor: pointer;
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme .text {
   outline: none;
   background: #F7C9F3;
   border: 1px solid #110038;
@@ -552,7 +552,7 @@ body {
   text-align: center;
 }
 
-.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .text p {
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme .text p {
   text-transform: capitalize;
   width: 100%;
   height: 100%;
@@ -563,7 +563,7 @@ body {
   line-height: 28px;
 }
 
-.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .arrow {
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme .arrow {
   height: 36px;
   width: 36px;
   outline: none;
@@ -574,20 +574,20 @@ body {
   padding: 2px;
 }
 
-.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .arrow p {
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme .arrow p {
   width: 100%;
   height: 100%;
   padding-left: 16px;
 }
 
-.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .arrow p svg {
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme .arrow p svg {
   display: block;
   position: relative;
   top: 11px;
   right: 7px;
 }
 
-.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .opt-box {
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme .opt-box {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
           clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   position: absolute;
@@ -615,12 +615,28 @@ body {
   z-index: 5;
 }
 
-.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .opt-box .opt {
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme .opt-box .opt {
   width: 100%;
   height: 36px;
+  position: relative;
 }
 
-.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .opt-box .opt label {
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme .opt-box .opt p {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  width: 100%;
+  line-height: 36px;
+  border: none;
+  position: absolute;
+  top: 18px;
+  left: 16px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme .opt-box .opt label {
   display: none;
   position: relative;
   top: 0px;
@@ -629,23 +645,11 @@ body {
   height: 36px;
 }
 
-.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .opt-box .opt label:hover {
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme .opt-box .opt label:hover {
   cursor: pointer;
 }
 
-.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .opt-box .opt label p {
-  font-family: 'Chakra Petch', sans-serif;
-  font-size: 16px;
-  color: #110038;
-  letter-spacing: 0;
-  width: 100%;
-  height: 100%;
-  padding-left: 16px;
-  line-height: 36px;
-  border: none;
-}
-
-.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.day {
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme .opt-box .opt.day {
   background: #FFF4FD;
   border: 1px solid #CCA6C9;
   -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
@@ -653,12 +657,12 @@ body {
   margin-bottom: 5px;
 }
 
-.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.day span {
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme .opt-box .opt.day span {
   border-bottom: 1px solid #110038;
   text-transform: capitalize;
 }
 
-.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.night {
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme .opt-box .opt.night {
   margin-top: 5px;
   margin-bottom: unset;
   background: #F0F0F0;
@@ -667,7 +671,7 @@ body {
           box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
 }
 
-.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.night span {
+.nav-bar .nav__container .nav__logo-buttons .nav__buttons .theme .opt-box .opt.night span {
   text-transform: capitalize;
 }
 
@@ -820,20 +824,17 @@ body {
   border: 1px solid #110038;
   -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
           box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-}
-
-.nav-bar .nav__container .nav__search-bar .search-block .search__input:focus ~ .search__button p {
   font-family: 'Chakra Petch', sans-serif;
   font-size: 16px;
   color: #110038;
   letter-spacing: 0;
 }
 
-.nav-bar .nav__container .nav__search-bar .search-block .search__input:focus ~ .search__button p img:nth-child(1) {
+.nav-bar .nav__container .nav__search-bar .search-block .search__input:focus ~ .search__button img:nth-child(1) {
   display: none;
 }
 
-.nav-bar .nav__container .nav__search-bar .search-block .search__input:focus ~ .search__button p img:nth-child(2) {
+.nav-bar .nav__container .nav__search-bar .search-block .search__input:focus ~ .search__button img:nth-child(2) {
   display: inline-block;
 }
 
@@ -862,9 +863,6 @@ body {
   outline: none;
   cursor: pointer;
   padding: 3px;
-}
-
-.nav-bar .nav__container .nav__search-bar .search-block .search__button p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -888,7 +886,11 @@ body {
   text-transform: capitalize;
 }
 
-.nav-bar .nav__container .nav__search-bar .search-block .search__button p img:nth-child(2), .nav-bar .nav__container .nav__search-bar .search-block .search__button p img:nth-of-type(3) {
+.nav-bar .nav__container .nav__search-bar .search-block .search__button img {
+  margin-right: 4px;
+}
+
+.nav-bar .nav__container .nav__search-bar .search-block .search__button img:nth-child(2), .nav-bar .nav__container .nav__search-bar .search-block .search__button img:nth-of-type(3) {
   display: none;
 }
 
@@ -897,23 +899,19 @@ body {
   background: #e6bbe2;
   -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
           box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-}
-
-.nav-bar .nav__container .nav__search-bar .search-block .search__button:active p {
   font-family: 'Chakra Petch', sans-serif;
   font-size: 16px;
   color: #110038;
   letter-spacing: 0;
   line-height: 28px;
-  width: 138px;
   border: 1px dotted #110038;
 }
 
-.nav-bar .nav__container .nav__search-bar .search-block .search__button:active p img:nth-child(1) {
+.nav-bar .nav__container .nav__search-bar .search-block .search__button:active img:nth-child(1) {
   display: none;
 }
 
-.nav-bar .nav__container .nav__search-bar .search-block .search__button:active p img:nth-child(2) {
+.nav-bar .nav__container .nav__search-bar .search-block .search__button:active img:nth-child(2) {
   display: inline-block;
 }
 
@@ -1142,23 +1140,16 @@ main .suggestions .sug__container .sug__results .sug__preview button, main .sugg
       -ms-flex-align: center;
           align-items: center;
   padding: 3px;
-}
-
-main .suggestions .sug__container .sug__results .sug__preview button p, main .suggestions .mg__container .sug__results .sug__preview button p, main .mis-guifos .sug__container .sug__results .sug__preview button p, main .mis-guifos .mg__container .sug__results .sug__preview button p {
   font-family: 'Chakra Petch', sans-serif;
   font-size: 14px;
   color: #fff;
   letter-spacing: 0;
   letter-spacing: 0;
-  width: 100%;
   line-height: 26px;
 }
 
 main .suggestions .sug__container .sug__results .sug__preview button:hover, main .suggestions .mg__container .sug__results .sug__preview button:hover, main .mis-guifos .sug__container .sug__results .sug__preview button:hover, main .mis-guifos .mg__container .sug__results .sug__preview button:hover {
   cursor: pointer;
-}
-
-main .suggestions .sug__container .sug__results .sug__preview button:hover p, main .suggestions .mg__container .sug__results .sug__preview button:hover p, main .mis-guifos .sug__container .sug__results .sug__preview button:hover p, main .mis-guifos .mg__container .sug__results .sug__preview button:hover p {
   border: 1px dotted #110038;
 }
 

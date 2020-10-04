@@ -14,65 +14,68 @@
   display: none;
 }
 
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .button, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .text, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .arrow {
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .button, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme .text, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme .arrow {
   background: #EE3EFE;
 }
 
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .button:hover, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .button:active, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .text:hover, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .text:active, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .arrow:hover, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .arrow:active {
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .button:hover, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .button:active, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme .text:hover, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme .text:active, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme .arrow:hover, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme .arrow:active {
   background: #CE36DB;
   -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
           box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
 }
 
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .button p, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .text p, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .arrow p {
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .button p, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme .text p, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme .arrow p {
   color: #FFFFFF;
 }
 
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label:hover .text, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label:hover .arrow, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label:active .text, .dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label:active .arrow {
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label:hover + .text,
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label:hover ~ .arrow,
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label:active + .text,
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label:active ~ .arrow {
   background: #CE36DB;
   -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
           box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
 }
 
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .opt-box {
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label ~ .opt-box {
   background: #B4B4B4;
   -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
           box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
 }
 
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.day {
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label ~ .opt-box .opt.day {
   background: #CCCCCC;
   border: 1px solid #808080;
   -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
           box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
 }
 
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.day p {
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label ~ .opt-box .opt.day p {
   font-family: 'Chakra Petch', sans-serif;
   font-size: 16px;
   color: #110038;
   letter-spacing: 0;
 }
 
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.day p span {
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label ~ .opt-box .opt.day p span {
   border: none;
 }
 
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.night {
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label ~ .opt-box .opt.night {
   background: #2E32FB;
   border: 1px solid rgba(51, 53, 143, 0.2);
   -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
           box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
 }
 
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.night p {
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label ~ .opt-box .opt.night p {
   font-family: 'Chakra Petch', sans-serif;
   font-size: 16px;
   color: #fff;
   letter-spacing: 0;
 }
 
-.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label .opt-box .opt.night p span {
+.dark .index-container .nav-bar .nav__logo-buttons .nav__buttons .theme label ~ .opt-box .opt.night p span {
   border-bottom: 1px solid #fff;
 }
 
@@ -121,35 +124,28 @@
   background: #EE3EFE;
   -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
           box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
-}
-
-.dark .index-container .nav-bar .nav__search-bar .search-block .search__input:focus ~ .search__button p {
   color: #fff;
 }
 
-.dark .index-container .nav-bar .nav__search-bar .search-block .search__input:focus ~ .search__button p img:nth-of-type(3) {
+.dark .index-container .nav-bar .nav__search-bar .search-block .search__input:focus ~ .search__button img:nth-of-type(3) {
   display: inline-block;
 }
 
-.dark .index-container .nav-bar .nav__search-bar .search-block .search__input:focus ~ .search__button p img:nth-of-type(2) {
+.dark .index-container .nav-bar .nav__search-bar .search-block .search__input:focus ~ .search__button img:nth-of-type(2) {
   display: none;
 }
 
 .dark .index-container .nav-bar .nav__search-bar .search-block .search__button:active {
   background: #CE36DB;
   padding: 3px;
-}
-
-.dark .index-container .nav-bar .nav__search-bar .search-block .search__button:active p {
   color: #fff;
 }
 
-.dark .index-container .nav-bar .nav__search-bar .search-block .search__button:active p img:nth-of-type(3) {
+.dark .index-container .nav-bar .nav__search-bar .search-block .search__button:active img:nth-of-type(3) {
   display: inline-block;
-  margin-right: 4px;
 }
 
-.dark .index-container .nav-bar .nav__search-bar .search-block .search__button:active p img:nth-of-type(2) {
+.dark .index-container .nav-bar .nav__search-bar .search-block .search__button:active img:nth-of-type(2) {
   display: none;
 }
 
@@ -221,33 +217,33 @@
           box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
 }
 
-.dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__img button, .dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__img p, .dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__img a,
+.dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__img button, .dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__img label, .dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__img a,
 .dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__text button,
-.dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__text p,
+.dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__text label,
 .dark .index-container main .cg__container .before-starts .buttons .cap-box .btn-cap__text a,
 .dark .index-container main .cg__container .before-starts .buttons .btn-subir button,
-.dark .index-container main .cg__container .before-starts .buttons .btn-subir p,
+.dark .index-container main .cg__container .before-starts .buttons .btn-subir label,
 .dark .index-container main .cg__container .before-starts .buttons .btn-subir a,
 .dark .index-container main .cg__container .before-starts .buttons .btn-listo button,
-.dark .index-container main .cg__container .before-starts .buttons .btn-listo p,
+.dark .index-container main .cg__container .before-starts .buttons .btn-listo label,
 .dark .index-container main .cg__container .before-starts .buttons .btn-listo a,
 .dark .index-container main .cg__container .before-starts .buttons .start button,
-.dark .index-container main .cg__container .before-starts .buttons .start p,
+.dark .index-container main .cg__container .before-starts .buttons .start label,
 .dark .index-container main .cg__container .before-starts .buttons .start a,
 .dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__img button,
-.dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__img p,
+.dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__img label,
 .dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__img a,
 .dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__text button,
-.dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__text p,
+.dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__text label,
 .dark .index-container main .cg__container .camera-active .btn-box .cap-box .btn-cap__text a,
 .dark .index-container main .cg__container .camera-active .btn-box .btn-subir button,
-.dark .index-container main .cg__container .camera-active .btn-box .btn-subir p,
+.dark .index-container main .cg__container .camera-active .btn-box .btn-subir label,
 .dark .index-container main .cg__container .camera-active .btn-box .btn-subir a,
 .dark .index-container main .cg__container .camera-active .btn-box .btn-listo button,
-.dark .index-container main .cg__container .camera-active .btn-box .btn-listo p,
+.dark .index-container main .cg__container .camera-active .btn-box .btn-listo label,
 .dark .index-container main .cg__container .camera-active .btn-box .btn-listo a,
 .dark .index-container main .cg__container .camera-active .btn-box .start button,
-.dark .index-container main .cg__container .camera-active .btn-box .start p,
+.dark .index-container main .cg__container .camera-active .btn-box .start label,
 .dark .index-container main .cg__container .camera-active .btn-box .start a {
   color: #fff;
 }
@@ -296,11 +292,11 @@
           box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
 }
 
-.dark .index-container main .cg__container .camera-active .btn-box .btn-repetir button p {
+.dark .index-container main .cg__container .camera-active .btn-box .btn-repetir button {
   color: #fff;
 }
 
-.dark .index-container main .cg__container .camera-active .btn-box .btn-repetir:active button p {
+.dark .index-container main .cg__container .camera-active .btn-box .btn-repetir:active button {
   border: 1px dotted #FFFFFF;
 }
 /*# sourceMappingURL=dark-styles.css.map */

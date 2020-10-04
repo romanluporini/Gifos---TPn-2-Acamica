@@ -24,8 +24,10 @@
                 </div>
                 <div class="nav__logo-buttons">
                     
-                    <img class="nav__logo day" src="./images/gifOF_logo.png" alt="gifos logo" id="logo1">
-                    <img class="nav__logo night" src="./images/gifOF_logo_dark.png" alt="gifos logo" id="logo2">
+                    <a href="/index.html">
+                        <img class="nav__logo day" src="./images/gifOF_logo.png" alt="gifos logo" id="logo1">
+                        <img class="nav__logo night" src="./images/gifOF_logo_dark.png" alt="gifos logo" id="logo2">
+                    </a>
                     
                     <svg class="nav__arrow-back" width="24px" height="26px" viewBox="0 0 24 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>arrow</title>
@@ -71,7 +73,7 @@
                         </div>
 
                         <div class="steps">
-                            <img src="/images/window img.png" alt="">
+                            <img src="/images/window-img.png" alt="">
                             <div class="steps-title">
                                 <p>Aquí podrás crear tus propios guifos</p>
                             </div>
@@ -90,7 +92,11 @@
                         <div class="buttons">
 
                             <div class="cancel"><a href="/index.html"><p>Cancelar</p></a></div>
-                            <div class="start"><label for="screen2" id="activarCamara"><p>Comenzar</p></label></div>
+                            <div class="start">
+                                <label for="screen2" id="activarCamara">
+                                    Comenzar
+                                </label>
+                            </div>
                         </div>
 
                     </div>
@@ -106,7 +112,7 @@
 
                         <div class="frame">
                             <video id="videoElement" autoplay></video>
-                            <img src="" alt="" id="imgElem">
+                            <img src="gif_preview" alt="gif_preview" id="imgElem">
 
                             <img src="/images/globe_img.png" alt="globe_img" id="img-globe">
                             <p id="texto-subiendo">Estamos subiendo tu guifo...</p>
@@ -145,8 +151,8 @@
                             <div class="timer" id="timer"><p id="timer-numbers">00:00:00</p></div>
                             <div class="cap-box" id="cap-box">
                                 <div class="btn-cap__img">
-                                    <img src="/images/camera.svg" alt="cam-img" id="img-cap">
-                                    <img src="/images/camera_light.svg" alt="cam-img" id="img-cap">
+                                    <img src="/images/camera.svg" alt="cam-img">
+                                    <img src="/images/camera_light.svg" alt="cam-img">
                                 </div>
                                 <div class="btn-cap__text"><button type="submit" id="capturar">Capturar</button></div>
                             </div>
@@ -179,11 +185,11 @@
                                 </div>
                             </div>
 
-                            <div class="btn-repetir" id="btn-repetir"><button type="submit"><p id="repetir-cap">Repetir captura</p></button></div>
+                            <div class="btn-repetir" id="btn-repetir"><button type="submit" id="repetir-cap">Repetir captura</button></div>
 
-                            <div class="btn-subir" id="btn-subir"><button type="submit" ><p id="subir-cap"> Subir guifo</p></button></div>
+                            <div class="btn-subir" id="btn-subir"><button type="submit" id="subir-cap">Subir guifo</button></div>
 
-                            <div class="btn-cancelarUp" id="btn-cancelarUp"><button type="submit"><p id="cancelar-upload"> Cancelar</p></button></div>
+                            <div class="btn-cancelarUp" id="btn-cancelarUp"><button type="submit" id="cancelar-upload">Cancelar</button></div>
 
                             <div class="btn-listo" id="btn-listo"><a href="/crear-guifos.html" id="listo">Listo</a></div>
                         </div>

@@ -38,9 +38,9 @@
                                 <feColorMatrix values="0 0 0 0 0.96823281   0 0 0 0 0.78809464   0 0 0 0 0.952825725  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
                             </filter>
                         </defs>
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <g id="gifOS_captura_7_exito" transform="translate(-60.000000, -77.000000)" fill-rule="nonzero">
-                                <g id="nav-bar" transform="translate(1.000000, 1.000000)">
+                                <g id="navBar" transform="translate(1.000000, 1.000000)">
                                     <g id="arrow" transform="translate(71.000000, 90.000000) rotate(-180.000000) translate(-71.000000, -90.000000) ">
                                         <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
                                         <use fill="#110038" xlink:href="#path-1"></use>
@@ -58,6 +58,7 @@
                         
                         <div class="theme">
                             <label for="btn-theme-opt">
+                            </label>
                                 <div class="text"> <p>elegir tema</p></div>
                                 <div class="arrow">
                                     <p> 
@@ -81,17 +82,15 @@
                                 </div>
                                 <div class="opt-box">
                                     <div class="opt day">
-                                        <label id="light-style">
-                                            <p> <span>s</span>ailor day</p> 
-                                        </label>
+                                        <label id="light-style"></label>
+                                        <p><span>s</span>ailor day</p> 
                                     </div>    
                                     <div class="opt night">
-                                        <label id="dark-style">
-                                            <p> <span>s</span>ailor night</p>
-                                        </label>
+                                        <label id="dark-style"></label>
+                                        <p> <span>s</span>ailor night</p>
                                     </div>
                                 </div>
-                            </label>
+                            
                         </div>
 
                         <div class="anchor-container">
@@ -108,13 +107,13 @@
                         <form action="GET">
                             <input type="text" class="search__input" placeholder="Busca tus gifs" required id="sinput-m" name="input-buscador" autocomplete="off">
                             <input type="text" class="search__input" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" required id="sinput-d" name="input-buscador" autocomplete="off">
-                            <button type="button" class="search__button" >
-                                <p id="search-button">
+                            <button type="button" class="search__button" id="search-button">
+                                <!-- <p > -->
                                     <img src="/images/lupa_inactive.svg" alt="lupa-inactive">
                                     <img src="/images/lupa.svg" alt="lupa-active">
                                     <img src="/images/lupa_light.svg" alt="lupa-light">
                                     buscar
-                                </p>
+                                <!-- </p> -->
                             </button>
                         
                             <div class="writing" id="is-writing">
@@ -150,37 +149,37 @@
                         <p>Hoy te sugerimos:</p>
                     </div>
                     <div class="sug__results">
-                        <div class="sug__preview" id="">
+                        <div class="sug__preview">
                             <div class="title">
                                 <p class="sug1" id="title-sug1">#Jonathanvanness</p>
                                 <img src="/images/button3.svg" alt="btn-x">
                             </div>
-                            <img src="" alt="sug-img1" id="sug-img1">
-                            <button type="submit"><p id="ver-mas1">Ver más...</p></button>
+                            <img src="/images/not-available.jpg" alt="sug-img1" id="sug-img1">
+                            <button type="submit" id="ver-mas1">Ver más...</button>
                         </div>
                         <div class="sug__preview">
                             <div class="title" >
                                 <p class="sug2" id="title-sug2">#SailorMercury</p>
                                 <img src="/images/button3.svg" alt="btn-x">
                             </div>
-                            <img src="" alt="sug-img2" id="sug-img2">
-                            <button type="submit"><p id="ver-mas2">Ver más...</p></button>
+                            <img src="/images/not-available.jpg" alt="sug-img2" id="sug-img2">
+                            <button type="submit" id="ver-mas2">Ver más...</button>
                         </div>
                         <div class="sug__preview">
                             <div class="title" >
                                 <p class="sug3" id="title-sug3">#FabFive</p>
                                 <img src="/images/button3.svg" alt="btn-x">
                             </div>
-                            <img src="" alt="sug-img3" id="sug-img3">
-                            <button type="submit"><p id="ver-mas3">Ver más...</p></button>
+                            <img src="/images/not-available.jpg" alt="sug-img3" id="sug-img3">
+                            <button type="submit" id="ver-mas3">Ver más...</button>
                         </div>
                         <div class="sug__preview">
                             <div class="title" >
                                 <p class="sug4" id="title-sug4">#Unicorns&Rainbows</p>
                                 <img src="/images/button3.svg" alt="btn-x">
                             </div>
-                            <img src="" alt="sug-img4"  id="sug-img4">
-                            <button type="submit"><p id="ver-mas4">Ver más...</p></button>
+                            <img src="/images/not-available.jpg" alt="sug-img4"  id="sug-img4">
+                            <button type="submit" id="ver-mas4">Ver más...</button>
                         </div>
                     </div>
                 </div>
@@ -192,16 +191,16 @@
                     </div>
                     <div class="trend__results">
                         
-                        <div class="trend__preview"><img src="" alt="trend-img-0" id="trend-img0"><div class="bottom-tags" id="tag-0"></div></div>
-                        <div class="trend__preview"><img src="" alt="trend-img-2" id="trend-img1"><div class="bottom-tags" id="tag-1"></div></div>
-                        <div class="trend__preview"><img src="" alt="trend-img-2" id="trend-img2"><div class="bottom-tags" id="tag-2"></div></div>
-                        <div class="trend__preview"><img src="" alt="trend-img-3" id="trend-img3"><div class="bottom-tags" id="tag-3"></div></div>
-                        <div class="trend__preview"><img src="" alt="trend-img-4" id="trend-img4"><div class="bottom-tags" id="tag-4"></div></div>
-                        <div class="trend__preview"><img src="" alt="trend-img-5" id="trend-img5"><div class="bottom-tags" id="tag-5"></div></div>
-                        <div class="trend__preview"><img src="" alt="trend-img-6" id="trend-img6"><div class="bottom-tags" id="tag-6"></div></div>
-                        <div class="trend__preview"><img src="" alt="trend-img-7" id="trend-img7"><div class="bottom-tags" id="tag-7"></div></div>
-                        <div class="trend__preview"><img src="" alt="trend-img-8" id="trend-img8"><div class="bottom-tags" id="tag-8"></div></div>
-                        <div class="trend__preview"><img src="" alt="trend-img-9" id="trend-img9"><div class="bottom-tags" id="tag-9"></div></div>
+                        <div class="trend__preview"><img src="/images/not-available.jpg" alt="trend-img-0" id="trend-img0"><div class="bottom-tags" id="tag-0"></div></div>
+                        <div class="trend__preview"><img src="/images/not-available.jpg" alt="trend-img-2" id="trend-img1"><div class="bottom-tags" id="tag-1"></div></div>
+                        <div class="trend__preview"><img src="/images/not-available.jpg" alt="trend-img-2" id="trend-img2"><div class="bottom-tags" id="tag-2"></div></div>
+                        <div class="trend__preview"><img src="/images/not-available.jpg" alt="trend-img-3" id="trend-img3"><div class="bottom-tags" id="tag-3"></div></div>
+                        <div class="trend__preview"><img src="/images/not-available.jpg" alt="trend-img-4" id="trend-img4"><div class="bottom-tags" id="tag-4"></div></div>
+                        <div class="trend__preview"><img src="/images/not-available.jpg" alt="trend-img-5" id="trend-img5"><div class="bottom-tags" id="tag-5"></div></div>
+                        <div class="trend__preview"><img src="/images/not-available.jpg" alt="trend-img-6" id="trend-img6"><div class="bottom-tags" id="tag-6"></div></div>
+                        <div class="trend__preview"><img src="/images/not-available.jpg" alt="trend-img-7" id="trend-img7"><div class="bottom-tags" id="tag-7"></div></div>
+                        <div class="trend__preview"><img src="/images/not-available.jpg" alt="trend-img-8" id="trend-img8"><div class="bottom-tags" id="tag-8"></div></div>
+                        <div class="trend__preview"><img src="/images/not-available.jpg" alt="trend-img-9" id="trend-img9"><div class="bottom-tags" id="tag-9"></div></div>
                     </div>
                 </div>
             </section>
@@ -222,16 +221,16 @@
                     </div>
                     <div class="sr__results">
 
-                        <div class="sr"><img src="" alt="" id="sr-0"><div class="bottom-tags" id="tag-10"></div></div>
-                        <div class="sr"><img src="" alt="" id="sr-1"><div class="bottom-tags" id="tag-11"></div></div>
-                        <div class="sr"><img src="" alt="" id="sr-2"><div class="bottom-tags" id="tag-12"></div></div>
-                        <div class="sr"><img src="" alt="" id="sr-3"><div class="bottom-tags" id="tag-13"></div></div>
-                        <div class="sr"><img src="" alt="" id="sr-4"><div class="bottom-tags" id="tag-14"></div></div>
-                        <div class="sr"><img src="" alt="" id="sr-5"><div class="bottom-tags" id="tag-15"></div></div>
-                        <div class="sr"><img src="" alt="" id="sr-6"><div class="bottom-tags" id="tag-16"></div></div>
-                        <div class="sr"><img src="" alt="" id="sr-7"><div class="bottom-tags" id="tag-17"></div></div>
-                        <div class="sr"><img src="" alt="" id="sr-8"><div class="bottom-tags" id="tag-18"></div></div>
-                        <div class="sr"><img src="" alt="" id="sr-9"><div class="bottom-tags" id="tag-19"></div></div>
+                        <div class="sr"><img src="/images/not-available.jpg" alt="sr-img1" id="sr-0"><div class="bottom-tags" id="tag-10"></div></div>
+                        <div class="sr"><img src="/images/not-available.jpg" alt="sr-img2" id="sr-1"><div class="bottom-tags" id="tag-11"></div></div>
+                        <div class="sr"><img src="/images/not-available.jpg" alt="sr-img3" id="sr-2"><div class="bottom-tags" id="tag-12"></div></div>
+                        <div class="sr"><img src="/images/not-available.jpg" alt="sr-img4" id="sr-3"><div class="bottom-tags" id="tag-13"></div></div>
+                        <div class="sr"><img src="/images/not-available.jpg" alt="sr-img5" id="sr-4"><div class="bottom-tags" id="tag-14"></div></div>
+                        <div class="sr"><img src="/images/not-available.jpg" alt="sr-img6" id="sr-5"><div class="bottom-tags" id="tag-15"></div></div>
+                        <div class="sr"><img src="/images/not-available.jpg" alt="sr-img7" id="sr-6"><div class="bottom-tags" id="tag-16"></div></div>
+                        <div class="sr"><img src="/images/not-available.jpg" alt="sr-img8" id="sr-7"><div class="bottom-tags" id="tag-17"></div></div>
+                        <div class="sr"><img src="/images/not-available.jpg" alt="sr-img9" id="sr-8"><div class="bottom-tags" id="tag-18"></div></div>
+                        <div class="sr"><img src="/images/not-available.jpg" alt="sr-img10" id="sr-9"><div class="bottom-tags" id="tag-19"></div></div>
                         
                     </div>
 

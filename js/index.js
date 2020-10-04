@@ -82,7 +82,7 @@ function insertarSugeridos(){
 
     for (i=0; i < srcSugArr.length; i++) {
         let v='gifsTrendSugeridos'+i;
-        let found = fetch('http://api.giphy.com/v1/gifs/search?q=' + `${srcSugArr[i]}` + '&api_key=' + 'MEzLGHsEgB21300IkEEPzSpYzn9V8brD' + '&limit=10')
+        let found = fetch('https://api.giphy.com/v1/gifs/search?q=' + `${srcSugArr[i]}` + '&api_key=' + 'MEzLGHsEgB21300IkEEPzSpYzn9V8brD' + '&limit=10')
         .then(response => {
             return response.json();
         })
@@ -302,28 +302,28 @@ verMasButton1.addEventListener('click', ()=>{
     document.querySelector('.nav__arrow-back').style.display="block";
     document.getElementById('egs').style.display="none";
     let gifsVerMas=JSON.parse(localStorage.getItem('gifsTrendSugeridos0'));
-    title.innerHTML = suggestions.data[0] + ':';
+    title.innerHTML = srcSugArr[0] + ':';
     insertarBuscados(gifsVerMas);
 })
 verMasButton2.addEventListener('click', ()=>{
     document.querySelector('.nav__arrow-back').style.display="block";
     document.getElementById('egs').style.display="none";
     let gifsVerMas=JSON.parse(localStorage.getItem('gifsTrendSugeridos1'));
-    title.innerHTML = suggestions.data[0] + ':';
+    title.innerHTML = srcSugArr[1] + ':';
     insertarBuscados(gifsVerMas);
 })
 verMasButton3.addEventListener('click', ()=>{
     document.querySelector('.nav__arrow-back').style.display="block";
     document.getElementById('egs').style.display="none";
     let gifsVerMas=JSON.parse(localStorage.getItem('gifsTrendSugeridos2'));
-    title.innerHTML = suggestions.data[0] + ':';
+    title.innerHTML = srcSugArr[2] + ':';
     insertarBuscados(gifsVerMas)
 })
 verMasButton4.addEventListener('click', ()=>{
     document.querySelector('.nav__arrow-back').style.display="block";
     document.getElementById('egs').style.display="none";
     let gifsVerMas=JSON.parse(localStorage.getItem('gifsTrendSugeridos3'));
-    title.innerHTML = suggestions.data[0] + ':';
+    title.innerHTML = srcSugArr[3] + ':';
     insertarBuscados(gifsVerMas);
 })
 
